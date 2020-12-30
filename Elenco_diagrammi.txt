@@ -1,7 +1,7 @@
 Creazione diagrammi:
  il diagramma dei Casi d’Uso (FATTO)
- diagramma delle classi a livello di dominio
- diagramma delle classi a livello di progettazione
+ diagramma delle classi a livello di dominio (fatto, versione 1)
+ diagramma delle classi a livello di progettazione (fatto, versione 1)
  diagramma SSD
  almeno un diagramma di sequenza di progettazione (non SSD)
  diagramma dell’architettura software
