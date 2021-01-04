@@ -14,11 +14,11 @@ namespace ProgettoBirra
     {
         string email, password;
        
-        public FormMenu(string email)
+        public FormMenu(string email, string password)
         {
             InitializeComponent();
             this.email = email;
-            
+            this.password = password;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace ProgettoBirra
 
         private void buttonGestioneUtente(object sender, EventArgs e)
         {
-            formGestioneUt newform = new formGestioneUt(email);
+            formGestioneUt newform = new formGestioneUt(email,password);
             this.Hide();
             newform.ShowDialog();
             this.Show();

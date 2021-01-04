@@ -29,81 +29,90 @@ namespace ProgettoBirra
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBoxPassword = new System.Windows.Forms.CheckBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.checkBoxEmail = new System.Windows.Forms.CheckBox();
+            this.buttonSalva = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // checkBoxPassword
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(95, 82);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(143, 20);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Modifica password";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxPassword.AutoSize = true;
+            this.checkBoxPassword.Location = new System.Drawing.Point(71, 67);
+            this.checkBoxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxPassword.Name = "checkBoxPassword";
+            this.checkBoxPassword.Size = new System.Drawing.Size(114, 17);
+            this.checkBoxPassword.TabIndex = 0;
+            this.checkBoxPassword.Text = "Modifica password";
+            this.checkBoxPassword.UseVisualStyleBackColor = true;
+            this.checkBoxPassword.CheckedChanged += new System.EventHandler(this.checkBoxPassword_CheckedChanged);
             // 
-            // textBox1
+            // textBoxPassword
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(440, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxPassword.Enabled = false;
+            this.textBoxPassword.Location = new System.Drawing.Point(330, 65);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(200, 20);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 26);
+            this.label1.Location = new System.Drawing.Point(71, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 16);
+            this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cosa vuoi fare?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(440, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 22);
-            this.textBox2.TabIndex = 4;
+            this.textBoxEmail.Enabled = false;
+            this.textBoxEmail.Location = new System.Drawing.Point(330, 121);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEmail.TabIndex = 4;
             // 
-            // checkBox2
+            // checkBoxEmail
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(95, 149);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(117, 20);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Modifica email";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxEmail.AutoSize = true;
+            this.checkBoxEmail.Location = new System.Drawing.Point(71, 121);
+            this.checkBoxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxEmail.Name = "checkBoxEmail";
+            this.checkBoxEmail.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxEmail.TabIndex = 3;
+            this.checkBoxEmail.Text = "Modifica email";
+            this.checkBoxEmail.UseVisualStyleBackColor = true;
+            this.checkBoxEmail.CheckedChanged += new System.EventHandler(this.checkBoxEmail_CheckedChanged);
             // 
-            // button1
+            // buttonSalva
             // 
-            this.button1.Location = new System.Drawing.Point(277, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Salva";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSalva.Location = new System.Drawing.Point(210, 227);
+            this.buttonSalva.Name = "buttonSalva";
+            this.buttonSalva.Size = new System.Drawing.Size(140, 84);
+            this.buttonSalva.TabIndex = 5;
+            this.buttonSalva.Text = "SALVA";
+            this.buttonSalva.UseVisualStyleBackColor = true;
+            this.buttonSalva.Click += new System.EventHandler(this.buttonSalva_Click);
             // 
             // formGestioneUt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.checkBox2);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonSalva);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.checkBoxEmail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.checkBoxPassword);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formGestioneUt";
             this.Text = "formGestioneUt";
             this.Load += new System.EventHandler(this.formGestioneUt_Load);
@@ -114,11 +123,11 @@ namespace ProgettoBirra
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBoxPassword;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.CheckBox checkBoxEmail;
+        private System.Windows.Forms.Button buttonSalva;
     }
 }

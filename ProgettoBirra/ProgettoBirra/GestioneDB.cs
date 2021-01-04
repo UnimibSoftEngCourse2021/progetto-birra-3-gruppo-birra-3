@@ -173,6 +173,33 @@ namespace ProgettoBirra
             }
         }
 
+
+
+        public void UpdateUtente(string email, string password, string emailOld, string passwordOld)
+        {
+            //
+            
+            //query modifica Utente
+            string query = "UPDATE utenti SET email='" + email + "', password='" + password + "' WHERE email='" + emailOld + "' AND password='" + passwordOld + "'";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //create mysql command
+                MySqlCommand cmd = new MySqlCommand();
+                //Assign the query using CommandText
+                cmd.CommandText = query;
+                //Assign the connection using Connection
+                cmd.Connection = connection;
+
+                //Execute query
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
         //Delete statement
         public void Delete()
         {
