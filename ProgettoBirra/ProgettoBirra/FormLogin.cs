@@ -52,7 +52,7 @@ namespace ProgettoBirra
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCreaAccount(object sender, EventArgs e)
         { 
             FormRegistrazione newform = new FormRegistrazione();
             this.Hide();
@@ -63,21 +63,6 @@ namespace ProgettoBirra
         private void button4_Click(object sender, EventArgs e)
         {
 
-            //BOTTONE TEST
-
-            bool b = false;
-            //database.SelectUtente(textBox1.Text, textBox2.Text);
-            b = database.SelectUtente(textBox1.Text, textBox2.Text);
-            if (b == true)
-            {
-                MessageBox.Show("ha funzionato");
-                FormMenu newform = new FormMenu(textBox1.Text,textBox2.Text);
-                this.Hide();
-                newform.ShowDialog();
-                this.Show();
-            }
-            else
-                MessageBox.Show("non ha funzionato");
         }
     }
 }

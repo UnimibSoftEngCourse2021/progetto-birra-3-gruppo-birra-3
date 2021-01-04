@@ -35,7 +35,7 @@ namespace ProgettoBirra
         private void button1_Click(object sender, EventArgs e)
         {
             String prodottoNuovo = textBox1.Text;
-            Form3 f3 = new Form3();
+            FormGestioneProdotti f3 = new FormGestioneProdotti();
             f3.Show();
         }
     }

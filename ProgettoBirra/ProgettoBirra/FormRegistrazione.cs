@@ -19,9 +19,9 @@ namespace ProgettoBirra
             database = new GestioneDB();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonRegistrati(object sender, EventArgs e)
         {
-            database.InsertUtente(textBox1.Text, textBox2.Text);
+            database.InsertUtente(textBoxEmail.Text, textBoxPassword.Text);
 
 
 

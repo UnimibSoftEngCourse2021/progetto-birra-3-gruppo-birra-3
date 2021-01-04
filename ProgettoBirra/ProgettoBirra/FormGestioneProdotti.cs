@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    public partial class Form3 : Form
+    public partial class FormGestioneProdotti : Form
     {
-        public Form3()
+        public FormGestioneProdotti()
         {
             InitializeComponent();
 

@@ -35,8 +35,6 @@ namespace ProgettoBirra
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label2
@@ -70,7 +68,7 @@ namespace ProgettoBirra
             this.button1.TabIndex = 4;
             this.button1.Text = "CREA ACCOUNT";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.buttonCreaAccount);
             // 
             // button2
             // 
@@ -91,31 +89,11 @@ namespace ProgettoBirra
             this.label1.TabIndex = 6;
             this.label1.Text = "EMAIL:";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(443, 235);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 70);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "TEST";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(582, 63);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(238, 251);
-            this.listBox1.TabIndex = 9;
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 360);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(453, 366);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -123,7 +101,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Name = "FormLogin";
-            this.Text = "login";
+            this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,8 +115,6 @@ namespace ProgettoBirra
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

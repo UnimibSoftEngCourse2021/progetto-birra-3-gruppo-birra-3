@@ -1,7 +1,7 @@
 ﻿
 namespace ProgettoBirra
 {
-    partial class Form3
+    partial class FormGestioneProdotti
     {
         /// <summary>
         /// Required designer variable.
@@ -71,7 +71,7 @@ namespace ProgettoBirra
             this.button3.Text = "ELIMINA";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form3
+            // FormGestioneProdotti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@ namespace ProgettoBirra
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "FormGestioneProdotti";
+            this.Text = "DISPENSA";
             this.ResumeLayout(false);
 
         }

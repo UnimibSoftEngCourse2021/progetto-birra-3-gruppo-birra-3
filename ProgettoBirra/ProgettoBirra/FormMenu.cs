@@ -21,22 +21,42 @@ namespace ProgettoBirra
             this.password = password;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonGestioneProdotti(object sender, EventArgs e)
         {
-            Form3 newform = new Form3();
+            FormGestioneProdotti newform = new FormGestioneProdotti();
             newform.ShowDialog();
             //this.Close();
         }
 
         private void buttonGestioneUtente(object sender, EventArgs e)
         {
-            formGestioneUt newform = new formGestioneUt(email,password);
+            FormGestioneUtente newform = new FormGestioneUtente(email,password);
             this.Hide();
             newform.ShowDialog();
             this.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonGestioneAttrezzatura(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPreparaBirra(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonListaDellaSpesa(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCheBirraFaccio(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGestioneRicette(object sender, EventArgs e)
         {
             
         }

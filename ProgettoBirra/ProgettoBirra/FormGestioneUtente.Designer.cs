@@ -1,7 +1,7 @@
 ﻿
 namespace ProgettoBirra
 {
-    partial class formGestioneUt
+    partial class FormGestioneUtente
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.checkBoxPassword);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formGestioneUt";
-            this.Text = "formGestioneUt";
+            this.Text = "MODIFICA ACCOUNT";
             this.Load += new System.EventHandler(this.formGestioneUt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

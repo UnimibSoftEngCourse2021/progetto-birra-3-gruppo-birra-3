@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    public partial class formGestioneUt : Form
+    public partial class FormGestioneUtente : Form
     {
         string email;
         string password;
         GestioneDB database;
-        public formGestioneUt(string email, string password)
+        public FormGestioneUtente(string email, string password)
         {
             InitializeComponent();
             database = new GestioneDB();
