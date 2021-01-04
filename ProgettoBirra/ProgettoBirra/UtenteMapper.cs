@@ -16,7 +16,7 @@ namespace ProgettoBirra
             this.email = email;
             this.password = password;
             
-
+            //test mio
         }
 
         public string getEmail() {
