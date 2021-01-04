@@ -10,6 +10,12 @@ using System.Data.SqlClient;
 
 namespace ProgettoBirra
 {
+    //inizializzazione variabili globali
+    public static class Globals {
+        public static string emailGlobal;
+        public static string passwordGlobal;
+        //public static GestioneDB d = new GestioneDB();
+    }
     class GestioneDB
     {
         private MySqlConnection connection;
@@ -175,12 +181,12 @@ namespace ProgettoBirra
 
 
 
-        public void UpdateUtente(string email, string password, string emailOld, string passwordOld)
+        public void UpdateUtente(string email, string password)
         {
             //
             
             //query modifica Utente
-            string query = "UPDATE utenti SET email='" + email + "', password='" + password + "' WHERE email='" + emailOld + "' AND password='" + passwordOld + "'";
+            string query = "UPDATE utenti SET email='" + email + "', password='" + password + "' WHERE email='" + Globals.emailGlobal + "' AND password='" + Globals.passwordGlobal + "'";
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -259,6 +265,9 @@ namespace ProgettoBirra
         //ricercaUtente(login)
         public bool SelectUtente(string email, string password)
         {
+            Globals.emailGlobal = email;
+            Globals.passwordGlobal = password;
+
             string query = "SELECT Utenti.email,Utenti.password FROM Utenti WHERE Utenti.email = '" + email + "' AND Utenti.password = '" + password + "'";
 
         
@@ -292,7 +301,8 @@ namespace ProgettoBirra
                 //return list to be displayed
                 //utente.setEmail(e);
                 //utente.setPassword(p);
-
+                /*Globals.emailGlobal = e;
+                Globals.passwordGlobal = p;*/
                 return true;
             }
 

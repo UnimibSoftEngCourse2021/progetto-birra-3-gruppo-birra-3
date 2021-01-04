@@ -15,25 +15,12 @@ namespace ProgettoBirra
         string email;
         string password;
         GestioneDB database;
-        public FormGestioneUtente(string email, string password)
+        public FormGestioneUtente()
         {
             InitializeComponent();
             database = new GestioneDB();
-            this.email = email;
-            this.password = password;
-            textBoxEmail.Text = email;
-            textBoxPassword.Text = password;
-
-            /*if (checkBoxEmail.IsAccessible) {
-                textBoxEmail.Enabled = true;
-            }else
-                textBoxEmail.Enabled = false;
-
-            if (checkBoxPassword.IsAccessible)
-            {
-                textBoxPassword.Enabled = true;
-            }else
-                textBoxPassword.Enabled = false;*/
+            textBoxEmail.Text = Globals.emailGlobal;
+            textBoxPassword.Text = Globals.passwordGlobal;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -82,7 +69,7 @@ namespace ProgettoBirra
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            database.UpdateUtente(textBoxEmail.Text,textBoxPassword.Text,this.email,this.password);
+            database.UpdateUtente(textBoxEmail.Text,textBoxPassword.Text);
             MessageBox.Show("la query è stata eseguita");
         }
     }

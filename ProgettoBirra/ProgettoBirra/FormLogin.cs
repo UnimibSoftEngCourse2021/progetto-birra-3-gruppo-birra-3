@@ -35,7 +35,7 @@ namespace ProgettoBirra
             if (b == true)
             {
                 //MessageBox.Show("Benvenuto");
-                FormMenu newform = new FormMenu(textBox1.Text, textBox2.Text);
+                FormMenu newform = new FormMenu();
                 this.Hide();
                 newform.ShowDialog();
                 this.Show();
