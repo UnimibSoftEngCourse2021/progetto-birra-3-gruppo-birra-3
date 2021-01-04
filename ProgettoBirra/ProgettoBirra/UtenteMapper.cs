@@ -11,12 +11,15 @@ namespace ProgettoBirra
         private string email;
         private string password;
 
+
+        public UtenteMapper()
+        { }
+
         public UtenteMapper(string email, string password)
         {
             this.email = email;
             this.password = password;
             
-            //test mio
         }
 
         public string getEmail() {

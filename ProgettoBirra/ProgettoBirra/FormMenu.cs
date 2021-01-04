@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    public partial class Form2 : Form
+    public partial class FormMenu : Form
     {
-        public Form2()
+        string email, password;
+       
+        public FormMenu(string email)
         {
             InitializeComponent();
+            this.email = email;
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -22,6 +26,19 @@ namespace ProgettoBirra
             Form3 newform = new Form3();
             newform.ShowDialog();
             //this.Close();
+        }
+
+        private void buttonGestioneUtente(object sender, EventArgs e)
+        {
+            formGestioneUt newform = new formGestioneUt(email);
+            this.Hide();
+            newform.ShowDialog();
+            this.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

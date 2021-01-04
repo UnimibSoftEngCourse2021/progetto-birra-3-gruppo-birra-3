@@ -1,7 +1,7 @@
 ﻿
 namespace ProgettoBirra
 {
-    partial class Form2
+    partial class FormMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -35,31 +35,35 @@ namespace ProgettoBirra
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(72, 110);
+            this.button1.Location = new System.Drawing.Point(96, 135);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 164);
+            this.button1.Size = new System.Drawing.Size(304, 202);
             this.button1.TabIndex = 0;
             this.button1.Text = "CheBirraFaccio";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(493, 243);
+            this.button2.Location = new System.Drawing.Point(657, 299);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 66);
+            this.button2.Size = new System.Drawing.Size(347, 81);
             this.button2.TabIndex = 1;
             this.button2.Text = "PREPARA UNA BIRRA";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(493, 27);
+            this.button3.Location = new System.Drawing.Point(657, 33);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 66);
+            this.button3.Size = new System.Drawing.Size(347, 81);
             this.button3.TabIndex = 2;
             this.button3.Text = "GESTISCI PRODOTTI";
             this.button3.UseVisualStyleBackColor = true;
@@ -67,44 +71,60 @@ namespace ProgettoBirra
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(493, 99);
+            this.button4.Location = new System.Drawing.Point(657, 122);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(260, 66);
+            this.button4.Size = new System.Drawing.Size(347, 81);
             this.button4.TabIndex = 3;
             this.button4.Text = "GESTISCI RICETTE";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(493, 171);
+            this.button5.Location = new System.Drawing.Point(657, 210);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(260, 66);
+            this.button5.Size = new System.Drawing.Size(347, 81);
             this.button5.TabIndex = 4;
             this.button5.Text = "GESTISCI ATTREZZATURA";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(493, 315);
+            this.button6.Location = new System.Drawing.Point(657, 388);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(260, 66);
+            this.button6.Size = new System.Drawing.Size(347, 81);
             this.button6.TabIndex = 5;
             this.button6.Text = "LISTA DELLA SPESA";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // button7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.button7.Location = new System.Drawing.Point(96, 431);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(304, 23);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "GESTIONE UTENTE";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.buttonGestioneUtente);
+            // 
+            // FormMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 408);
+            this.ClientSize = new System.Drawing.Size(1033, 502);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FormMenu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }
@@ -117,5 +137,6 @@ namespace ProgettoBirra
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

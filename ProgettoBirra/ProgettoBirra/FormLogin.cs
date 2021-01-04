@@ -16,6 +16,8 @@ namespace ProgettoBirra
     public partial class FormLogin : Form
     {
         GestioneDB database;
+
+        string prova="test";
         public FormLogin()
         {
             InitializeComponent();
@@ -23,19 +25,23 @@ namespace ProgettoBirra
             database.create_table();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bottoneLogin(object sender, EventArgs e)
         {
-            /*if (textBox1.Text.Equals("user") && textBox2.Text.Equals("password"))
+            //Bottone login 
+
+            bool b = false;
+            //database.SelectUtente(textBox1.Text, textBox2.Text);
+            b = database.SelectUtente(textBox1.Text, textBox2.Text);
+            if (b == true)
             {
-                Form2 newform = new Form2();
+                //MessageBox.Show("Benvenuto");
+                FormMenu newform = new FormMenu(textBox1.Text);
+                this.Hide();
                 newform.ShowDialog();
-                //this.Hide();
+                this.Show();
             }
-            else {
-                MessageBox.Show("login errato, riprovare.");
-                textBox1.Text = "";
-                textBox2.Text = "";
-            }*/
+            else
+                MessageBox.Show("Login errato");
 
 
         }
@@ -56,12 +62,19 @@ namespace ProgettoBirra
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            //BOTTONE TEST
+
             bool b = false;
             //database.SelectUtente(textBox1.Text, textBox2.Text);
             b = database.SelectUtente(textBox1.Text, textBox2.Text);
             if (b == true)
             {
                 MessageBox.Show("ha funzionato");
+                FormMenu newform = new FormMenu(textBox1.Text);
+                this.Hide();
+                newform.ShowDialog();
+                this.Show();
             }
             else
                 MessageBox.Show("non ha funzionato");

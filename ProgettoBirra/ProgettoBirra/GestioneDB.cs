@@ -17,6 +17,7 @@ namespace ProgettoBirra
         private string database;
         private string uid;
         private string password;
+       
 
         //Constructor
         public GestioneDB()
@@ -239,15 +240,15 @@ namespace ProgettoBirra
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
-                string a = "";
-                string b = "";
+                string e = "";
+                string p = "";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    a += $"{reader.GetString("email")};";
-                    b += $"{reader.GetString("password")};";
+                    e += $"{reader.GetString("email")};";
+                    p += $"{reader.GetString("password")};";
                 }
 
                 //MessageBox.Show("a = " + a.ToString());
@@ -257,11 +258,14 @@ namespace ProgettoBirra
                 this.CloseConnection();
 
 
-                if (a == "" || b == "")
+                if (e == "" || p == "")
                     return false;
 
 
                 //return list to be displayed
+                //utente.setEmail(e);
+                //utente.setPassword(p);
+
                 return true;
             }
 
