@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    public partial class FormModificaProd : Form
+    public partial class FormEliminaProd : Form
     {
         GestioneDB database;
-        public FormModificaProd()
+        public FormEliminaProd()
         {
             database = new GestioneDB();
             InitializeComponent();
         }
 
-        private void buttonSalvaModifiche_Click(object sender, EventArgs e)
+        private void buttonEliminaProd_Click(object sender, EventArgs e)
         {
-            database.UpdateProd(textBoxNome.Text, Convert.ToInt32(this.textBoxNuovaQT.Text));
+            database.DeleteProd(textBoxNomeProd.Text);
 
             FormGestioneProdotti newform = new FormGestioneProdotti();
             this.Hide();

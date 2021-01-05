@@ -40,9 +40,9 @@ namespace ProgettoBirra
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(72, 110);
+            this.button1.Location = new System.Drawing.Point(72, 171);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 164);
+            this.button1.Size = new System.Drawing.Size(228, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "CheBirraFaccio";
             this.button1.UseVisualStyleBackColor = true;
@@ -100,10 +100,10 @@ namespace ProgettoBirra
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(72, 301);
+            this.button7.Location = new System.Drawing.Point(72, 315);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(228, 68);
+            this.button7.Size = new System.Drawing.Size(228, 54);
             this.button7.TabIndex = 6;
             this.button7.Text = "GESTIONE UTENTE";
             this.button7.UseVisualStyleBackColor = true;

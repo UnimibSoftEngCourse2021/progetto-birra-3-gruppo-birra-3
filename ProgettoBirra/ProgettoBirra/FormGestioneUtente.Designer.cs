@@ -35,6 +35,7 @@ namespace ProgettoBirra
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.checkBoxEmail = new System.Windows.Forms.CheckBox();
             this.buttonSalva = new System.Windows.Forms.Button();
+            this.buttonEliminaUtente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBoxPassword
@@ -93,19 +94,30 @@ namespace ProgettoBirra
             // 
             // buttonSalva
             // 
-            this.buttonSalva.Location = new System.Drawing.Point(210, 227);
+            this.buttonSalva.Location = new System.Drawing.Point(390, 159);
             this.buttonSalva.Name = "buttonSalva";
-            this.buttonSalva.Size = new System.Drawing.Size(140, 84);
+            this.buttonSalva.Size = new System.Drawing.Size(140, 54);
             this.buttonSalva.TabIndex = 5;
             this.buttonSalva.Text = "SALVA";
             this.buttonSalva.UseVisualStyleBackColor = true;
             this.buttonSalva.Click += new System.EventHandler(this.buttonSalva_Click);
             // 
-            // formGestioneUt
+            // buttonEliminaUtente
+            // 
+            this.buttonEliminaUtente.Location = new System.Drawing.Point(157, 250);
+            this.buttonEliminaUtente.Name = "buttonEliminaUtente";
+            this.buttonEliminaUtente.Size = new System.Drawing.Size(226, 60);
+            this.buttonEliminaUtente.TabIndex = 6;
+            this.buttonEliminaUtente.Text = "ELIMINA ACCOUNT";
+            this.buttonEliminaUtente.UseVisualStyleBackColor = true;
+            this.buttonEliminaUtente.Click += new System.EventHandler(this.buttonEliminaUtente_Click);
+            // 
+            // FormGestioneUtente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonEliminaUtente);
             this.Controls.Add(this.buttonSalva);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.checkBoxEmail);
@@ -113,7 +125,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.checkBoxPassword);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "formGestioneUt";
+            this.Name = "FormGestioneUtente";
             this.Text = "MODIFICA ACCOUNT";
             this.Load += new System.EventHandler(this.formGestioneUt_Load);
             this.ResumeLayout(false);
@@ -129,5 +141,6 @@ namespace ProgettoBirra
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.CheckBox checkBoxEmail;
         private System.Windows.Forms.Button buttonSalva;
+        private System.Windows.Forms.Button buttonEliminaUtente;
     }
 }

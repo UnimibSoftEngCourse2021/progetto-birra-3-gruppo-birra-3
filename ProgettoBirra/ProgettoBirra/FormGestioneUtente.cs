@@ -72,5 +72,11 @@ namespace ProgettoBirra
             database.UpdateUtente(textBoxEmail.Text,textBoxPassword.Text);
             MessageBox.Show("la query è stata eseguita");
         }
+
+        private void buttonEliminaUtente_Click(object sender, EventArgs e)
+        {
+            database.DeleteProdUtente();
+            database.DeleteUtente();
+        }
     }
 }

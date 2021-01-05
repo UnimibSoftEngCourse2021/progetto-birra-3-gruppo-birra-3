@@ -288,7 +288,48 @@ namespace ProgettoBirra
             }
         }
 
+
+
+        //Elimina Utente
+        public void DeleteUtente()
+        {
+            string query = "DELETE FROM Utenti WHERE email='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
         
+        //elimina tutti i prodotti associati all'utente 
+        public void DeleteProdUtente()
+        {
+            string query = "DELETE FROM Prodotto WHERE proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
+        //Elimina Prodotto
+        public void DeleteProd(string nomeProd)
+        {
+            string query = "DELETE FROM Prodotto WHERE nomeProd='" + nomeProd + "' AND proprietario='"+ Globals.emailGlobal +"'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
+
 
 
         //Select statement

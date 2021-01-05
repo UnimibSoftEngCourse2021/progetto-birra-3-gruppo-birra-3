@@ -31,5 +31,11 @@ namespace ProgettoBirra
             newform.ShowDialog();
 
         }
+
+        private void buttonElimina(object sender, EventArgs e)
+        {
+            FormEliminaProd newform = new FormEliminaProd();
+            newform.ShowDialog();
+        }
     }
 }
