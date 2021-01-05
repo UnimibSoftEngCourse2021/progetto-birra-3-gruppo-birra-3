@@ -38,48 +38,55 @@ namespace ProgettoBirra
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(16, 15);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(594, 602);
+            this.listBox1.Size = new System.Drawing.Size(791, 740);
             this.listBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(636, 106);
+            this.button1.Location = new System.Drawing.Point(848, 130);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 60);
+            this.button1.Size = new System.Drawing.Size(324, 74);
             this.button1.TabIndex = 1;
             this.button1.Text = "AGGIUNGI";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.buttonAggiungi);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(636, 272);
+            this.button2.Location = new System.Drawing.Point(848, 335);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 60);
+            this.button2.Size = new System.Drawing.Size(324, 74);
             this.button2.TabIndex = 2;
             this.button2.Text = "MODIFICA";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.buttonModifica);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(636, 444);
+            this.button3.Location = new System.Drawing.Point(848, 546);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(243, 60);
+            this.button3.Size = new System.Drawing.Size(324, 74);
             this.button3.TabIndex = 3;
             this.button3.Text = "ELIMINA";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // FormGestioneProdotti
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 632);
+            this.ClientSize = new System.Drawing.Size(1188, 778);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormGestioneProdotti";
             this.Text = "DISPENSA";
             this.ResumeLayout(false);

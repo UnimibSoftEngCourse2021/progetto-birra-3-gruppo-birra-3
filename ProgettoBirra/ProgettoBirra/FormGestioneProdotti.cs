@@ -18,11 +18,18 @@ namespace ProgettoBirra
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAggiungi(object sender, EventArgs e)
         {
-            Form4 newform = new Form4();
+            FormAggiuntaProd newform = new FormAggiuntaProd();
             newform.ShowDialog();
             //this.Close();
+        }
+
+        private void buttonModifica(object sender, EventArgs e)
+        {
+            FormModificaProd newform = new FormModificaProd();
+            newform.ShowDialog();
+
         }
     }
 }

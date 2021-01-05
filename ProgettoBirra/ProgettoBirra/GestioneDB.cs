@@ -112,7 +112,27 @@ namespace ProgettoBirra
             }
         }
 
+        //metodo creazione tabella prodotto
+        public void create_tableProd()
+        {
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `Prodotto` (`proprietario` VARCHAR(45) NOT NULL,`nomeProd` VARCHAR(45) NOT NULL,`quantita` INT NOT NULL,`idProdotto` INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (`idProdotto`), CONSTRAINT `emailp` FOREIGN KEY (`proprietario`) REFERENCES `Utenti` (`email`))");
+            //string query = string.Format("DROP TABLE `Prodotto`");
 
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                //cmd.ExecuteNonQuery();
+
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
         //Insert statement
         public void Insert()
         {
@@ -156,6 +176,32 @@ namespace ProgettoBirra
             }
         }
 
+
+        //Metodo per inserire un nuovo prodotto nel DB
+        public void InsertProd(string emailp, string nomeProd, int quantita)
+        {
+            string query = "INSERT INTO Prodotto (proprietario, nomeProd, quantita) VALUES('" + emailp + "', '" + nomeProd + "','" + quantita + "')";
+
+
+            create_table();
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+
+        
+        
         //Update statement
         public void Update()
         {
@@ -179,14 +225,37 @@ namespace ProgettoBirra
             }
         }
 
-
-
+ 
         public void UpdateUtente(string email, string password)
         {
             //
             
             //query modifica Utente
             string query = "UPDATE utenti SET email='" + email + "', password='" + password + "' WHERE email='" + Globals.emailGlobal + "' AND password='" + Globals.passwordGlobal + "'";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //create mysql command
+                MySqlCommand cmd = new MySqlCommand();
+                //Assign the query using CommandText
+                cmd.CommandText = query;
+                //Assign the connection using Connection
+                cmd.Connection = connection;
+
+                //Execute query
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+
+        //Update di un prodotto
+        public void UpdateProd(string nomeProd, int nuovaQT)
+        {
+            string query = "UPDATE Prodotto SET quantita='" + nuovaQT + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeProd='" + nomeProd + "'";
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -218,6 +287,8 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+
+        
 
 
         //Select statement
