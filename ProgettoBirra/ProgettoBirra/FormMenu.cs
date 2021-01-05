@@ -34,7 +34,8 @@ namespace ProgettoBirra
 
         private void buttonGestioneAttrezzatura(object sender, EventArgs e)
         {
-
+            FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
+            newform.ShowDialog();
         }
 
         private void buttonPreparaBirra(object sender, EventArgs e)

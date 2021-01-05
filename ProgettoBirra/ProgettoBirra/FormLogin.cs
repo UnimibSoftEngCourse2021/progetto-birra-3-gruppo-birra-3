@@ -22,7 +22,7 @@ namespace ProgettoBirra
         {
             InitializeComponent();
             database=new GestioneDB();
-            database.create_tableProd();
+            database.create_tableAtt();
         }
 
         private void bottoneLogin(object sender, EventArgs e)

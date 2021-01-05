@@ -56,11 +56,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttrezzoMapper.cs" />
+    <Compile Include="FormAggiuntaAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAggiuntaAtt.Designer.cs">
+      <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminaAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminaAtt.Designer.cs">
+      <DependentUpon>FormEliminaAtt.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEliminaProd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEliminaProd.Designer.cs">
       <DependentUpon>FormEliminaProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestioneAttrezzatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestioneAttrezzatura.Designer.cs">
+      <DependentUpon>FormGestioneAttrezzatura.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGestioneUtente.cs">
       <SubType>Form</SubType>
@@ -92,6 +111,12 @@
     <Compile Include="FormAggiuntaProd.Designer.cs">
       <DependentUpon>FormAggiuntaProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModificaAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificaAtt.Designer.cs">
+      <DependentUpon>FormModificaAtt.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormModificaProd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,8 +135,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UtenteMapper.cs" />
+    <EmbeddedResource Include="FormAggiuntaAtt.resx">
+      <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminaAtt.resx">
+      <DependentUpon>FormEliminaAtt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEliminaProd.resx">
       <DependentUpon>FormEliminaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestioneAttrezzatura.resx">
+      <DependentUpon>FormGestioneAttrezzatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestioneUtente.resx">
       <DependentUpon>FormGestioneUtente.cs</DependentUpon>
@@ -127,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAggiuntaProd.resx">
       <DependentUpon>FormAggiuntaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificaAtt.resx">
+      <DependentUpon>FormModificaAtt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormModificaProd.resx">
       <DependentUpon>FormModificaProd.cs</DependentUpon>

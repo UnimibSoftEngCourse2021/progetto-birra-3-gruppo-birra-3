@@ -133,6 +133,29 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+
+        //metodo creazione tabella attrezzo
+        public void create_tableAtt()
+        {
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `Attrezzo` (`idAttrezzo` INT NOT NULL AUTO_INCREMENT, `nomeAtt` VARCHAR(45) NOT NULL, `proprietario` VARCHAR(45) NOT NULL, `capacita` INT NOT NULL, PRIMARY KEY(`idAttrezzo`), CONSTRAINT `emailat` FOREIGN KEY(`proprietario`) REFERENCES `Utenti` (`email`))");
+            //string query = string.Format("DROP TABLE `attrezzo`");
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                //cmd.ExecuteNonQuery();
+
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
         //Insert statement
         public void Insert()
         {
@@ -182,8 +205,27 @@ namespace ProgettoBirra
         {
             string query = "INSERT INTO Prodotto (proprietario, nomeProd, quantita) VALUES('" + emailp + "', '" + nomeProd + "','" + quantita + "')";
 
+            
+            //create_table();
 
-            create_table();
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+        //Metodo per inserire un nuovo attrezzo nel DB
+        public void InsertAtt(string emailat, string nomeAtt, int capacita)
+        {
+            string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + emailat + "', '" + nomeAtt + "','" + capacita + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -200,8 +242,7 @@ namespace ProgettoBirra
         }
 
 
-        
-        
+
         //Update statement
         public void Update()
         {
@@ -275,6 +316,29 @@ namespace ProgettoBirra
             }
         }
 
+        //Update di un attrezzo
+        public void UpdateAtt(string nomeAtt, int nuovaCP)
+        {
+            string query = "UPDATE Attrezzo SET capacita='" + nuovaCP + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeAtt ='" + nomeAtt + "'";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //create mysql command
+                MySqlCommand cmd = new MySqlCommand();
+                //Assign the query using CommandText
+                cmd.CommandText = query;
+                //Assign the connection using Connection
+                cmd.Connection = connection;
+
+                //Execute query
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
         //Delete statement
         public void Delete()
         {
@@ -329,7 +393,18 @@ namespace ProgettoBirra
             }
         }
 
+        //Elimina Attrezzo
+        public void DeleteAtt(string nomeAtt)
+        {
+            string query = "DELETE FROM Attrezzo WHERE nomeAtt='" + nomeAtt + "' AND proprietario='" + Globals.emailGlobal + "'";
 
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
 
 
         //Select statement
