@@ -484,6 +484,19 @@ namespace ProgettoBirra
             }
         }
 
+        //Elimina Ricetta
+        public void DeleteRic(string nomeRic)
+        {
+            string query = "DELETE FROM Ricetta WHERE nomeRic='" + nomeRic + "' AND proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
 
         //Select statement
         public List<string>[] Select()

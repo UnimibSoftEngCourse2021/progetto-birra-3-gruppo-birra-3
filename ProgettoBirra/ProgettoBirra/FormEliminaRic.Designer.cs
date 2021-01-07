@@ -1,7 +1,7 @@
 ﻿
 namespace ProgettoBirra
 {
-    partial class FormGestioneRicette
+    partial class FormEliminaRic
     {
         /// <summary>
         /// Required designer variable.
@@ -29,58 +29,56 @@ namespace ProgettoBirra
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonAggiungi = new System.Windows.Forms.Button();
-            this.buttonModifica = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxNomeRic = new System.Windows.Forms.TextBox();
             this.buttonElimina = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonAggiungi
+            // label1
             // 
-            this.buttonAggiungi.Location = new System.Drawing.Point(422, 66);
-            this.buttonAggiungi.Name = "buttonAggiungi";
-            this.buttonAggiungi.Size = new System.Drawing.Size(116, 58);
-            this.buttonAggiungi.TabIndex = 0;
-            this.buttonAggiungi.Text = "AGGIUNGI";
-            this.buttonAggiungi.UseVisualStyleBackColor = true;
-            this.buttonAggiungi.Click += new System.EventHandler(this.buttonAggiungi_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(125, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "NOME:";
             // 
-            // buttonModifica
+            // textBoxNomeRic
             // 
-            this.buttonModifica.Location = new System.Drawing.Point(422, 159);
-            this.buttonModifica.Name = "buttonModifica";
-            this.buttonModifica.Size = new System.Drawing.Size(112, 58);
-            this.buttonModifica.TabIndex = 1;
-            this.buttonModifica.Text = "MODIFICA";
-            this.buttonModifica.UseVisualStyleBackColor = true;
+            this.textBoxNomeRic.Location = new System.Drawing.Point(274, 72);
+            this.textBoxNomeRic.Name = "textBoxNomeRic";
+            this.textBoxNomeRic.Size = new System.Drawing.Size(182, 20);
+            this.textBoxNomeRic.TabIndex = 1;
             // 
             // buttonElimina
             // 
-            this.buttonElimina.Location = new System.Drawing.Point(422, 265);
+            this.buttonElimina.Location = new System.Drawing.Point(345, 179);
             this.buttonElimina.Name = "buttonElimina";
-            this.buttonElimina.Size = new System.Drawing.Size(112, 60);
+            this.buttonElimina.Size = new System.Drawing.Size(111, 68);
             this.buttonElimina.TabIndex = 2;
             this.buttonElimina.Text = "ELIMINA";
             this.buttonElimina.UseVisualStyleBackColor = true;
             this.buttonElimina.Click += new System.EventHandler(this.buttonElimina_Click);
             // 
-            // FormGestioneRicette
+            // FormEliminaRic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 434);
+            this.ClientSize = new System.Drawing.Size(608, 317);
             this.Controls.Add(this.buttonElimina);
-            this.Controls.Add(this.buttonModifica);
-            this.Controls.Add(this.buttonAggiungi);
-            this.Name = "FormGestioneRicette";
-            this.Text = "FormGesioneRicette";
+            this.Controls.Add(this.textBoxNomeRic);
+            this.Controls.Add(this.label1);
+            this.Name = "FormEliminaRic";
+            this.Text = "FormEliminaRic";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonAggiungi;
-        private System.Windows.Forms.Button buttonModifica;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxNomeRic;
         private System.Windows.Forms.Button buttonElimina;
     }
 }

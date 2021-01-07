@@ -81,6 +81,12 @@
     <Compile Include="FormEliminaProd.Designer.cs">
       <DependentUpon>FormEliminaProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEliminaRic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminaRic.Designer.cs">
+      <DependentUpon>FormEliminaRic.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestioneRicette.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEliminaProd.resx">
       <DependentUpon>FormEliminaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminaRic.resx">
+      <DependentUpon>FormEliminaRic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestioneRicette.resx">
       <DependentUpon>FormGestioneRicette.cs</DependentUpon>

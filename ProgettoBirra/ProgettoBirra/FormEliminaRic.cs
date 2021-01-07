@@ -10,23 +10,24 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    public partial class FormGestioneRicette : Form
+    public partial class FormEliminaRic : Form
     {
-        public FormGestioneRicette()
+        GestioneDB database;
+        public FormEliminaRic()
         {
+            database = new GestioneDB();
             InitializeComponent();
-        }
-
-        private void buttonAggiungi_Click(object sender, EventArgs e)
-        {
-            FormAggiungiRic newform = new FormAggiungiRic();
-            newform.ShowDialog();
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)
         {
-            FormEliminaRic newform = new FormEliminaRic();
+            database.DeleteRic(textBoxNomeRic.Text);
+
+            FormGestioneRicette newform = new FormGestioneRicette();
+            this.Hide();
+            this.Close();
             newform.ShowDialog();
+            this.Show();
         }
     }
 }
