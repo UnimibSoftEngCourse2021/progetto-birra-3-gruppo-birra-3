@@ -55,7 +55,8 @@ namespace ProgettoBirra
 
         private void buttonGestioneRicette(object sender, EventArgs e)
         {
-            
+            FormGestioneRicette newform = new FormGestioneRicette();
+            newform.ShowDialog();
         }
     }
 }

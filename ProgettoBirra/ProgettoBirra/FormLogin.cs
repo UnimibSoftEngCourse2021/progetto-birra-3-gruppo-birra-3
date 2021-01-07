@@ -17,12 +17,11 @@ namespace ProgettoBirra
     {
         GestioneDB database;
 
-        string prova="test";
+        
         public FormLogin()
         {
             InitializeComponent();
             database=new GestioneDB();
-            database.create_tableAtt();
         }
 
         private void bottoneLogin(object sender, EventArgs e)

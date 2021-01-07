@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ProgettoBirra
 {
 
-    class ProdottoMapper
+    public class ProdottoMapper
     {
         private string nome;
         private string quantita;

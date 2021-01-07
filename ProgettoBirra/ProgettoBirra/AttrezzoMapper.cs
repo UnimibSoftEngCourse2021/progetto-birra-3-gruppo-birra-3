@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ProgettoBirra
 {
 
-    class AttrezzoMapper
+    public class AttrezzoMapper
     {
         private string nome;
         private string capacita;

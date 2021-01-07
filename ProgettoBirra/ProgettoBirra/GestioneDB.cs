@@ -11,10 +11,12 @@ using System.Data.SqlClient;
 namespace ProgettoBirra
 {
     //inizializzazione variabili globali
-    public static class Globals {
+    public class Globals {
         public static string emailGlobal;
         public static string passwordGlobal;
-        //public static GestioneDB d = new GestioneDB();
+        public List<ProdottoMapper> listaProdotti = new List<ProdottoMapper>();
+        public List<AttrezzoMapper> listaAttrezzi = new List<AttrezzoMapper>();
+        public List<RicettaMapper> listaRicette = new List<RicettaMapper>();
     }
     class GestioneDB
     {
@@ -156,6 +158,28 @@ namespace ProgettoBirra
             }
         }
 
+        //metodo creazione tabella ricetta
+        public void create_tableRic()
+        {
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `Ricetta` (`idRicetta` INT NOT NULL AUTO_INCREMENT, `nomeRic` VARCHAR(45) NOT NULL, `preparazione` VARCHAR(1000) NULL, `note` VARCHAR(1000) NULL, `proprietario` VARCHAR(45) NOT NULL, `elencoAttrezzi` VARCHAR(1000) NOT NULL, `elencoProdotti` VARCHAR(1000) NOT NULL, PRIMARY KEY(`idRicetta`), CONSTRAINT `emailr`FOREIGN KEY(`proprietario`) REFERENCES `Utenti` (`email`))");
+            //string query = string.Format("DROP TABLE `Ricetta`");
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                //cmd.ExecuteNonQuery();
+
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
         //Insert statement
         public void Insert()
         {
@@ -226,6 +250,37 @@ namespace ProgettoBirra
         public void InsertAtt(string emailat, string nomeAtt, int capacita)
         {
             string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + emailat + "', '" + nomeAtt + "','" + capacita + "')";
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+        //Metodo per inserire un nuovo attrezzo nel DB
+        public void InsertRic(string nomeRic, string attrezzi, string prodotti , string preparazione, string note)
+        {
+            /*
+            string[] ListaAtrezzi = attrezzi.Split('\n');
+            string[] ListaProdotti = prodotti.Split('\n');
+
+            foreach (var sub in ListaAtrezzi) {
+                MessageBox.Show($"valore: {sub}");
+            }
+            foreach (var sub in ListaProdotti)
+            {
+                MessageBox.Show($"valore: {sub}");
+            }*/
+
+            string query = "INSERT INTO Ricetta (nomeRic, preparazione, note, proprietario, elencoAttrezzi, elencoProdotti) VALUES('" + nomeRic + "', '" + preparazione + "','" + note + "', '" + Globals.emailGlobal + "', '" + attrezzi + "', '" + prodotti + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -337,6 +392,29 @@ namespace ProgettoBirra
                 //close connection
                 this.CloseConnection();
             }
+        }
+
+        //Update di una ricetta
+        public void UpdateRic(string nomeRic, string note)
+        {
+            string query = "UPDATE Ricetta SET note='" + note + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeRic ='" + nomeRic + "'";
+
+            //Open connection
+            /*if (this.OpenConnection() == true)
+            {
+                //create mysql command
+                MySqlCommand cmd = new MySqlCommand();
+                //Assign the query using CommandText
+                cmd.CommandText = query;
+                //Assign the connection using Connection
+                cmd.Connection = connection;
+
+                //Execute query
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }*/
         }
 
         //Delete statement
