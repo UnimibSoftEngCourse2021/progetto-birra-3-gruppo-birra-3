@@ -12,9 +12,12 @@ namespace ProgettoBirra
 {
     public partial class FormMenu : Form
     {
+        GestioneDB database;
         public FormMenu()
         {
+            database = new GestioneDB();
             InitializeComponent();
+            database.recuperoRic();
         }
 
         private void buttonGestioneProdotti(object sender, EventArgs e)

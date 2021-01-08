@@ -141,11 +141,23 @@
     <Compile Include="FormModificaProd.Designer.cs">
       <DependentUpon>FormModificaProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModificaRic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificaRic.Designer.cs">
+      <DependentUpon>FormModificaRic.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistrazione.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistrazione.Designer.cs">
       <DependentUpon>FormRegistrazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRicetta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRicetta.Designer.cs">
+      <DependentUpon>FormRicetta.cs</DependentUpon>
     </Compile>
     <Compile Include="GestioneDB.cs" />
     <Compile Include="ListaProdotti.cs" />
@@ -196,8 +208,14 @@
     <EmbeddedResource Include="FormModificaProd.resx">
       <DependentUpon>FormModificaProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormModificaRic.resx">
+      <DependentUpon>FormModificaRic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrazione.resx">
       <DependentUpon>FormRegistrazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRicetta.resx">
+      <DependentUpon>FormRicetta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

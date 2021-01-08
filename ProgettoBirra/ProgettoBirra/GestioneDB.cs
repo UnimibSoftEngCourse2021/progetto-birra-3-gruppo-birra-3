@@ -14,9 +14,9 @@ namespace ProgettoBirra
     public class Globals {
         public static string emailGlobal;
         public static string passwordGlobal;
-        public List<ProdottoMapper> listaProdotti = new List<ProdottoMapper>();
-        public List<AttrezzoMapper> listaAttrezzi = new List<AttrezzoMapper>();
-        public List<RicettaMapper> listaRicette = new List<RicettaMapper>();
+        public static List<ProdottoMapper> listaProdotti = new List<ProdottoMapper>();
+        public static List<AttrezzoMapper> listaAttrezzi = new List<AttrezzoMapper>();
+        public static List<RicettaMapper> listaRicette = new List<RicettaMapper>();
     }
     class GestioneDB
     {
@@ -417,6 +417,7 @@ namespace ProgettoBirra
             }*/
         }
 
+
         //Delete statement
         public void Delete()
         {
@@ -540,6 +541,48 @@ namespace ProgettoBirra
             }
         }
 
+        //recupero delle ricette associate ad un utente
+        public void recuperoRic()
+        {
+            string query = "SELECT * FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeRic = "";
+                string preparazione = "";
+                string note = "";
+                string idRicetta = "";
+                string prodotti = "";
+                string attrezzi = "";
+               
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeRic = $"{reader.GetString("nomeRic")}";
+                    preparazione = $"{reader.GetString("preparazione")}";
+                    note = $"{reader.GetString("note")}";
+                    idRicetta = $"{reader.GetString("idRicetta")}";
+                    prodotti = $"{reader.GetString("elencoProdotti")}";
+                    attrezzi = $"{reader.GetString("elencoAttrezzi")}";
+                    Globals.listaRicette.Add(new RicettaMapper(nomeRic, note, preparazione, idRicetta,prodotti,attrezzi));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+           
+        }
+    
         //ricercaUtente(login)
         public bool SelectUtente(string email, string password)
         {

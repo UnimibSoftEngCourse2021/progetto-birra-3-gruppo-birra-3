@@ -15,6 +15,15 @@ namespace ProgettoBirra
         public FormGestioneRicette()
         {
             InitializeComponent();
+
+            
+            
+            for (int i=0; i< Globals.listaRicette.Count; i++)
+            {
+                
+                listBox1.Items.Add(Globals.listaRicette[i].getNome());
+                
+            }
         }
 
         private void buttonAggiungi_Click(object sender, EventArgs e)
@@ -27,6 +36,22 @@ namespace ProgettoBirra
         {
             FormEliminaRic newform = new FormEliminaRic();
             newform.ShowDialog();
+        }
+
+        private void buttonModifica_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selezionato = listBox1.SelectedItem.ToString();
+            MessageBox.Show(selezionato);
+
+
+            FormRicetta newform = new FormRicetta(selezionato);
+            newform.ShowDialog();
+
         }
     }
 }
