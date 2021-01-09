@@ -93,7 +93,7 @@ rC:\Users\aless\Desktop\progettoBirra\progetto-birra-3-gruppo-birra-3\ProgettoBi
 setCapacita** 
 (**  
 string**  &
-quantita**' /
+capacita**' /
 )**/ 0
 {++ 	
 this,, 
@@ -8365,204 +8365,206 @@ Form1_Loadii6 @
 }vv 
 }ww Ô
 lC:\Users\aless\Desktop\progettoBirra\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs
-	namespace 	
-ProgettoBirra
+	namespace		 	
+ProgettoBirra		
  
-{ 
-public 
+{
+
+ 
+public 
 
-partial 
-class 
-FormMenu !
-:" #
-Form$ (
-{ 
+partial 
+class 
+FormMenu !
+:" #
+Form$ (
+{ 
 
-GestioneDB 
-database 
-; 
-public 
-FormMenu 
-( 
-) 
-{ 	
+GestioneDB 
+database 
+; 
+public 
+FormMenu 
+( 
+) 
+{ 	
+database 
+= 
+new 
+
+GestioneDB %
+(% &
+)& '
+;' (
+InitializeComponent 
+(  
+)  !
+;! "
 database 
-= 
-new 
+. 
+recuperoRic  
+(  !
+)! "
+;" #
+} 	
+private 
+void "
+buttonGestioneProdotti +
+(+ ,
+object, 2
+sender3 9
+,9 :
+	EventArgs; D
+eE F
+)F G
+{ 	 
+FormGestioneProdotti  
+newform! (
+=) *
+new+ . 
+FormGestioneProdotti/ C
+(C D
+)D E
+;E F
+newform 
+. 
 
-GestioneDB %
-(% &
-)& '
-;' (
-InitializeComponent 
-(  
-)  !
-;! "
-database 
-. 
-recuperoRic  
-(  !
-)! "
-;" #
-} 	
-private 
-void "
-buttonGestioneProdotti +
-(+ ,
-object, 2
-sender3 9
-,9 :
-	EventArgs; D
-eE F
-)F G
-{ 	 
-FormGestioneProdotti  
-newform! (
-=) *
-new+ . 
-FormGestioneProdotti/ C
-(C D
-)D E
-;E F
-newform 
-. 
+ShowDialog 
+( 
+)  
+;  !
+} 	
+private 
+void  
+buttonGestioneUtente )
+() *
+object* 0
+sender1 7
+,7 8
+	EventArgs9 B
+eC D
+)D E
+{ 	
+FormGestioneUtente 
+newform &
+=' (
+new) ,
+FormGestioneUtente- ?
+(? @
+)@ A
+;A B
+this 
+. 
+Hide 
+( 
+) 
+; 
+newform   
+.   
 
-ShowDialog 
-( 
-)  
-;  !
-} 	
-private 
-void  
-buttonGestioneUtente )
-() *
-object* 0
-sender1 7
-,7 8
-	EventArgs9 B
-eC D
-)D E
-{ 	
-FormGestioneUtente   
-newform   &
-=  ' (
-new  ) ,
-FormGestioneUtente  - ?
-(  ? @
-)  @ A
-;  A B
+ShowDialog   
+(   
+)    
+;    !
 this!! 
 .!! 
-Hide!! 
+Show!! 
 (!! 
 )!! 
-;!! 
-newform"" 
-."" 
+;!! 
+}"" 	
+private$$ 
+void$$ &
+buttonGestioneAttrezzatura$$ /
+($$/ 0
+object$$0 6
+sender$$7 =
+,$$= >
+	EventArgs$$? H
+e$$I J
+)$$J K
+{%% 	$
+FormGestioneAttrezzatura&& $
+newform&&% ,
+=&&- .
+new&&/ 2$
+FormGestioneAttrezzatura&&3 K
+(&&K L
+)&&L M
+;&&M N
+newform'' 
+.'' 
 
-ShowDialog"" 
-("" 
-)""  
-;""  !
-this## 
-.## 
-Show## 
-(## 
-)## 
-;## 
-}$$ 	
-private&& 
-void&& &
-buttonGestioneAttrezzatura&& /
-(&&/ 0
-object&&0 6
-sender&&7 =
-,&&= >
-	EventArgs&&? H
-e&&I J
-)&&J K
-{'' 	$
-FormGestioneAttrezzatura(( $
-newform((% ,
-=((- .
-new((/ 2$
-FormGestioneAttrezzatura((3 K
-(((K L
-)((L M
-;((M N
-newform)) 
-.)) 
+ShowDialog'' 
+('' 
+)''  
+;''  !
+}(( 	
+private** 
+void** 
+buttonPreparaBirra** '
+(**' (
+object**( .
+sender**/ 5
+,**5 6
+	EventArgs**7 @
+e**A B
+)**B C
+{++ 	
+}-- 	
+private// 
+void// !
+buttonListaDellaSpesa// *
+(//* +
+object//+ 1
+sender//2 8
+,//8 9
+	EventArgs//: C
+e//D E
+)//E F
+{00 	
+}22 	
+private44 
+void44  
+buttonCheBirraFaccio44 )
+(44) *
+object44* 0
+sender441 7
+,447 8
+	EventArgs449 B
+e44C D
+)44D E
+{55 	
+}77 	
+private99 
+void99 !
+buttonGestioneRicette99 *
+(99* +
+object99+ 1
+sender992 8
+,998 9
+	EventArgs99: C
+e99D E
+)99E F
+{:: 	
+FormGestioneRicette;; 
+newform;;  '
+=;;( )
+new;;* -
+FormGestioneRicette;;. A
+(;;A B
+);;B C
+;;;C D
+newform<< 
+.<< 
 
-ShowDialog)) 
-()) 
-)))  
-;))  !
-}** 	
-private,, 
-void,, 
-buttonPreparaBirra,, '
-(,,' (
-object,,( .
-sender,,/ 5
-,,,5 6
-	EventArgs,,7 @
-e,,A B
-),,B C
-{-- 	
-}// 	
-private11 
-void11 !
-buttonListaDellaSpesa11 *
-(11* +
-object11+ 1
-sender112 8
-,118 9
-	EventArgs11: C
-e11D E
-)11E F
-{22 	
-}44 	
-private66 
-void66  
-buttonCheBirraFaccio66 )
-(66) *
-object66* 0
-sender661 7
-,667 8
-	EventArgs669 B
-e66C D
-)66D E
-{77 	
-}99 	
-private;; 
-void;; !
-buttonGestioneRicette;; *
-(;;* +
-object;;+ 1
-sender;;2 8
-,;;8 9
-	EventArgs;;: C
-e;;D E
-);;E F
-{<< 	
-FormGestioneRicette== 
-newform==  '
-===( )
-new==* -
-FormGestioneRicette==. A
-(==A B
-)==B C
-;==C D
-newform>> 
-.>> 
-
-ShowDialog>> 
-(>> 
-)>>  
-;>>  !
-}?? 	
-}@@ 
-}AA ŸŒ
+ShowDialog<< 
+(<< 
+)<<  
+;<<  !
+}== 	
+}>> 
+}?? ŸŒ
 uC:\Users\aless\Desktop\progettoBirra\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.Designer.cs
 	namespace 	
 ProgettoBirra

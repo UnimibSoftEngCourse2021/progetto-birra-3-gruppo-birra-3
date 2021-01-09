@@ -39,7 +39,7 @@ namespace ProgettoBirra
             this.nome = nome;
         }
 
-        public void setCapacita(string quantita)
+        public void setCapacita(string capacita)
         {
             this.capacita = capacita;
         }

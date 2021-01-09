@@ -39,9 +39,9 @@ return
 
 }
 func @_ProgettoBirra.AttrezzoMapper.setCapacita$string$(none) -> () loc("C:\\Users\\aless\\Desktop\\progettoBirra\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\AttrezzoMapper.cs" :41 :8) {
-^entry (%_quantita : none):
+^entry (%_capacita : none):
 %0 = cbde.alloca none loc("C:\\Users\\aless\\Desktop\\progettoBirra\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\AttrezzoMapper.cs" :41 :32)
-cbde.store %_quantita, %0 : memref<none> loc("C:\\Users\\aless\\Desktop\\progettoBirra\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\AttrezzoMapper.cs" :41 :32)
+cbde.store %_capacita, %0 : memref<none> loc("C:\\Users\\aless\\Desktop\\progettoBirra\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\AttrezzoMapper.cs" :41 :32)
 br ^0
 
 ^0: // SimpleBlock
