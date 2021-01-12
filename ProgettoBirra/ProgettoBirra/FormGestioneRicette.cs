@@ -34,8 +34,7 @@ namespace ProgettoBirra
 
         private void buttonElimina_Click(object sender, EventArgs e)
         {
-            FormEliminaRic newform = new FormEliminaRic();
-            newform.ShowDialog();
+           
         }
 
         private void buttonModifica_Click(object sender, EventArgs e)
