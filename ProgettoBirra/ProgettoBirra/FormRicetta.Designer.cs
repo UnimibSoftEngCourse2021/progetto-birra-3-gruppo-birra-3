@@ -46,108 +46,116 @@ namespace ProgettoBirra
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 37);
+            this.label1.Location = new System.Drawing.Point(63, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(164, 37);
+            this.textBoxNome.Location = new System.Drawing.Point(184, 46);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNome.Size = new System.Drawing.Size(112, 26);
             this.textBoxNome.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 88);
+            this.label2.Location = new System.Drawing.Point(63, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 16);
+            this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Note";
             // 
             // textBoxNote
             // 
-            this.textBoxNote.Location = new System.Drawing.Point(164, 88);
+            this.textBoxNote.Location = new System.Drawing.Point(184, 110);
+            this.textBoxNote.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxNote.Name = "textBoxNote";
-            this.textBoxNote.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNote.Size = new System.Drawing.Size(112, 26);
             this.textBoxNote.TabIndex = 3;
             // 
             // textBoxPreparazione
             // 
-            this.textBoxPreparazione.Location = new System.Drawing.Point(164, 144);
+            this.textBoxPreparazione.Location = new System.Drawing.Point(184, 180);
+            this.textBoxPreparazione.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPreparazione.Name = "textBoxPreparazione";
-            this.textBoxPreparazione.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPreparazione.Size = new System.Drawing.Size(112, 26);
             this.textBoxPreparazione.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 147);
+            this.label3.Location = new System.Drawing.Point(63, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 16);
+            this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Preparazione";
             // 
             // textBoxProdotti
             // 
-            this.textBoxProdotti.Location = new System.Drawing.Point(164, 195);
+            this.textBoxProdotti.Location = new System.Drawing.Point(184, 244);
+            this.textBoxProdotti.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxProdotti.Multiline = true;
             this.textBoxProdotti.Name = "textBoxProdotti";
-            this.textBoxProdotti.Size = new System.Drawing.Size(253, 199);
+            this.textBoxProdotti.Size = new System.Drawing.Size(284, 248);
             this.textBoxProdotti.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 195);
+            this.label4.Location = new System.Drawing.Point(63, 244);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 16);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Prodotti";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(447, 195);
+            this.label5.Location = new System.Drawing.Point(503, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 16);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Attrezzi";
             // 
             // textBoxAttrezzi
             // 
-            this.textBoxAttrezzi.Location = new System.Drawing.Point(513, 195);
+            this.textBoxAttrezzi.Location = new System.Drawing.Point(577, 244);
+            this.textBoxAttrezzi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxAttrezzi.Multiline = true;
             this.textBoxAttrezzi.Name = "textBoxAttrezzi";
-            this.textBoxAttrezzi.Size = new System.Drawing.Size(225, 199);
+            this.textBoxAttrezzi.Size = new System.Drawing.Size(253, 248);
             this.textBoxAttrezzi.TabIndex = 9;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(164, 448);
+            this.button1.Location = new System.Drawing.Point(184, 560);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(84, 29);
             this.button1.TabIndex = 10;
             this.button1.Text = "Modifica";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(513, 448);
+            this.button2.Location = new System.Drawing.Point(577, 560);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(84, 29);
             this.button2.TabIndex = 11;
             this.button2.Text = "Elimina";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.buttonElimina_Click);
             // 
             // FormRicetta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 522);
+            this.ClientSize = new System.Drawing.Size(1062, 652);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxAttrezzi);
@@ -160,6 +168,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormRicetta";
             this.Text = "FormRicettacs";
             this.Load += new System.EventHandler(this.FormRicetta_Load);

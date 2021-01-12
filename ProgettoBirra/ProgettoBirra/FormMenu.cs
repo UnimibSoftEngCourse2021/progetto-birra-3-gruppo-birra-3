@@ -15,7 +15,7 @@ namespace ProgettoBirra
         {
             database = new GestioneDB();
             InitializeComponent();
-            database.recuperoRic();
+            
         }
 
         private void buttonGestioneProdotti(object sender, EventArgs e)

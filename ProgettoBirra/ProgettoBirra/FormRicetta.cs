@@ -12,10 +12,12 @@ namespace ProgettoBirra
 {
     public partial class FormRicetta : Form
     {
+        GestioneDB database;
         public FormRicetta(string selezionato)
         {
             InitializeComponent();
             textBoxNome.Text=selezionato;
+            database = new GestioneDB();
 
             for (int i = 0; i < Globals.listaRicette.Count; i++)
             {
@@ -33,6 +35,20 @@ namespace ProgettoBirra
         private void FormRicetta_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonElimina_Click(object sender, EventArgs e)
+        {
+            int idRic = database.recuperoIdRic(textBoxNome.Text);
+
+            database.DeleteProdRic(idRic);
+            database.DeleteRic(textBoxNome.Text);
+
+            FormMenu newform = new FormMenu();
+            this.Hide();
+            this.Close();
+            newform.ShowDialog();
+            this.Show();
         }
     }
 }

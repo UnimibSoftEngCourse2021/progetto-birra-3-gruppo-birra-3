@@ -12,12 +12,17 @@ namespace ProgettoBirra
 {
     public partial class FormGestioneRicette : Form
     {
+        GestioneDB database;
         public FormGestioneRicette()
         {
             InitializeComponent();
+            database = new GestioneDB();
 
-            
-            
+            Globals.listaRicette.Clear();
+
+            database.recuperoRic();
+
+
             for (int i=0; i< Globals.listaRicette.Count; i++)
             {
                 
@@ -28,8 +33,7 @@ namespace ProgettoBirra
 
         private void buttonAggiungi_Click(object sender, EventArgs e)
         {
-            FormAggiungiRic newform = new FormAggiungiRic();
-            newform.ShowDialog();
+         
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)

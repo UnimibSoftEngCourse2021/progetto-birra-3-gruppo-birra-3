@@ -527,6 +527,7 @@ namespace ProgettoBirra
         //Elimina Ricetta
         public void DeleteRic(string nomeRic)
         {
+            MessageBox.Show("sto eliminando " + nomeRic + "con proprietario " + Globals.emailGlobal);
             string query = "DELETE FROM Ricetta WHERE nomeRic='" + nomeRic + "' AND proprietario='" + Globals.emailGlobal + "'";
 
             if (this.OpenConnection() == true)
@@ -537,6 +538,19 @@ namespace ProgettoBirra
             }
         }
 
+        //Elimina Prodotti relatiti alla Ricetta
+        public void DeleteProdRic(int idRicetta)
+        {
+            MessageBox.Show("sto eliminando la ricetta con id " + idRicetta);
+            string query = "DELETE FROM prodRicetta WHERE idRicetta='" + idRicetta + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
 
         //Select statement
         public List<string>[] Select()
