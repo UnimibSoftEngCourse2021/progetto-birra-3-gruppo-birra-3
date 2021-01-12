@@ -21,9 +21,9 @@ namespace ProgettoBirra
 
         private void buttonAggiungiBirra_Click(object sender, EventArgs e)
         {
-            database.InsertRic(textBoxNome.Text, textBoxAttrezzi.Text, textBoxProdotti.Text, textBoxPreparazione.Text, textBoxNote.Text);
+            database.InsertRic(textBoxNome.Text, textBoxAttrezzi.Text, textBoxPreparazione.Text, textBoxNote.Text);
 
-            FormGestioneRicette newform = new FormGestioneRicette();
+            FormAggiungiProdottiRicetta newform = new FormAggiungiProdottiRicetta(textBoxNome.Text);
             this.Hide();
             this.Close();
             newform.ShowDialog();

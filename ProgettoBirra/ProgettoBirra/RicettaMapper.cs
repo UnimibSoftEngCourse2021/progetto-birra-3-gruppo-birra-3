@@ -12,19 +12,18 @@ namespace ProgettoBirra
         string note;
         string idRicetta;
         string preparazione;
-        string prodotti;
         string attrezzi;
 
         public RicettaMapper()
         { }
 
-        public RicettaMapper(string nome, string note, string preparazione, string idRicetta, string prodotti, string attrezzi)
+        public RicettaMapper(string nome, string note, string preparazione, string idRicetta, string attrezzi)
         {
             this.nome = nome;
             this.note = note;
             this.preparazione = preparazione;
             this.idRicetta = idRicetta;
-            this.prodotti = prodotti;
+            
             this.attrezzi = attrezzi;
 
         }
@@ -38,15 +37,7 @@ namespace ProgettoBirra
         {
             this.attrezzi = attrezzi;
         }
-        public string getProdotti()
-        {
-            return prodotti;
-        }
-
-        public void setProdotti(string prodotti)
-        {
-            this.prodotti = prodotti;
-        }
+       
         public string getidRicetta()
         {
             return idRicetta;

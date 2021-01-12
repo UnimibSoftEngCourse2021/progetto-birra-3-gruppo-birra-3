@@ -23,7 +23,6 @@ namespace ProgettoBirra
                 {
                     textBoxNome.Text = selezionato;
                     textBoxNote.Text = Globals.listaRicette[i].getNote();
-                    textBoxProdotti.Text = Globals.listaRicette[i].getProdotti();
                     textBoxAttrezzi.Text = Globals.listaRicette[i].getAttrezzi();
                     textBoxPreparazione.Text = Globals.listaRicette[i].getPreparazione();
                 }

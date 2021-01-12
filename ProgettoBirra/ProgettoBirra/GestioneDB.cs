@@ -161,8 +161,29 @@ namespace ProgettoBirra
         //metodo creazione tabella ricetta
         public void create_tableRic()
         {
-            string query = string.Format($"CREATE TABLE IF NOT EXISTS `Ricetta` (`idRicetta` INT NOT NULL AUTO_INCREMENT, `nomeRic` VARCHAR(45) NOT NULL, `preparazione` VARCHAR(1000) NULL, `note` VARCHAR(1000) NULL, `proprietario` VARCHAR(45) NOT NULL, `elencoAttrezzi` VARCHAR(1000) NOT NULL, `elencoProdotti` VARCHAR(1000) NOT NULL, PRIMARY KEY(`idRicetta`), CONSTRAINT `emailr`FOREIGN KEY(`proprietario`) REFERENCES `Utenti` (`email`))");
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `Ricetta` (`idRicetta` INT NOT NULL AUTO_INCREMENT, `nomeRic` VARCHAR(45) NOT NULL, `preparazione` VARCHAR(1000) NULL, `note` VARCHAR(1000) NULL, `proprietario` VARCHAR(45) NOT NULL, `elencoAttrezzi` VARCHAR(1000) NOT NULL, PRIMARY KEY(`idRicetta`), CONSTRAINT `emailr`FOREIGN KEY(`proprietario`) REFERENCES `Utenti` (`email`))");
             //string query = string.Format("DROP TABLE `Ricetta`");
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                //cmd.ExecuteNonQuery();
+
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+        public void create_tableProdHasRicetta()
+        {
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `prodRicetta` (`idRicetta` INT NOT NULL, `nomeProd` VARCHAR(45) NOT NULL,  `quantita` INT NOT NULL, CONSTRAINT `idRicettar`FOREIGN KEY(`idRicetta`) REFERENCES `ricetta` (`idRicetta`))");
+            //string query = string.Format("DROP TABLE `ricetta`");
 
             //open connection
             if (this.OpenConnection() == true)
@@ -266,7 +287,7 @@ namespace ProgettoBirra
         }
 
         //Metodo per inserire un nuovo attrezzo nel DB
-        public void InsertRic(string nomeRic, string attrezzi, string prodotti , string preparazione, string note)
+        public void InsertRic(string nomeRic, string attrezzi, string preparazione, string note)
         {
             /*
             string[] ListaAtrezzi = attrezzi.Split('\n');
@@ -280,7 +301,7 @@ namespace ProgettoBirra
                 MessageBox.Show($"valore: {sub}");
             }*/
 
-            string query = "INSERT INTO Ricetta (nomeRic, preparazione, note, proprietario, elencoAttrezzi, elencoProdotti) VALUES('" + nomeRic + "', '" + preparazione + "','" + note + "', '" + Globals.emailGlobal + "', '" + attrezzi + "', '" + prodotti + "')";
+            string query = "INSERT INTO Ricetta (nomeRic, preparazione, note, proprietario, elencoAttrezzi) VALUES('" + nomeRic + "', '" + preparazione + "','" + note + "', '" + Globals.emailGlobal + "', '" + attrezzi + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -296,8 +317,26 @@ namespace ProgettoBirra
             }
         }
 
+        //Aggiunta di un prodotto relativo ad una ricetta
+        public void InsertProdRic(int idRicetta, string nome, int quantita)
+        {
+           
 
+            string query = "INSERT INTO prodricetta (idRicetta, nomeProd, quantita) VALUES('" + idRicetta + "', '" + nome + "','" + quantita + "')";
 
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
         //Update statement
         public void Update()
         {
@@ -554,7 +593,6 @@ namespace ProgettoBirra
                 string preparazione = "";
                 string note = "";
                 string idRicetta = "";
-                string prodotti = "";
                 string attrezzi = "";
                
 
@@ -567,9 +605,8 @@ namespace ProgettoBirra
                     preparazione = $"{reader.GetString("preparazione")}";
                     note = $"{reader.GetString("note")}";
                     idRicetta = $"{reader.GetString("idRicetta")}";
-                    prodotti = $"{reader.GetString("elencoProdotti")}";
                     attrezzi = $"{reader.GetString("elencoAttrezzi")}";
-                    Globals.listaRicette.Add(new RicettaMapper(nomeRic, note, preparazione, idRicetta,prodotti,attrezzi));
+                    Globals.listaRicette.Add(new RicettaMapper(nomeRic, note, preparazione, idRicetta,attrezzi));
                 }
 
 
@@ -582,7 +619,41 @@ namespace ProgettoBirra
 
            
         }
-    
+
+
+        //recupera id ricetta
+        public int recuperoIdRic(string nomeric)
+        {
+            string idric="";
+            string query = "SELECT idRicetta FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "' AND nomeRic='" + nomeric + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                   idric = $"{reader.GetString("idRicetta")}";
+                  
+                }
+
+                //close Connection
+                this.CloseConnection();
+                
+            }
+            //Convert.ToInt32(idric);
+            int valoreRitorno = Convert.ToInt32(idric);
+            return valoreRitorno;
+
+
+
+        }
         //ricercaUtente(login)
         public bool SelectUtente(string email, string password)
         {
