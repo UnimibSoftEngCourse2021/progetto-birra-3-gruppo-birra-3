@@ -59,5 +59,7 @@ namespace ProgettoBirra
             FormGestioneRicette newform = new FormGestioneRicette();
             newform.ShowDialog();
         }
+
+      
     }
 }

@@ -16,6 +16,7 @@ namespace ProgettoBirra
         public FormRicetta(string selezionato)
         {
             InitializeComponent();
+            Globals.listaProdotti.Clear();
             textBoxNome.Text=selezionato;
             database = new GestioneDB();
             
