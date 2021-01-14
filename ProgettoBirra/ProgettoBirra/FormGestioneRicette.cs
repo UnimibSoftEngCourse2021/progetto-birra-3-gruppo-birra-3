@@ -33,7 +33,8 @@ namespace ProgettoBirra
 
         private void buttonAggiungi_Click(object sender, EventArgs e)
         {
-         
+            FormAggiungiRic newform = new FormAggiungiRic();
+            newform.ShowDialog();
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)
@@ -49,7 +50,7 @@ namespace ProgettoBirra
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selezionato = listBox1.SelectedItem.ToString();
-            MessageBox.Show(selezionato);
+            //MessageBox.Show(selezionato);
 
 
             FormRicetta newform = new FormRicetta(selezionato);

@@ -39,7 +39,7 @@ namespace ProgettoBirra
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxAttrezzi = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonModificaRic = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@ namespace ProgettoBirra
             this.textBoxNome.Location = new System.Drawing.Point(184, 46);
             this.textBoxNome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.ReadOnly = true;
             this.textBoxNome.Size = new System.Drawing.Size(112, 26);
             this.textBoxNome.TabIndex = 1;
             // 
@@ -82,7 +83,8 @@ namespace ProgettoBirra
             this.textBoxPreparazione.Location = new System.Drawing.Point(184, 180);
             this.textBoxPreparazione.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPreparazione.Name = "textBoxPreparazione";
-            this.textBoxPreparazione.Size = new System.Drawing.Size(112, 26);
+            this.textBoxPreparazione.ReadOnly = true;
+            this.textBoxPreparazione.Size = new System.Drawing.Size(284, 26);
             this.textBoxPreparazione.TabIndex = 4;
             // 
             // label3
@@ -96,17 +98,19 @@ namespace ProgettoBirra
             // 
             // textBoxProdotti
             // 
-            this.textBoxProdotti.Location = new System.Drawing.Point(184, 244);
+            this.textBoxProdotti.Location = new System.Drawing.Point(184, 315);
             this.textBoxProdotti.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxProdotti.Multiline = true;
             this.textBoxProdotti.Name = "textBoxProdotti";
-            this.textBoxProdotti.Size = new System.Drawing.Size(284, 248);
+            this.textBoxProdotti.ReadOnly = true;
+            this.textBoxProdotti.Size = new System.Drawing.Size(284, 177);
             this.textBoxProdotti.TabIndex = 6;
+            this.textBoxProdotti.TextChanged += new System.EventHandler(this.textBoxProdotti_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 244);
+            this.label4.Location = new System.Drawing.Point(63, 315);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 7;
@@ -127,18 +131,20 @@ namespace ProgettoBirra
             this.textBoxAttrezzi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxAttrezzi.Multiline = true;
             this.textBoxAttrezzi.Name = "textBoxAttrezzi";
+            this.textBoxAttrezzi.ReadOnly = true;
             this.textBoxAttrezzi.Size = new System.Drawing.Size(253, 248);
             this.textBoxAttrezzi.TabIndex = 9;
             // 
-            // button1
+            // buttonModificaRic
             // 
-            this.button1.Location = new System.Drawing.Point(184, 560);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Modifica";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonModificaRic.Location = new System.Drawing.Point(184, 560);
+            this.buttonModificaRic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonModificaRic.Name = "buttonModificaRic";
+            this.buttonModificaRic.Size = new System.Drawing.Size(84, 29);
+            this.buttonModificaRic.TabIndex = 10;
+            this.buttonModificaRic.Text = "Modifica";
+            this.buttonModificaRic.UseVisualStyleBackColor = true;
+            this.buttonModificaRic.Click += new System.EventHandler(this.buttonModificaRic_Click);
             // 
             // button2
             // 
@@ -157,7 +163,7 @@ namespace ProgettoBirra
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 652);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonModificaRic);
             this.Controls.Add(this.textBoxAttrezzi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -189,7 +195,7 @@ namespace ProgettoBirra
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxAttrezzi;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonModificaRic;
         private System.Windows.Forms.Button button2;
     }
 }

@@ -439,7 +439,7 @@ namespace ProgettoBirra
             string query = "UPDATE Ricetta SET note='" + note + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeRic ='" + nomeRic + "'";
 
             //Open connection
-            /*if (this.OpenConnection() == true)
+            if (this.OpenConnection() == true)
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -453,7 +453,7 @@ namespace ProgettoBirra
 
                 //close connection
                 this.CloseConnection();
-            }*/
+            }
         }
 
 
@@ -634,6 +634,39 @@ namespace ProgettoBirra
            
         }
 
+        //recupero dei prodotti associati ad una ricetta di un utente
+        public void recuperoProd(string idRic)
+        {
+            string query = "SELECT * FROM prodricetta WHERE idRicetta= '"+ Convert.ToInt32(idRic) + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeProd = "";
+                string quantita = "";
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeProd = $"{reader.GetString("nomeProd")}";
+                    quantita = $"{reader.GetString("quantita")}";
+                    Globals.listaProdotti.Add(new ProdottoMapper(nomeProd, quantita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+
+        }
 
         //recupera id ricetta
         public int recuperoIdRic(string nomeric)
