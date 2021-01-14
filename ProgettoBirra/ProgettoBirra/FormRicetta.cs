@@ -35,7 +35,7 @@ namespace ProgettoBirra
 
             for (int i = 0; i < Globals.listaProdotti.Count; i++) {
 
-                textBoxProdotti.AppendText(Globals.listaProdotti[i].getNome() + " " + Globals.listaProdotti[i].getQuantita() + "\r\n");
+                textBoxProdotti.AppendText(Globals.listaProdotti[i].getNome() + " Con quanitità --> " + Globals.listaProdotti[i].getQuantita() + "\r\n");
        
             }
 
@@ -52,7 +52,7 @@ namespace ProgettoBirra
 
             database.DeleteProdRic(idRic);
             database.DeleteRic(textBoxNome.Text);
-
+            MessageBox.Show("Eliminato con successo");
             FormMenu newform = new FormMenu();
             this.Hide();
             this.Close();

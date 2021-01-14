@@ -20,18 +20,21 @@ namespace ProgettoBirra
         private void buttonAggiungiAtt_Click(object sender, EventArgs e)
         {
             FormAggiuntaAtt newform = new FormAggiuntaAtt();
+            this.Close();
             newform.ShowDialog();
         }
 
         private void buttonModificaAtt_Click(object sender, EventArgs e)
         {
             FormModificaAtt newform = new FormModificaAtt();
+            this.Close();
             newform.ShowDialog();
         }
 
         private void buttonEliminaAtt_Click(object sender, EventArgs e)
         {
             FormEliminaAtt newform = new FormEliminaAtt();
+            this.Close();
             newform.ShowDialog();
         }
     }

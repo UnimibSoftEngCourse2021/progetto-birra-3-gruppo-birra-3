@@ -49,12 +49,16 @@ namespace ProgettoBirra
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selezionato = listBox1.SelectedItem.ToString();
-            //MessageBox.Show(selezionato);
+            
 
+            if (listBox1.SelectedItem != null)
+            {
+                string selezionato = listBox1.SelectedItem.ToString();
+            
 
-            FormRicetta newform = new FormRicetta(selezionato);
+                FormRicetta newform = new FormRicetta(selezionato);
             newform.ShowDialog();
+            }
 
         }
     }

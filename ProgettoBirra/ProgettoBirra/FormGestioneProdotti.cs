@@ -21,6 +21,7 @@ namespace ProgettoBirra
         private void buttonAggiungi(object sender, EventArgs e)
         {
             FormAggiuntaProd newform = new FormAggiuntaProd();
+            this.Close();
             newform.ShowDialog();
             //this.Close();
         }
