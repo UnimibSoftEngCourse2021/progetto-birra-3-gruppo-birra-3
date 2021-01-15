@@ -223,27 +223,74 @@ namespace ProgettoBirra
             }
         }
 
+
+
         public void InsertUtente(string email, string password)
         {
+
+
             //string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
-            string query = "INSERT INTO Utenti (email, password) VALUES('"+email+ "', '" + password + "')";
+            string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
 
-            //create_table();
-
-            //open connection
-            if (this.OpenConnection() == true)
+            if (verificaUtente(email) == false)
             {
-                //create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //open connection
+                if (this.OpenConnection() == true)
+                {
+                    //create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                cmd.ExecuteNonQueryAsync();
+                    //Execute command
+                    cmd.ExecuteNonQueryAsync();
 
-                //close connection
-                this.CloseConnection();
+                    //close connection
+                    this.CloseConnection();
+                    MessageBox.Show("Utente inserito nel database");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Utente già presente nel database");
             }
         }
 
+        public bool verificaUtente(string email)
+        {
+            string query = "SELECT Utenti.email FROM Utenti WHERE Utenti.email = '" + email + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+                
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("email")};";
+                    
+                }
+
+                
+
+                //close Connection
+                this.CloseConnection();
+
+
+                if (e == "")
+                    return false;
+
+
+             
+                return true;
+            }
+
+            return false;
+        }
 
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
