@@ -32,6 +32,7 @@ namespace ProgettoBirra
         {
             FormAggiuntaAtt newform = new FormAggiuntaAtt();
             this.Close();
+            this.Dispose();
             newform.ShowDialog();
         }
 

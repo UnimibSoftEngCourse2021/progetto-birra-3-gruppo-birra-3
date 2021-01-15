@@ -53,11 +53,13 @@ namespace ProgettoBirra
             database.DeleteProdRic(idRic);
             database.DeleteRic(textBoxNome.Text);
             MessageBox.Show("Eliminato con successo");
-            FormMenu newform = new FormMenu();
+
+            /*FormMenu newform = new FormMenu();
             this.Hide();
             this.Close();
             newform.ShowDialog();
-            this.Show();
+            this.Show();*/
+            this.Close();
         }
 
         private void textBoxProdotti_TextChanged(object sender, EventArgs e)
@@ -70,11 +72,12 @@ namespace ProgettoBirra
             database.UpdateRic(textBoxNome.Text, textBoxNote.Text);
             MessageBox.Show("Hai modificato la nota con successo");
 
-            FormMenu newform = new FormMenu();
+            /*FormMenu newform = new FormMenu();
             this.Hide();
             this.Close();
             newform.ShowDialog();
-            this.Show();
+            this.Show();*/
+            this.Close();
         }
     }
 }

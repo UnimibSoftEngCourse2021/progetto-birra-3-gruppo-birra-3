@@ -33,11 +33,15 @@ namespace ProgettoBirra
             database.InsertProd(Globals.emailGlobal, textBoxNomeProd.Text, Convert.ToInt32(this.textBoxQuantita.Text));
 
 
-            FormGestioneProdotti newform = new FormGestioneProdotti();
-            this.Hide();
+            /* FormGestioneProdotti newform = new FormGestioneProdotti();
+             this.Hide();
+             this.Close();
+             newform.ShowDialog();
+             this.Show();*/
+
             this.Close();
-            newform.ShowDialog();
-            this.Show();
+            this.Dispose();
+
         }
     }
 }

@@ -33,22 +33,26 @@ namespace ProgettoBirra
         {
             database.UpdateAtt(textBoxNomeAtt.Text, Convert.ToInt32(this.numericUpDown1.Text));
 
-            FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
+            /*FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
             this.Hide();
             this.Close();
             newform.ShowDialog();
-            this.Show();
+            this.Show();*/
+            this.Close();
+            this.Dispose();
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)
         {
             database.DeleteAtt(textBoxNomeAtt.Text);
 
-            FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
+            /*FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
             this.Hide();
             this.Close();
             newform.ShowDialog();
-            this.Show();
+            this.Show();*/
+            this.Close();
+            this.Dispose();
         }
 
         private void FormModificaAtt_Load(object sender, EventArgs e)

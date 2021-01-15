@@ -34,8 +34,9 @@ namespace ProgettoBirra
         {
             FormAggiuntaProd newform = new FormAggiuntaProd();
             this.Close();
+            this.Dispose();
             newform.ShowDialog();
-            //this.Close();
+            
         }
 
     
@@ -48,6 +49,7 @@ namespace ProgettoBirra
                 string selezionato = listBox1.SelectedItem.ToString();
 
                 this.Close();
+                this.Dispose();
                 FormModificaProd newform = new FormModificaProd(selezionato);
                 newform.ShowDialog();
 

@@ -38,22 +38,28 @@ namespace ProgettoBirra
         {
             database.UpdateProd(textBoxNome.Text, Convert.ToInt32(this.numericUpDown1.Text));
 
-            FormGestioneProdotti newform = new FormGestioneProdotti();
-            this.Hide();
+            /* FormGestioneProdotti newform = new FormGestioneProdotti();
+             this.Hide();
+             this.Close();
+             newform.ShowDialog();
+             this.Show();*/
             this.Close();
-            newform.ShowDialog();
-            this.Show();
+            this.Dispose();
+
         }
 
         private void Button_elimina(object sender, EventArgs e)
         {
             database.DeleteProd(textBoxNome.Text);
 
-            FormGestioneProdotti newform = new FormGestioneProdotti();
-            this.Hide();
+            /* FormGestioneProdotti newform = new FormGestioneProdotti();
+             this.Hide();
+             this.Close();
+             newform.ShowDialog();
+             this.Show();*/
             this.Close();
-            newform.ShowDialog();
-            this.Show();
+            this.Dispose();
+
         }
 
         private void FormModificaProd_Load(object sender, EventArgs e)

@@ -28,7 +28,7 @@ namespace ProgettoBirra
         private void buttonGestioneUtente(object sender, EventArgs e)
         {
             FormGestioneUtente newform = new FormGestioneUtente();
-            this.Hide();
+            this.Close();
             newform.ShowDialog();
             this.Show();
         }
@@ -58,6 +58,8 @@ namespace ProgettoBirra
         {
             FormGestioneRicette newform = new FormGestioneRicette();
             newform.ShowDialog();
+
+            
         }
 
         private void FormMenu_Load(object sender, EventArgs e)

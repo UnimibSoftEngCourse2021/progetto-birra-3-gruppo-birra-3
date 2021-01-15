@@ -23,11 +23,13 @@ namespace ProgettoBirra
         {
             database.InsertAtt(textBoxNomeAtt.Text, Convert.ToInt32(this.textBoxCapacita.Text));
 
-            FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
+            /*FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
             this.Hide();
             this.Close();
             newform.ShowDialog();
-            this.Show();
+            this.Show();*/
+            this.Close();
+            this.Dispose();
         }
     }
 }

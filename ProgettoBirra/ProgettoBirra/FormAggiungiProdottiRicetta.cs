@@ -22,18 +22,18 @@ namespace ProgettoBirra
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void buttonFine_Click(object sender, EventArgs e)
         {
-            FormGestioneRicette newform = new FormGestioneRicette();
+            /*FormMenu newform = new FormMenu();
             this.Hide();
             this.Close();
-            newform.ShowDialog();
-            this.Show();
+            newform.ShowDialog();*/
+            this.Close();
+            this.Dispose();
+
+
         }
 
         private void buttonSalva_Click(object sender, EventArgs e)
@@ -47,5 +47,7 @@ namespace ProgettoBirra
             textBox2.Text = "";
 
         }
+
+     
     }
 }

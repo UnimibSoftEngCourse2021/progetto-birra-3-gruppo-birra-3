@@ -30,6 +30,8 @@ namespace ProgettoBirra
 
         }
 
+
+
         private void formGestioneUt_Load(object sender, EventArgs e)
         {
 
@@ -66,8 +68,17 @@ namespace ProgettoBirra
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            database.UpdateUtente(textBoxEmail.Text,textBoxPassword.Text);
-            MessageBox.Show("la query è stata eseguita");
+
+
+            if (checkBoxEmail.Checked || checkBoxPassword.Checked)
+            {
+                database.UpdateUtente(textBoxEmail.Text, textBoxPassword.Text);
+                MessageBox.Show("Utente/Password aggiornato");
+            }
+            else
+            {
+                MessageBox.Show("Selezionare almeno una modifica");
+            }
         }
 
         private void buttonEliminaUtente_Click(object sender, EventArgs e)
@@ -83,6 +94,7 @@ namespace ProgettoBirra
                 database.DeleteUtente();
                 MessageBox.Show("Utente Eliminato");
                 this.Close();
+                
             }
             else
             {

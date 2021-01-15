@@ -34,7 +34,10 @@ namespace ProgettoBirra
         private void buttonAggiungi_Click(object sender, EventArgs e)
         {
             FormAggiungiRic newform = new FormAggiungiRic();
+            this.Close();
+            this.Dispose();
             newform.ShowDialog();
+            
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)
@@ -58,6 +61,7 @@ namespace ProgettoBirra
 
                 FormRicetta newform = new FormRicetta(selezionato);
             newform.ShowDialog();
+                this.Close();
             }
 
         }
