@@ -111,6 +111,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.button1);
             this.Name = "FormMenu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
 
         }

@@ -22,6 +22,9 @@ namespace ProgettoBirra
         {
             InitializeComponent();
             database=new GestioneDB();
+
+
+            database.create_tableProdHasRicetta();
             
             
         }

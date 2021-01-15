@@ -36,6 +36,7 @@ namespace ProgettoBirra
             this.checkBoxEmail = new System.Windows.Forms.CheckBox();
             this.buttonSalva = new System.Windows.Forms.Button();
             this.buttonEliminaUtente = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // checkBoxPassword
@@ -104,7 +105,7 @@ namespace ProgettoBirra
             // 
             // buttonEliminaUtente
             // 
-            this.buttonEliminaUtente.Location = new System.Drawing.Point(157, 250);
+            this.buttonEliminaUtente.Location = new System.Drawing.Point(158, 273);
             this.buttonEliminaUtente.Name = "buttonEliminaUtente";
             this.buttonEliminaUtente.Size = new System.Drawing.Size(226, 60);
             this.buttonEliminaUtente.TabIndex = 6;
@@ -112,11 +113,23 @@ namespace ProgettoBirra
             this.buttonEliminaUtente.UseVisualStyleBackColor = true;
             this.buttonEliminaUtente.Click += new System.EventHandler(this.buttonEliminaUtente_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(158, 250);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(132, 17);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Conferma Eliminazione";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // FormGestioneUtente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonEliminaUtente);
             this.Controls.Add(this.buttonSalva);
             this.Controls.Add(this.textBoxEmail);
@@ -142,5 +155,6 @@ namespace ProgettoBirra
         private System.Windows.Forms.CheckBox checkBoxEmail;
         private System.Windows.Forms.Button buttonSalva;
         private System.Windows.Forms.Button buttonEliminaUtente;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

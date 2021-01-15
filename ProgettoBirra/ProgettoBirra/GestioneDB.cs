@@ -181,8 +181,8 @@ namespace ProgettoBirra
 
         public void create_tableProdHasRicetta()
         {
-            string query = string.Format($"CREATE TABLE IF NOT EXISTS `prodRicetta` (`idRicetta` INT NOT NULL, `nomeProd` VARCHAR(45) NOT NULL,  `quantita` INT NOT NULL, CONSTRAINT `idRicettar`FOREIGN KEY(`idRicetta`) REFERENCES `ricetta` (`idRicetta`))");
-            //string query = string.Format("DROP TABLE `ricetta`");
+            string query = string.Format($"CREATE TABLE IF NOT EXISTS `prodRicetta` (`idRicetta` INT NOT NULL, `nomeProd` VARCHAR(45) NOT NULL,  `quantita` INT NOT NULL, `proprietario` VARCHAR(45) NOT NULL, CONSTRAINT `idRicettar`FOREIGN KEY(`idRicetta`) REFERENCES `ricetta` (`idRicetta`))");
+            //string query = string.Format("DROP TABLE `prodRicetta`");
 
             //open connection
             if (this.OpenConnection() == true)
@@ -458,7 +458,7 @@ namespace ProgettoBirra
         {
            
 
-            string query = "INSERT INTO prodricetta (idRicetta, nomeProd, quantita) VALUES('" + idRicetta + "', '" + nome + "','" + quantita + "')";
+            string query = "INSERT INTO prodricetta (idRicetta, nomeProd, quantita, proprietario) VALUES('" + idRicetta + "', '" + nome + "','" + quantita + "','" + Globals.emailGlobal+"')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -630,6 +630,47 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+
+        //elimina tutti gli associati all'utente 
+        public void DeleteAttrezziUtente()
+        {
+            string query = "DELETE FROM Attrezzo WHERE proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
+        //elimina tutti i prodotti associati alle ricette dell'utente 
+        public void DeleteProdRicettaUtente()
+        {
+            string query = "DELETE FROM prodRicetta WHERE proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
+
+        //elimina tutte le ricette dell'utente 
+        public void DeleteRicetteUtente()
+        {
+            string query = "DELETE FROM Ricetta WHERE proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
+
 
         //Elimina Prodotto
         public void DeleteProd(string nomeProd)
@@ -838,7 +879,7 @@ namespace ProgettoBirra
         //recupero dei prodotti associati ad una ricetta di un utente
         public void recuperoProd(string idRic)
         {
-            string query = "SELECT * FROM prodricetta WHERE idRicetta= '"+ Convert.ToInt32(idRic) + "'";
+            string query = "SELECT * FROM prodricetta WHERE idRicetta= '"+ Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal+"'";
 
             if (this.OpenConnection() == true)
             {
@@ -846,6 +887,7 @@ namespace ProgettoBirra
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 string nomeProd = "";
                 string quantita = "";
+                
 
 
 

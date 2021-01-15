@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProgettoBirra
@@ -15,12 +8,16 @@ namespace ProgettoBirra
         string email;
         string password;
         GestioneDB database;
+        
+
+
         public FormGestioneUtente()
         {
             InitializeComponent();
             database = new GestioneDB();
             textBoxEmail.Text = Globals.emailGlobal;
             textBoxPassword.Text = Globals.passwordGlobal;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -75,8 +72,28 @@ namespace ProgettoBirra
 
         private void buttonEliminaUtente_Click(object sender, EventArgs e)
         {
-            database.DeleteProdUtente();
-            database.DeleteUtente();
+
+            if (checkBox1.Checked)
+            {
+
+                database.DeleteProdRicettaUtente();
+                database.DeleteRicetteUtente();
+                database.DeleteAttrezziUtente();
+                database.DeleteProdUtente();
+                database.DeleteUtente();
+                MessageBox.Show("Utente Eliminato");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Conferma Eliminazione utente");
+            }
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

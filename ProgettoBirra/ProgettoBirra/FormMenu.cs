@@ -60,6 +60,9 @@ namespace ProgettoBirra
             newform.ShowDialog();
         }
 
-      
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
