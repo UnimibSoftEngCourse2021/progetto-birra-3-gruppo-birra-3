@@ -229,7 +229,7 @@ namespace ProgettoBirra
         {
 
 
-            //string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
+            
             string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
 
             if (verificaUtente(email) == false)
@@ -292,6 +292,44 @@ namespace ProgettoBirra
             return false;
         }
 
+        //metodo per verificare che un'attrezzatura non sia già presente nel db
+        public bool verificaAttr(string nome)
+        {
+            string query = "SELECT attrezzo.nomeAtt FROM attrezzo WHERE attrezzo.nomeAtt = '" + nome + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("nomeAtt")};";
+
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+                if (e == "")
+                    return false;
+
+
+
+                return true;
+            }
+
+            return false;
+        }
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
         {
@@ -315,22 +353,28 @@ namespace ProgettoBirra
         }
 
         //Metodo per inserire un nuovo attrezzo nel DB
-        public void InsertAtt(string emailat, string nomeAtt, int capacita)
+        public void InsertAtt(string nomeAtt, int capacita)
         {
-            string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + emailat + "', '" + nomeAtt + "','" + capacita + "')";
+            string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + Globals.emailGlobal+ "', '" + nomeAtt + "','" + capacita + "')";
 
-            //open connection
-            if (this.OpenConnection() == true)
+            if (verificaAttr(nomeAtt) == false)
             {
-                //create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //open connection
+                if (this.OpenConnection() == true)
+                {
+                    //create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                cmd.ExecuteNonQueryAsync();
+                    //Execute command
+                    cmd.ExecuteNonQueryAsync();
 
-                //close connection
-                this.CloseConnection();
+                    //close connection
+                    this.CloseConnection();
+                    MessageBox.Show("Attrezzatura aggiunta al database correttamente");
+                }
             }
+            else
+            { MessageBox.Show("Attrezzatura già presente nel database"); }
         }
 
         //Metodo per inserire un nuovo attrezzo nel DB
@@ -679,6 +723,40 @@ namespace ProgettoBirra
             }
 
            
+        }
+
+        //recupero delle attrezzature di un determinato utente
+        public void recuperoAttr()
+        {
+            string query = "SELECT * FROM attrezzo WHERE proprietario= '" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeAtt= "";
+                string capacita = "";
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeAtt = $"{reader.GetString("nomeAtt")}";
+                    capacita = $"{reader.GetString("capacita")}";
+                    Globals.listaAttrezzi.Add(new AttrezzoMapper(nomeAtt,capacita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+
         }
 
         //recupero dei prodotti associati ad una ricetta di un utente

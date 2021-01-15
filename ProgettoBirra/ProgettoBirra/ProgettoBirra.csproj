@@ -81,12 +81,6 @@
     <Compile Include="FormAggiuntaAtt.Designer.cs">
       <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEliminaAtt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEliminaAtt.Designer.cs">
-      <DependentUpon>FormEliminaAtt.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEliminaProd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAggiuntaAtt.resx">
       <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEliminaAtt.resx">
-      <DependentUpon>FormEliminaAtt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEliminaProd.resx">
       <DependentUpon>FormEliminaProd.cs</DependentUpon>

@@ -30,48 +30,38 @@ namespace ProgettoBirra
         private void InitializeComponent()
         {
             this.buttonAggiungiAtt = new System.Windows.Forms.Button();
-            this.buttonModificaAtt = new System.Windows.Forms.Button();
-            this.buttonEliminaAtt = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonAggiungiAtt
             // 
-            this.buttonAggiungiAtt.Location = new System.Drawing.Point(582, 30);
+            this.buttonAggiungiAtt.Location = new System.Drawing.Point(517, 24);
+            this.buttonAggiungiAtt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAggiungiAtt.Name = "buttonAggiungiAtt";
-            this.buttonAggiungiAtt.Size = new System.Drawing.Size(183, 96);
+            this.buttonAggiungiAtt.Size = new System.Drawing.Size(163, 77);
             this.buttonAggiungiAtt.TabIndex = 0;
             this.buttonAggiungiAtt.Text = "Aggiungi";
             this.buttonAggiungiAtt.UseVisualStyleBackColor = true;
             this.buttonAggiungiAtt.Click += new System.EventHandler(this.buttonAggiungiAtt_Click);
             // 
-            // buttonModificaAtt
+            // listBox1
             // 
-            this.buttonModificaAtt.Location = new System.Drawing.Point(582, 170);
-            this.buttonModificaAtt.Name = "buttonModificaAtt";
-            this.buttonModificaAtt.Size = new System.Drawing.Size(183, 94);
-            this.buttonModificaAtt.TabIndex = 1;
-            this.buttonModificaAtt.Text = "Modifica";
-            this.buttonModificaAtt.UseVisualStyleBackColor = true;
-            this.buttonModificaAtt.Click += new System.EventHandler(this.buttonModificaAtt_Click);
-            // 
-            // buttonEliminaAtt
-            // 
-            this.buttonEliminaAtt.Location = new System.Drawing.Point(582, 326);
-            this.buttonEliminaAtt.Name = "buttonEliminaAtt";
-            this.buttonEliminaAtt.Size = new System.Drawing.Size(183, 95);
-            this.buttonEliminaAtt.TabIndex = 2;
-            this.buttonEliminaAtt.Text = "Elimina";
-            this.buttonEliminaAtt.UseVisualStyleBackColor = true;
-            this.buttonEliminaAtt.Click += new System.EventHandler(this.buttonEliminaAtt_Click);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(27, 24);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(472, 308);
+            this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
             // FormGestioneAttrezzatura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonEliminaAtt);
-            this.Controls.Add(this.buttonModificaAtt);
+            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.buttonAggiungiAtt);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormGestioneAttrezzatura";
             this.Text = "Gestione Attrezzatura";
             this.ResumeLayout(false);
@@ -81,7 +71,6 @@ namespace ProgettoBirra
         #endregion
 
         private System.Windows.Forms.Button buttonAggiungiAtt;
-        private System.Windows.Forms.Button buttonModificaAtt;
-        private System.Windows.Forms.Button buttonEliminaAtt;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
