@@ -91,7 +91,6 @@ namespace ProgettoBirra
             }
         }
 
-
         //create table
         public void create_table()
         {
@@ -222,9 +221,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
-
-
-
+        
         public void InsertUtente(string email, string password)
         {
 
@@ -330,27 +327,75 @@ namespace ProgettoBirra
 
             return false;
         }
+        
+        public bool verificaProd(string nome)
+        {
+            string query = "SELECT prodotto.nomeProd FROM prodotto WHERE prodotto.nomeProd= '" + nome + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("nomeProd")};";
+
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+                if (e == "")
+                    return false;
+
+
+
+                return true;
+            }
+
+            return false;
+        }
+
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
         {
             string query = "INSERT INTO Prodotto (proprietario, nomeProd, quantita) VALUES('" + emailp + "', '" + nomeProd + "','" + quantita + "')";
 
-            
-            //create_table();
 
-            //open connection
-            if (this.OpenConnection() == true)
+
+            if (verificaProd(nomeProd) == false)
             {
-                //create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                cmd.ExecuteNonQueryAsync();
+                //open connection
+                if (this.OpenConnection() == true)
+                {
+                    //create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //close connection
-                this.CloseConnection();
+                    //Execute command
+                    cmd.ExecuteNonQueryAsync();
+
+                    //close connection
+                    this.CloseConnection();
+                    MessageBox.Show("Prodotto aggiunta al database correttamente");
+                }
             }
-        }
+            else
+            {
+                MessageBox.Show("Attrezzatura già presente nel database");
+            }
+        
+    }
 
         //Metodo per inserire un nuovo attrezzo nel DB
         public void InsertAtt(string nomeAtt, int capacita)
@@ -428,6 +473,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+        
         //Update statement
         public void Update()
         {
@@ -476,7 +522,6 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
-
 
         //Update di un prodotto
         public void UpdateProd(string nomeProd, int nuovaQT)
@@ -546,8 +591,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
-
-
+        
         //Delete statement
         public void Delete()
         {
@@ -560,9 +604,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
-
-
-
+        
         //Elimina Utente
         public void DeleteUtente()
         {
@@ -758,7 +800,41 @@ namespace ProgettoBirra
 
 
         }
+        
+        //recupero dei prodotti di un determinato utente
+        public void recuperoProdUtente()
+        {
+            string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
 
+          if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeProdotto = "";
+                string quantita = "";
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeProdotto = $"{reader.GetString("nomeProd")}";
+                    quantita = $"{reader.GetString("quantita")}";
+                    Globals.listaProdotti.Add(new ProdottoMapper(nomeProdotto, quantita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+
+        }
+        
         //recupero dei prodotti associati ad una ricetta di un utente
         public void recuperoProd(string idRic)
         {
@@ -826,6 +902,7 @@ namespace ProgettoBirra
 
 
         }
+        
         //ricercaUtente(login)
         public bool SelectUtente(string email, string password)
         {

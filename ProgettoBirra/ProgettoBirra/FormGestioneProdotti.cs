@@ -12,9 +12,21 @@ namespace ProgettoBirra
 {
     public partial class FormGestioneProdotti : Form
     {
+
+        GestioneDB database;
         public FormGestioneProdotti()
         {
             InitializeComponent();
+
+            database = new GestioneDB();
+            Globals.listaProdotti.Clear();
+            database.recuperoProdUtente();
+            for (int i = 0; i < Globals.listaProdotti.Count; i++)
+            {
+                listBox1.Items.Add(Globals.listaProdotti[i].getNome());
+            }
+
+
 
         }
 
@@ -26,17 +38,20 @@ namespace ProgettoBirra
             //this.Close();
         }
 
-        private void buttonModifica(object sender, EventArgs e)
-        {
-            FormModificaProd newform = new FormModificaProd();
-            newform.ShowDialog();
+    
 
-        }
-
-        private void buttonElimina(object sender, EventArgs e)
+     
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FormEliminaProd newform = new FormEliminaProd();
-            newform.ShowDialog();
+            if (listBox1.SelectedItem != null)
+            {
+                string selezionato = listBox1.SelectedItem.ToString();
+
+                this.Close();
+                FormModificaProd newform = new FormModificaProd(selezionato);
+                newform.ShowDialog();
+
+            }
         }
     }
 }

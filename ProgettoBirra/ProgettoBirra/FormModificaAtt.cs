@@ -50,5 +50,10 @@ namespace ProgettoBirra
             newform.ShowDialog();
             this.Show();
         }
+
+        private void FormModificaAtt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

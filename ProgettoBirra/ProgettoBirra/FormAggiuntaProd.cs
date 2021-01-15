@@ -28,6 +28,8 @@ namespace ProgettoBirra
         private void buttonSalvaProd(object sender, EventArgs e)
         {
 
+
+
             database.InsertProd(Globals.emailGlobal, textBoxNomeProd.Text, Convert.ToInt32(this.textBoxQuantita.Text));
 
 

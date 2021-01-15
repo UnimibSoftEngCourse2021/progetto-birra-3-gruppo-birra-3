@@ -81,12 +81,6 @@
     <Compile Include="FormAggiuntaAtt.Designer.cs">
       <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEliminaProd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEliminaProd.Designer.cs">
-      <DependentUpon>FormEliminaProd.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormGestioneRicette.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,9 +168,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAggiuntaAtt.resx">
       <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEliminaProd.resx">
-      <DependentUpon>FormEliminaProd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestioneRicette.resx">
       <DependentUpon>FormGestioneRicette.cs</DependentUpon>
