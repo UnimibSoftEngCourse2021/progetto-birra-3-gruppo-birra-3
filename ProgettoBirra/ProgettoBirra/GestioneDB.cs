@@ -387,12 +387,12 @@ namespace ProgettoBirra
 
                     //close connection
                     this.CloseConnection();
-                    MessageBox.Show("Prodotto aggiunta al database correttamente");
+                    MessageBox.Show("Il prodotto è stato inserita nella dispensa");
                 }
             }
             else
             {
-                MessageBox.Show("Attrezzatura già presente nel database");
+                MessageBox.Show("Prodotto già presente nella dispensa");
             }
         
     }
@@ -415,11 +415,11 @@ namespace ProgettoBirra
 
                     //close connection
                     this.CloseConnection();
-                    MessageBox.Show("Attrezzatura aggiunta al database correttamente");
+                    MessageBox.Show("L'attrezzo è stato inserito nel magazzino");
                 }
             }
             else
-            { MessageBox.Show("Attrezzatura già presente nel database"); }
+            { MessageBox.Show("Attrezzatura già presente nel magazzino"); }
         }
 
         //Metodo per inserire un nuovo attrezzo nel DB

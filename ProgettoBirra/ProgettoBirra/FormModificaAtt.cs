@@ -32,7 +32,7 @@ namespace ProgettoBirra
         private void buttonSalvaModifiche_Click(object sender, EventArgs e)
         {
             database.UpdateAtt(textBoxNomeAtt.Text, Convert.ToInt32(this.numericUpDown1.Text));
-
+            MessageBox.Show("L'attrezzo è stato modificato con successo");
             /*FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
             this.Hide();
             this.Close();
@@ -45,7 +45,7 @@ namespace ProgettoBirra
         private void buttonElimina_Click(object sender, EventArgs e)
         {
             database.DeleteAtt(textBoxNomeAtt.Text);
-
+            MessageBox.Show("L'attrezzo è stato rimosso dal magazzino");
             /*FormGestioneAttrezzatura newform = new FormGestioneAttrezzatura();
             this.Hide();
             this.Close();

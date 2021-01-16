@@ -52,7 +52,7 @@ namespace ProgettoBirra
 
             database.DeleteProdRic(idRic);
             database.DeleteRic(textBoxNome.Text);
-            MessageBox.Show("Eliminato con successo");
+            MessageBox.Show("La ricetta è stata eliminata dal ricettario");
 
             /*FormMenu newform = new FormMenu();
             this.Hide();
@@ -70,7 +70,7 @@ namespace ProgettoBirra
         private void buttonModificaRic_Click(object sender, EventArgs e)
         {
             database.UpdateRic(textBoxNome.Text, textBoxNote.Text);
-            MessageBox.Show("Hai modificato la nota con successo");
+            MessageBox.Show("La nota è stata modificata con successo");
 
             /*FormMenu newform = new FormMenu();
             this.Hide();
