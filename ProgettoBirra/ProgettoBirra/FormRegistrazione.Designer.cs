@@ -39,56 +39,62 @@ namespace ProgettoBirra
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 121);
+            this.label1.Location = new System.Drawing.Point(81, 93);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "EMAIL:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(366, 285);
+            this.button1.Location = new System.Drawing.Point(445, 277);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 63);
+            this.button1.Size = new System.Drawing.Size(135, 97);
             this.button1.TabIndex = 1;
-            this.button1.Text = "ISCRIVITI";
+            this.button1.Text = "ISCRIVIMI";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.buttonRegistrati);
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(242, 118);
+            this.textBoxEmail.Location = new System.Drawing.Point(273, 89);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(214, 20);
+            this.textBoxEmail.Size = new System.Drawing.Size(319, 26);
             this.textBoxEmail.TabIndex = 2;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 171);
+            this.label2.Location = new System.Drawing.Point(81, 170);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "PASSWORD:";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(242, 171);
+            this.textBoxPassword.Location = new System.Drawing.Point(273, 170);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(214, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(319, 26);
             this.textBoxPassword.TabIndex = 4;
             // 
             // FormRegistrazione
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 433);
+            this.ClientSize = new System.Drawing.Size(699, 492);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormRegistrazione";
             this.Text = "REGISTRAZIONE";
             this.ResumeLayout(false);

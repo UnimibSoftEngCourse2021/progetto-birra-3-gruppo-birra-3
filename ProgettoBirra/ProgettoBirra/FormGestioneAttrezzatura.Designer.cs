@@ -35,35 +35,36 @@ namespace ProgettoBirra
             // 
             // buttonAggiungiAtt
             // 
-            this.buttonAggiungiAtt.Location = new System.Drawing.Point(517, 24);
+            this.buttonAggiungiAtt.Location = new System.Drawing.Point(562, 107);
             this.buttonAggiungiAtt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAggiungiAtt.Name = "buttonAggiungiAtt";
-            this.buttonAggiungiAtt.Size = new System.Drawing.Size(163, 77);
+            this.buttonAggiungiAtt.Size = new System.Drawing.Size(183, 153);
             this.buttonAggiungiAtt.TabIndex = 0;
-            this.buttonAggiungiAtt.Text = "Aggiungi";
+            this.buttonAggiungiAtt.Text = "AGGIUNGI NUOVO ATTREZZO";
             this.buttonAggiungiAtt.UseVisualStyleBackColor = true;
             this.buttonAggiungiAtt.Click += new System.EventHandler(this.buttonAggiungiAtt_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(27, 24);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(38, 50);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(472, 308);
+            this.listBox1.Size = new System.Drawing.Size(476, 304);
             this.listBox1.TabIndex = 3;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
             // FormGestioneAttrezzatura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.buttonAggiungiAtt);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormGestioneAttrezzatura";
-            this.Text = "Gestione Attrezzatura";
+            this.Text = "MAGAZZINO";
             this.ResumeLayout(false);
 
         }
