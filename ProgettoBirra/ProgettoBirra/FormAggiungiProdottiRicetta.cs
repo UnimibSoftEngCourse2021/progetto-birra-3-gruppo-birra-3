@@ -46,7 +46,12 @@ namespace ProgettoBirra
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            database.InsertRic(nomeRic, attRic, prepRic, noteRic);
+            //prima giustamente salvava tante ricette diverse per ogni prodotto aggiunto
+            //ho creato un verificaRic (copia incolla di verificaProd)
+            //così se la ricetta non esiste la crea, altrimenti non fa nulla nell'if
+            if (database.verificaRic(nomeRic) == false){
+                database.InsertRic(nomeRic, attRic, prepRic, noteRic);
+            }
             int idRicetta = database.recuperoIdRic(nomeRic);
 
             database.InsertProdRic(idRicetta, textBox1.Text, Int32.Parse(textBox2.Text));

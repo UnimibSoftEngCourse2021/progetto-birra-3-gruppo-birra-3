@@ -40,14 +40,14 @@ namespace ProgettoBirra
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(274, 72);
+            this.textBox1.Location = new System.Drawing.Point(258, 72);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(240, 26);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(274, 160);
+            this.textBox2.Location = new System.Drawing.Point(258, 160);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(240, 26);
             this.textBox2.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace ProgettoBirra
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 72);
+            this.label1.Location = new System.Drawing.Point(65, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 20);
             this.label1.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace ProgettoBirra
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 160);
+            this.label2.Location = new System.Drawing.Point(65, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace ProgettoBirra
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(520, 163);
+            this.label3.Location = new System.Drawing.Point(504, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 20);
             this.label3.TabIndex = 6;

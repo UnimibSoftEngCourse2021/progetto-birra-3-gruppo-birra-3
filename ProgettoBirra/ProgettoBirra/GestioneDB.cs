@@ -366,6 +366,44 @@ namespace ProgettoBirra
             return false;
         }
 
+        public bool verificaRic(string nome)
+        {
+            string query = "SELECT ricetta.nomeRic FROM ricetta WHERE ricetta.nomeRic= '" + nome + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("nomeRic")};";
+
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+                if (e == "")
+                    return false;
+
+
+
+                return true;
+            }
+
+            return false;
+        }
+
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
         {
@@ -450,6 +488,7 @@ namespace ProgettoBirra
 
                 //close connection
                 this.CloseConnection();
+                
             }
         }
 
