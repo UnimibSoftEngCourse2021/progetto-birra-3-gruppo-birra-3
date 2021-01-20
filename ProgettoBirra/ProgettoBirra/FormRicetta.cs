@@ -83,6 +83,10 @@ namespace ProgettoBirra
         private void buttonPrepara(object sender, EventArgs e)
         {
             bool fatta = true;
+            int numero;
+            int quantitaDaTogliere;
+            int quantitaVecchia;
+            
 
             for (int i = 0; i < Globals.listaProdotti.Count; i++)
             {
@@ -93,7 +97,7 @@ namespace ProgettoBirra
                     break;
                 }
 
-                int numero = Convert.ToInt32(Globals.listaProdotti[i].getQuantita());
+                numero = Convert.ToInt32(Globals.listaProdotti[i].getQuantita());
                 numero = numero  * Convert.ToInt32(this.numericUpDown1.Text);
 
                 if (database.verificaQuantitaProd(Globals.listaProdotti[i].getNome(), numero) > 0 )
@@ -107,11 +111,30 @@ namespace ProgettoBirra
 
             if(fatta==true)
             {
+
+                for (int j = 0; j < Globals.listaProdotti.Count; j++)
+                {
+                    quantitaVecchia = database.recuperoQuantitaProd(Globals.listaProdotti[j].getNome());
+                    quantitaDaTogliere = Convert.ToInt32(Globals.listaProdotti[j].getQuantita()) * Convert.ToInt32(this.numericUpDown1.Text);
+                    
+
+                    database.InsertListaSpesa(Globals.listaProdotti[j].getNome(), quantitaDaTogliere);
+                    if (quantitaVecchia - quantitaDaTogliere == 0)
+                    {
+                        database.DeleteProd(Globals.listaProdotti[j].getNome());
+                    }
+                    else
+                    {
+                        database.UpdateProd(Globals.listaProdotti[j].getNome(), quantitaVecchia - quantitaDaTogliere);
+                    }
+                    
+                }
+
                 MessageBox.Show("Hai fatto la ricetta");
             }
+
+
             
-
-
 
 
 
