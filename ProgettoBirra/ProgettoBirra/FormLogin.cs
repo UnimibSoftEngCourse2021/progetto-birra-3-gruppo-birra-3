@@ -24,7 +24,7 @@ namespace ProgettoBirra
             database=new GestioneDB();
 
 
-            //database.create_tableListaDellaSpesa();
+            database.create_tableListaDellaSpesa();
             
             
         }

@@ -204,8 +204,8 @@ namespace ProgettoBirra
         //metodo creazione tabella lista della spesa
         public void create_tableListaDellaSpesa()
         {
-            string query = string.Format($"CREATE TABLE IF NOT EXISTS `ListaDellaSpesa` (`proprietario` VARCHAR(45) NOT NULL, `listaProdotti` VARCHAR(100) NOT NULL, CONSTRAINT `proprietarior` FOREIGN KEY(`proprietario`) REFERENCES `utenti` (`email`))");
-            //string query = string.Format("DROP TABLE `prodRicetta`");
+             string query = string.Format($"CREATE TABLE IF NOT EXISTS `ListaDellaSpesa` (`proprietario` VARCHAR(45) NOT NULL, `Prodotto` VARCHAR(100) NOT NULL, `Quantita` int NOT NULL, CONSTRAINT `proprietarior` FOREIGN KEY(`proprietario`) REFERENCES `utenti` (`email`))");
+            //string query = string.Format("DROP TABLE `ListaDellaSpesa`");
 
             //open connection
             if (this.OpenConnection() == true)
@@ -223,56 +223,7 @@ namespace ProgettoBirra
             }
         }
 
-        //Insert statement
-        public void Insert()
-        {
-            string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
-
-
-            create_table();
-
-            //open connection
-            if (this.OpenConnection() == true)
-            {
-                //create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                //Execute command
-                cmd.ExecuteNonQueryAsync();
-
-                //close connection
-                this.CloseConnection();
-            }
-        }
-        
-        public void InsertUtente(string email, string password)
-        {
-
-
-            
-            string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
-
-            if (verificaUtente(email) == false)
-            {
-                //open connection
-                if (this.OpenConnection() == true)
-                {
-                    //create command and assign the query and connection from the constructor
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                    //Execute command
-                    cmd.ExecuteNonQueryAsync();
-
-                    //close connection
-                    this.CloseConnection();
-                    MessageBox.Show("Utente inserito nel database");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Utente già presente nel database");
-            }
-        }
+     
 
         public bool verificaUtente(string email)
         {
@@ -468,6 +419,96 @@ namespace ProgettoBirra
 
             return 9999;
         }
+
+        public bool verificaProdListaSpesa(string nome)
+        {
+            string query = "SELECT ListaDellaSpesa.Prodotto FROM ListaDellaSpesa WHERE ListaDellaSpesa.Prodotto= '" + nome + "' AND ListaDellaSpesa.proprietario='" + Globals.emailGlobal + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("Prodotto")};";
+
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+                if (e == "")
+                    return false;
+
+
+
+                return true;
+            }
+
+            return false;
+        }
+
+        //Insert statement
+        public void Insert()
+        {
+            string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
+
+
+            create_table();
+
+            //open connection
+            if (this.OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+        public void InsertUtente(string email, string password)
+        {
+
+
+
+            string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
+
+            if (verificaUtente(email) == false)
+            {
+                //open connection
+                if (this.OpenConnection() == true)
+                {
+                    //create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                    //Execute command
+                    cmd.ExecuteNonQueryAsync();
+
+                    //close connection
+                    this.CloseConnection();
+                    MessageBox.Show("Utente inserito nel database");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Utente già presente nel database");
+            }
+        }
+
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
         {
@@ -581,7 +622,7 @@ namespace ProgettoBirra
         {
 
 
-            string query = "INSERT INTO ListaDellaSpesa (proprietario, listaProdotti) VALUES('" + Globals.emailGlobal  + "', '" + prodotto+ "-"+ quantita + "')";
+            string query = "INSERT INTO ListaDellaSpesa (proprietario, Prodotto, quantita) VALUES('" + Globals.emailGlobal  + "', '" + prodotto+ "', '" + quantita + "')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -716,7 +757,31 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
-        
+
+
+        public void UpdateListaDellaSpesa(int numero, string nomeProd)
+        {
+            string query = "UPDATE ListaDellaSpesa SET quantita=quantita+" + numero + " WHERE proprietario='" + Globals.emailGlobal + "' AND Prodotto ='" + nomeProd + "'";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //create mysql command
+                MySqlCommand cmd = new MySqlCommand();
+                //Assign the query using CommandText
+                cmd.CommandText = query;
+                //Assign the connection using Connection
+                cmd.Connection = connection;
+
+                //Execute query
+                cmd.ExecuteNonQueryAsync();
+
+                //close connection
+                this.CloseConnection();
+            }
+        }
+
+
         //Delete statement
         public void Delete()
         {

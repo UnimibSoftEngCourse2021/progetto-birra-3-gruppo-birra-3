@@ -116,9 +116,24 @@ namespace ProgettoBirra
                 {
                     quantitaVecchia = database.recuperoQuantitaProd(Globals.listaProdotti[j].getNome());
                     quantitaDaTogliere = Convert.ToInt32(Globals.listaProdotti[j].getQuantita()) * Convert.ToInt32(this.numericUpDown1.Text);
-                    
 
-                    database.InsertListaSpesa(Globals.listaProdotti[j].getNome(), quantitaDaTogliere);
+
+
+                    if (database.verificaProdListaSpesa(Globals.listaProdotti[j].getNome()))
+                    {
+                        database.UpdateListaDellaSpesa(quantitaDaTogliere, Globals.listaProdotti[j].getNome());
+                    }
+                    else
+                    {
+                        database.InsertListaSpesa(Globals.listaProdotti[j].getNome(), quantitaDaTogliere);
+                    }
+                         
+
+            
+
+
+
+
                     if (quantitaVecchia - quantitaDaTogliere == 0)
                     {
                         database.DeleteProd(Globals.listaProdotti[j].getNome());
