@@ -292,7 +292,7 @@ namespace ProgettoBirra
         //metodo per verificare che un'attrezzatura non sia già presente nel db
         public bool verificaAttr(string nome)
         {
-            string query = "SELECT attrezzo.nomeAtt FROM attrezzo WHERE attrezzo.nomeAtt = '" + nome + "'";
+            string query = "SELECT attrezzo.nomeAtt FROM attrezzo WHERE attrezzo.nomeAtt = '" + nome + "'AND attrezzo.proprietario='" + Globals.emailGlobal + "'";
 
 
             //Open connection
@@ -330,7 +330,7 @@ namespace ProgettoBirra
         
         public bool verificaProd(string nome)
         {
-            string query = "SELECT prodotto.nomeProd FROM prodotto WHERE prodotto.nomeProd= '" + nome + "'";
+            string query = "SELECT prodotto.nomeProd FROM prodotto WHERE prodotto.nomeProd= '" + nome + "' AND prodotto.proprietario='" + Globals.emailGlobal + "'";
 
 
             //Open connection
@@ -368,7 +368,7 @@ namespace ProgettoBirra
 
         public bool verificaRic(string nome)
         {
-            string query = "SELECT ricetta.nomeRic FROM ricetta WHERE ricetta.nomeRic= '" + nome + "'";
+            string query = "SELECT ricetta.nomeRic FROM ricetta WHERE ricetta.nomeRic= '" + nome + "'AND ricetta.proprietario='" + Globals.emailGlobal + "'";
 
 
             //Open connection
@@ -404,6 +404,47 @@ namespace ProgettoBirra
             return false;
         }
 
+        public int verificaQuantitaProd(string nome, int quantita)
+        {
+            string query = "SELECT prodotto.quantita FROM prodotto WHERE prodotto.nomeProd= '" + nome + "' AND prodotto.proprietario='" + Globals.emailGlobal + "'";
+
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string e = "";
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    e += $"{reader.GetString("quantita")}";
+
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+                int quanitaMancante = Convert.ToInt32(e) - quantita;
+
+                if (quanitaMancante < 0) 
+                {
+                    return (quanitaMancante * -1);
+                }
+                    
+                else 
+                { 
+                    return 0;
+                }
+            }
+
+            return 9999;
+        }
         //Metodo per inserire un nuovo prodotto nel DB
         public void InsertProd(string emailp, string nomeProd, int quantita)
         {

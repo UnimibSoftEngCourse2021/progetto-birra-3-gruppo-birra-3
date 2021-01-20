@@ -79,5 +79,44 @@ namespace ProgettoBirra
             this.Show();*/
             this.Close();
         }
+
+        private void buttonPrepara(object sender, EventArgs e)
+        {
+            bool fatta = true;
+
+            for (int i = 0; i < Globals.listaProdotti.Count; i++)
+            {
+                if (database.verificaProd(Globals.listaProdotti[i].getNome()) == false)
+                {
+                    MessageBox.Show("Impossibile preparare ricetta, non hai i prodotti necessari");
+                    fatta = false;
+                    break;
+                }
+
+                int numero = Convert.ToInt32(Globals.listaProdotti[i].getQuantita());
+                numero = numero  * Convert.ToInt32(this.numericUpDown1.Text);
+
+                if (database.verificaQuantitaProd(Globals.listaProdotti[i].getNome(), numero) > 0 )
+                {
+                    MessageBox.Show("Non hai abbastanza quantita di "+ Globals.listaProdotti[i].getNome());
+                    fatta = false;
+                    break;
+                }
+
+            }
+
+            if(fatta==true)
+            {
+                MessageBox.Show("Hai fatto la ricetta");
+            }
+            
+
+
+
+
+
+
+
+        }
     }
 }
