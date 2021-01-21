@@ -42,10 +42,10 @@ namespace ProgettoBirra
             // checkBoxPassword
             // 
             this.checkBoxPassword.AutoSize = true;
-            this.checkBoxPassword.Location = new System.Drawing.Point(105, 81);
-            this.checkBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxPassword.Location = new System.Drawing.Point(77, 120);
+            this.checkBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxPassword.Name = "checkBoxPassword";
-            this.checkBoxPassword.Size = new System.Drawing.Size(175, 20);
+            this.checkBoxPassword.Size = new System.Drawing.Size(143, 17);
             this.checkBoxPassword.TabIndex = 0;
             this.checkBoxPassword.Text = "MODIFICA PASSWORD";
             this.checkBoxPassword.UseVisualStyleBackColor = true;
@@ -54,19 +54,20 @@ namespace ProgettoBirra
             // textBoxPassword
             // 
             this.textBoxPassword.Enabled = false;
-            this.textBoxPassword.Location = new System.Drawing.Point(321, 79);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPassword.Location = new System.Drawing.Point(239, 118);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(295, 22);
+            this.textBoxPassword.Size = new System.Drawing.Size(222, 20);
             this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 25);
+            this.label1.Location = new System.Drawing.Point(33, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 16);
+            this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "COSA DESIDERI?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -74,18 +75,17 @@ namespace ProgettoBirra
             // textBoxEmail
             // 
             this.textBoxEmail.Enabled = false;
-            this.textBoxEmail.Location = new System.Drawing.Point(321, 147);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxEmail.Location = new System.Drawing.Point(239, 60);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(295, 22);
+            this.textBoxEmail.Size = new System.Drawing.Size(222, 20);
             this.textBoxEmail.TabIndex = 4;
             // 
             // buttonSalva
             // 
-            this.buttonSalva.Location = new System.Drawing.Point(428, 192);
-            this.buttonSalva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSalva.Location = new System.Drawing.Point(321, 156);
             this.buttonSalva.Name = "buttonSalva";
-            this.buttonSalva.Size = new System.Drawing.Size(187, 66);
+            this.buttonSalva.Size = new System.Drawing.Size(140, 54);
             this.buttonSalva.TabIndex = 5;
             this.buttonSalva.Text = "SALVA MODIFICHE";
             this.buttonSalva.UseVisualStyleBackColor = true;
@@ -93,10 +93,9 @@ namespace ProgettoBirra
             // 
             // buttonEliminaUtente
             // 
-            this.buttonEliminaUtente.Location = new System.Drawing.Point(161, 335);
-            this.buttonEliminaUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEliminaUtente.Location = new System.Drawing.Point(121, 272);
             this.buttonEliminaUtente.Name = "buttonEliminaUtente";
-            this.buttonEliminaUtente.Size = new System.Drawing.Size(301, 74);
+            this.buttonEliminaUtente.Size = new System.Drawing.Size(226, 60);
             this.buttonEliminaUtente.TabIndex = 6;
             this.buttonEliminaUtente.Text = "ELIMINA ACCOUNT";
             this.buttonEliminaUtente.UseVisualStyleBackColor = true;
@@ -105,10 +104,9 @@ namespace ProgettoBirra
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(161, 307);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Location = new System.Drawing.Point(121, 249);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(201, 20);
+            this.checkBox1.Size = new System.Drawing.Size(165, 17);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "CONFERMA ELIMINAZIONE";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -117,17 +115,18 @@ namespace ProgettoBirra
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 147);
+            this.label2.Location = new System.Drawing.Point(77, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Nome utente";
             // 
             // FormGestioneUtente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 450);
+            this.ClientSize = new System.Drawing.Size(518, 366);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonEliminaUtente);
@@ -136,7 +135,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.checkBoxPassword);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormGestioneUtente";
             this.Text = "MODIFICA ACCOUNT";
             this.Load += new System.EventHandler(this.formGestioneUt_Load);

@@ -141,12 +141,6 @@
     <Compile Include="FormModificaProd.Designer.cs">
       <DependentUpon>FormModificaProd.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormModificaRic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormModificaRic.Designer.cs">
-      <DependentUpon>FormModificaRic.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormRegistrazione.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,9 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormModificaProd.resx">
       <DependentUpon>FormModificaProd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormModificaRic.resx">
-      <DependentUpon>FormModificaRic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrazione.resx">
       <DependentUpon>FormRegistrazione.cs</DependentUpon>

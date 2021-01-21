@@ -41,10 +41,10 @@ namespace ProgettoBirra
             // 
             // buttonSalvaModifiche
             // 
-            this.buttonSalvaModifiche.Location = new System.Drawing.Point(83, 222);
-            this.buttonSalvaModifiche.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSalvaModifiche.Location = new System.Drawing.Point(62, 180);
+            this.buttonSalvaModifiche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSalvaModifiche.Name = "buttonSalvaModifiche";
-            this.buttonSalvaModifiche.Size = new System.Drawing.Size(221, 78);
+            this.buttonSalvaModifiche.Size = new System.Drawing.Size(166, 63);
             this.buttonSalvaModifiche.TabIndex = 0;
             this.buttonSalvaModifiche.Text = "SALVA MODIFICHE";
             this.buttonSalvaModifiche.UseVisualStyleBackColor = true;
@@ -52,36 +52,37 @@ namespace ProgettoBirra
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(252, 80);
-            this.textBoxNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxNome.Location = new System.Drawing.Point(189, 65);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(265, 22);
+            this.textBoxNome.Size = new System.Drawing.Size(200, 20);
             this.textBoxNome.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 80);
+            this.label1.Location = new System.Drawing.Point(64, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 16);
+            this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "NOME PRODOTTO:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 154);
+            this.label2.Location = new System.Drawing.Point(67, 125);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "QUANTITA\':";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(363, 222);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(272, 180);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 78);
+            this.button1.Size = new System.Drawing.Size(158, 63);
             this.button1.TabIndex = 5;
             this.button1.Text = "ELIMINA PRODOTTO";
             this.button1.UseVisualStyleBackColor = true;
@@ -89,31 +90,31 @@ namespace ProgettoBirra
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(252, 149);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Location = new System.Drawing.Point(189, 121);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(267, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 20);
             this.numericUpDown1.TabIndex = 6;
             // 
             // labelCapacitaAtt
             // 
             this.labelCapacitaAtt.AutoSize = true;
-            this.labelCapacitaAtt.Location = new System.Drawing.Point(525, 154);
+            this.labelCapacitaAtt.Location = new System.Drawing.Point(394, 125);
+            this.labelCapacitaAtt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCapacitaAtt.Name = "labelCapacitaAtt";
-            this.labelCapacitaAtt.Size = new System.Drawing.Size(24, 16);
+            this.labelCapacitaAtt.Size = new System.Drawing.Size(13, 13);
             this.labelCapacitaAtt.TabIndex = 7;
-            this.labelCapacitaAtt.Text = "Kg";
+            this.labelCapacitaAtt.Text = "g";
             // 
             // FormModificaProd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 374);
+            this.ClientSize = new System.Drawing.Size(499, 304);
             this.Controls.Add(this.labelCapacitaAtt);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
@@ -121,7 +122,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.buttonSalvaModifiche);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormModificaProd";
             this.Text = "MODIFICA PRODOTTO";
             this.Load += new System.EventHandler(this.FormModificaProd_Load);
