@@ -663,12 +663,12 @@ namespace ProgettoBirra
             }
         }
          
-        public void UpdateUtente(string email, string password)
+        public void UpdateUtente( string password)
         {
             //
             
             //query modifica Utente
-            string query = "UPDATE utenti SET email='" + email + "', password='" + password + "' WHERE email='" + Globals.emailGlobal + "' AND password='" + Globals.passwordGlobal + "'";
+            string query = "UPDATE utenti SET password='" + password + "' WHERE password='" + Globals.passwordGlobal + "'";
 
             //Open connection
             if (this.OpenConnection() == true)

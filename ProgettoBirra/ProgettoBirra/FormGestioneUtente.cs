@@ -56,29 +56,19 @@ namespace ProgettoBirra
 
         private void checkBoxEmail_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxEmail.Checked != true)
-            {
-                textBoxEmail.Enabled = false;
-            }
-            else
-            {
-                textBoxEmail.Enabled = true;
-            }
+           
         }
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
 
 
-            if (checkBoxEmail.Checked || checkBoxPassword.Checked)
+            if (checkBoxPassword.Checked)
             {
-                database.UpdateUtente(textBoxEmail.Text, textBoxPassword.Text);
-                MessageBox.Show("Utente/Password aggiornato");
+                database.UpdateUtente(textBoxPassword.Text);
+                MessageBox.Show("Password aggiornato");
             }
-            else
-            {
-                MessageBox.Show("Selezionare almeno una modifica");
-            }
+           
         }
 
         private void buttonEliminaUtente_Click(object sender, EventArgs e)
