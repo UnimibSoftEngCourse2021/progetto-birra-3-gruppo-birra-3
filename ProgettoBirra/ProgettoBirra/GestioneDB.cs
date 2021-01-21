@@ -17,6 +17,7 @@ namespace ProgettoBirra
         public static List<ProdottoMapper> listaProdotti = new List<ProdottoMapper>();
         public static List<AttrezzoMapper> listaAttrezzi = new List<AttrezzoMapper>();
         public static List<RicettaMapper> listaRicette = new List<RicettaMapper>();
+        public static List<ListaSpesaMapper> listaSpesa = new List<ListaSpesaMapper>();
     }
     class GestioneDB
     {
@@ -887,7 +888,19 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+        // Elimina la lista della spesa di un utente
+        public void DeleteSpesa()
+        {
 
+            string query = "DELETE FROM listadellaspesa WHERE proprietario='" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQueryAsync();
+                this.CloseConnection();
+            }
+        }
         //Elimina Ricetta
         public void DeleteRic(string nomeRic)
         {
@@ -998,6 +1011,40 @@ namespace ProgettoBirra
            
         }
 
+        //metodo per recuperare la lista della spesa di un determinato utente
+        public void recuperoListaSpesa()
+        {
+            string query = "SELECT * FROM listadellaspesa WHERE proprietario = '" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeProd = "";
+                string quantita = "";
+                
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeProd = $"{reader.GetString("Prodotto")}";
+                    quantita = $"{reader.GetString("Quantita")}";
+                    Globals.listaSpesa.Add(new ListaSpesaMapper(nomeProd,quantita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+
+        }
         //recupero delle attrezzature di un determinato utente
         public void recuperoAttr()
         {

@@ -99,6 +99,12 @@
     <Compile Include="FormGestioneUtente.Designer.cs">
       <DependentUpon>FormGestioneUtente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaSpesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaSpesa.Designer.cs">
+      <DependentUpon>FormListaSpesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,7 @@
     </Compile>
     <Compile Include="GestioneDB.cs" />
     <Compile Include="ListaProdotti.cs" />
+    <Compile Include="ListaSpesaMapper.cs" />
     <Compile Include="ProdottoMapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestioneUtente.resx">
       <DependentUpon>FormGestioneUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaSpesa.resx">
+      <DependentUpon>FormListaSpesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

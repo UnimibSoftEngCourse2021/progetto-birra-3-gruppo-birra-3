@@ -46,7 +46,8 @@ namespace ProgettoBirra
 
         private void buttonListaDellaSpesa(object sender, EventArgs e)
         {
-
+            FormListaSpesa newform = new FormListaSpesa();
+            newform.ShowDialog();
         }
 
         private void buttonCheBirraFaccio(object sender, EventArgs e)
