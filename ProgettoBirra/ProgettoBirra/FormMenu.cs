@@ -41,7 +41,7 @@ namespace ProgettoBirra
 
         private void buttonPreparaBirra(object sender, EventArgs e)
         {
-            //ciao
+
         }
 
         private void buttonListaDellaSpesa(object sender, EventArgs e)

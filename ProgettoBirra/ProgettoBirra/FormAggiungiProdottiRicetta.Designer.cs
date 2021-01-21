@@ -41,7 +41,7 @@ namespace ProgettoBirra
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(172, 47);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(161, 20);
             this.textBox1.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace ProgettoBirra
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(172, 104);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(161, 20);
             this.textBox2.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace ProgettoBirra
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 47);
+            this.label1.Location = new System.Drawing.Point(18, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
@@ -67,7 +67,7 @@ namespace ProgettoBirra
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 104);
+            this.label2.Location = new System.Drawing.Point(18, 107);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 13);
@@ -77,7 +77,7 @@ namespace ProgettoBirra
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(56, 164);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 49);
             this.button1.TabIndex = 4;
@@ -88,7 +88,7 @@ namespace ProgettoBirra
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(270, 164);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 49);
             this.button2.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAggiungiProdottiRicetta";
             this.Text = "PRODOTTI DELLA RICETTA";
             this.ResumeLayout(false);

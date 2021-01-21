@@ -66,7 +66,7 @@ namespace ProgettoBirra
             if (checkBoxPassword.Checked)
             {
                 database.UpdateUtente(textBoxPassword.Text);
-                MessageBox.Show("Password aggiornato");
+                MessageBox.Show("Password aggiornata");
             }
            
         }

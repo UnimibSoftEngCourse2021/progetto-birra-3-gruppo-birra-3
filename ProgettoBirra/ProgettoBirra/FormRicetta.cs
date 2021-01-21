@@ -128,12 +128,6 @@ namespace ProgettoBirra
                         database.InsertListaSpesa(Globals.listaProdotti[j].getNome(), quantitaDaTogliere);
                     }
                          
-
-            
-
-
-
-
                     if (quantitaVecchia - quantitaDaTogliere == 0)
                     {
                         database.DeleteProd(Globals.listaProdotti[j].getNome());
