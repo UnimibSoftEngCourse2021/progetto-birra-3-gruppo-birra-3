@@ -18,6 +18,9 @@ namespace ProgettoBirra
         public static List<AttrezzoMapper> listaAttrezzi = new List<AttrezzoMapper>();
         public static List<RicettaMapper> listaRicette = new List<RicettaMapper>();
         public static List<ListaSpesaMapper> listaSpesa = new List<ListaSpesaMapper>();
+        public static List<ProdottoMapper> listaProdottiUtente = new List<ProdottoMapper>();
+        public static List<ProdottoMapper> listaProdottiRicettaUtente = new List<ProdottoMapper>();
+        public static int n = 999;
     }
     class GestioneDB
     {
@@ -76,6 +79,8 @@ namespace ProgettoBirra
                 return false;
             }
         }
+
+
 
         //Close connection
         private bool CloseConnection()
@@ -1145,6 +1150,7 @@ namespace ProgettoBirra
 
             }
 
+            
 
         }
 
@@ -1181,9 +1187,6 @@ namespace ProgettoBirra
             return (Convert.ToInt32(quantita));
 
         }
-
-
-
 
         //recupera id ricetta
         public int recuperoIdRic(string nomeric)
@@ -1266,6 +1269,112 @@ namespace ProgettoBirra
             return false;
         }
 
+        //massimizza birra
+        public void cheBirraFaccioOggi(int idRic) {
+            string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                string nomeProdotto = "";
+                string quantita = "";
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeProdotto = $"{reader.GetString("nomeProd")}";
+                    quantita = $"{reader.GetString("quantita")}";
+                    Globals.listaProdottiUtente.Add(new ProdottoMapper(nomeProdotto, quantita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+
+            string query2 = "SELECT * FROM prodricetta WHERE idRicetta= '" + Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd2 = new MySqlCommand(query2, connection);
+                string nomeProd = "";
+                string quantita = "";
+
+
+
+
+                MySqlDataReader reader2 = cmd2.ExecuteReader();
+
+                while (reader2.Read())
+                {
+                    nomeProd = $"{reader2.GetString("nomeProd")}";
+                    quantita = $"{reader2.GetString("quantita")}";
+                    Globals.listaProdottiRicettaUtente.Add(new ProdottoMapper(nomeProd, quantita));
+                }
+
+
+
+                //close Connection
+                this.CloseConnection();
+
+
+            }
+            MessageBox.Show(" " + idRic);
+
+            //List<int> listaVolteProd = new List<int>();
+
+            //int n = 999;
+
+            bool blocco1 = true;
+
+            
+            for (int i = 0; i < Globals.listaProdottiRicettaUtente.Count(); i++){
+                if (blocco1)
+                {
+
+                    for (int j = 0; j < Globals.listaProdottiUtente.Count(); j++)
+                    {
+
+                        if (Globals.listaProdottiRicettaUtente[i].getNome().Equals(Globals.listaProdottiUtente[j].getNome()))
+                        {
+                           
+                            int quantitaRicetta = Convert.ToInt32(Globals.listaProdottiRicettaUtente[i].getQuantita());
+                            int quantitaProdotto = Convert.ToInt32(Globals.listaProdottiUtente[j].getQuantita());
+
+                            float numVolteProd = quantitaProdotto / quantitaRicetta;
+                            if (numVolteProd >= 1)
+                            {
+                                if (Convert.ToInt32(numVolteProd) < Globals.n) {
+
+                                    Globals.n = Convert.ToInt32(numVolteProd);
+                                    MessageBox.Show("" + Globals.n);
+                                }
+                                
+                            }
+                            else {
+                                blocco1 = false;
+                                break;
+                            }
+                        }
+
+                    }
+
+                }
+                
+            }
+ 
+            /*if (n != 999) { 
+                
+            }*/
+        }
         //Count statement
         public int Count()
         {

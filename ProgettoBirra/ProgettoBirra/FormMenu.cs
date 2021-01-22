@@ -16,7 +16,10 @@ namespace ProgettoBirra
             database = new GestioneDB();
             InitializeComponent();
             
+
+
         }
+
 
         private void buttonGestioneProdotti(object sender, EventArgs e)
         {
@@ -53,6 +56,21 @@ namespace ProgettoBirra
         private void buttonCheBirraFaccio(object sender, EventArgs e)
         {
 
+            Globals.listaRicette.Clear();
+
+            database.recuperoRic();
+
+
+            for (int i = 0; i < Globals.listaRicette.Count; i++)
+            {
+
+                //database.recuperoIdRic(Globals.listaRicette[i].getNome());
+                Globals.listaProdottiRicettaUtente.Clear();
+                Globals.listaProdottiUtente.Clear();
+                Globals.n = 999;
+                database.cheBirraFaccioOggi(database.recuperoIdRic(Globals.listaRicette[i].getNome()));
+
+            }
         }
 
         private void buttonGestioneRicette(object sender, EventArgs e)
