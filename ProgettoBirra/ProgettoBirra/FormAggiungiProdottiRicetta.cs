@@ -34,10 +34,17 @@ namespace ProgettoBirra
         private void buttonFine_Click(object sender, EventArgs e)
         {
             MessageBox.Show("La ricetta è stata salvata nel ricettario");
-            /*FormMenu newform = new FormMenu();
-            this.Hide();
-            this.Close();
-            newform.ShowDialog();*/
+            if (database.verificaRic(nomeRic) == false)
+            {
+                database.InsertRic(nomeRic, attRic, prepRic, noteRic);
+            }
+            int idRicetta = database.recuperoIdRic(nomeRic);
+
+            if (!textBox1.Text.Equals("") || !textBox2.Text.Equals(""))
+            {
+                database.InsertProdRic(idRicetta, textBox1.Text, Int32.Parse(textBox2.Text));
+            }
+            
             this.Close();
             this.Dispose();
 
@@ -46,9 +53,6 @@ namespace ProgettoBirra
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            //prima giustamente salvava tante ricette diverse per ogni prodotto aggiunto
-            //ho creato un verificaRic (copia incolla di verificaProd)
-            //così se la ricetta non esiste la crea, altrimenti non fa nulla nell'if
             if (database.verificaRic(nomeRic) == false){
                 database.InsertRic(nomeRic, attRic, prepRic, noteRic);
             }

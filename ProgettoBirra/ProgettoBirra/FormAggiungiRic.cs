@@ -21,8 +21,6 @@ namespace ProgettoBirra
 
         private void buttonAggiungiBirra_Click(object sender, EventArgs e)
         {
-            database.InsertRic(textBoxNome.Text, textBoxAttrezzi.Text, textBoxPreparazione.Text, textBoxNote.Text);
-            
             string nome = textBoxNome.Text;
             string attrezzi = textBoxAttrezzi.Text;
             string preparazione = textBoxPreparazione.Text;
