@@ -20,6 +20,7 @@ namespace ProgettoBirra
         public static List<ListaSpesaMapper> listaSpesa = new List<ListaSpesaMapper>();
         public static List<ProdottoMapper> listaProdottiUtente = new List<ProdottoMapper>();
         public static List<ProdottoMapper> listaProdottiRicettaUtente = new List<ProdottoMapper>();
+        public static List<cheBirraFaccio> listaDisponibilitaBirra = new List<cheBirraFaccio>();
         public static int n = 999;
     }
     class GestioneDB
@@ -1188,6 +1189,38 @@ namespace ProgettoBirra
 
         }
 
+        //metodo per recuperare il nome di una ricetta, dato il suo ID
+        public string recuperoNomeRic(int id)
+        {
+            string nomeRic="";
+            string query = "SELECT nomeRic FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "' AND idRicetta='" + id + "'";
+
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+
+
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    nomeRic = $"{reader.GetString("nomeRic")}";
+
+                }
+
+                //close Connection
+                this.CloseConnection();
+
+            }
+            //Convert.ToInt32(idric);
+            
+            return nomeRic;
+
+
+        }
         //recupera id ricetta
         public int recuperoIdRic(string nomeric)
         {
@@ -1327,11 +1360,13 @@ namespace ProgettoBirra
 
 
             }
-            MessageBox.Show(" " + idRic);
+           // MessageBox.Show(" " + idRic);
 
             //List<int> listaVolteProd = new List<int>();
 
             //int n = 999;
+
+            int min = 9999;
 
             bool blocco1 = true;
 
@@ -1355,7 +1390,11 @@ namespace ProgettoBirra
                                 if (Convert.ToInt32(numVolteProd) < Globals.n) {
 
                                     Globals.n = Convert.ToInt32(numVolteProd);
-                                    MessageBox.Show("" + Globals.n);
+                                    //MessageBox.Show("" + Globals.n);
+                                    if (Globals.n < min)
+                                    {
+                                        min = Globals.n;
+                                    }
                                 }
                                 
                             }
@@ -1371,9 +1410,9 @@ namespace ProgettoBirra
                 
             }
  
-            /*if (n != 999) { 
-                
-            }*/
+            if (min != 9999) {
+                Globals.listaDisponibilitaBirra.Add(new cheBirraFaccio(idRic, min));
+            }
         }
         //Count statement
         public int Count()

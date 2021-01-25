@@ -57,6 +57,8 @@ namespace ProgettoBirra
         {
 
             Globals.listaRicette.Clear();
+            Globals.listaDisponibilitaBirra.Clear();
+
 
             database.recuperoRic();
 
@@ -70,6 +72,28 @@ namespace ProgettoBirra
                 Globals.n = 999;
                 database.cheBirraFaccioOggi(database.recuperoIdRic(Globals.listaRicette[i].getNome()));
 
+            }
+
+            int idRicettamin=0;
+            int quantitaricettamin=0;
+
+            for (int j = 0; j < Globals.listaDisponibilitaBirra.Count; j++)
+            {
+                if (Globals.listaDisponibilitaBirra[j].getquantitaMin() > quantitaricettamin)
+                {
+                    idRicettamin = Globals.listaDisponibilitaBirra[j].getidRicetta();
+                    quantitaricettamin= Globals.listaDisponibilitaBirra[j].getquantitaMin();
+                }
+
+            }
+
+            if (quantitaricettamin != 0)
+            {
+                
+                MessageBox.Show("Puoi fare la ricetta  " + database.recuperoNomeRic(idRicettamin) + " fino a " + quantitaricettamin + "  volte, per massimizzare l'uso dei tuoi prodotti");
+            }
+            else {
+                MessageBox.Show("Non puoi fare nessuna ricetta");
             }
         }
 
