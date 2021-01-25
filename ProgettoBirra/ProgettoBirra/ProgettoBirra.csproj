@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE88753A-00C0-44A8-859B-806E6C5AA318}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProgettoBirra</RootNamespace>
+    <AssemblyName>ProgettoBirra</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <GenerateResourceMSBuildArchitecture>CurrentArchitecture</GenerateResourceMSBuildArchitecture>
+    <GenerateResourceMSBuildRuntime>CurrentRuntime</GenerateResourceMSBuildRuntime>
+    <DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
+    <CodeAnalysisRuleSet>..\.sonarlint\provapbcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\.sonarlint\provapbcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\.sonarlint\provapbcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet.Async, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Renci.SshNet.Async.1.4.0\lib\net40\Renci.SshNet.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttrezzoMapper.cs" />
+    <Compile Include="cheBirraFaccio.cs" />
+    <Compile Include="FormAggiungiProdottiRicetta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAggiungiProdottiRicetta.Designer.cs">
+      <DependentUpon>FormAggiungiProdottiRicetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAggiungiRic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAggiungiRic.Designer.cs">
+      <DependentUpon>FormAggiungiRic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAggiuntaAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAggiuntaAtt.Designer.cs">
+      <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestioneRicette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestioneRicette.Designer.cs">
+      <DependentUpon>FormGestioneRicette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestioneAttrezzatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestioneAttrezzatura.Designer.cs">
+      <DependentUpon>FormGestioneAttrezzatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestioneUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestioneUtente.Designer.cs">
+      <DependentUpon>FormGestioneUtente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaSpesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaSpesa.Designer.cs">
+      <DependentUpon>FormListaSpesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestioneProdotti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestioneProdotti.Designer.cs">
+      <DependentUpon>FormGestioneProdotti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAggiuntaProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAggiuntaProd.Designer.cs">
+      <DependentUpon>FormAggiuntaProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificaAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificaAtt.Designer.cs">
+      <DependentUpon>FormModificaAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificaProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificaProd.Designer.cs">
+      <DependentUpon>FormModificaProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrazione.Designer.cs">
+      <DependentUpon>FormRegistrazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRicetta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRicetta.Designer.cs">
+      <DependentUpon>FormRicetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneDB.cs" />
+    <Compile Include="ListaProdotti.cs" />
+    <Compile Include="ListaSpesaMapper.cs" />
+    <Compile Include="ProdottoMapper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RicettaMapper.cs" />
+    <Compile Include="UtenteMapper.cs" />
+    <EmbeddedResource Include="FormAggiungiProdottiRicetta.resx">
+      <DependentUpon>FormAggiungiProdottiRicetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAggiungiRic.resx">
+      <DependentUpon>FormAggiungiRic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAggiuntaAtt.resx">
+      <DependentUpon>FormAggiuntaAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestioneRicette.resx">
+      <DependentUpon>FormGestioneRicette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestioneAttrezzatura.resx">
+      <DependentUpon>FormGestioneAttrezzatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestioneUtente.resx">
+      <DependentUpon>FormGestioneUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaSpesa.resx">
+      <DependentUpon>FormListaSpesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestioneProdotti.resx">
+      <DependentUpon>FormGestioneProdotti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAggiuntaProd.resx">
+      <DependentUpon>FormAggiuntaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificaAtt.resx">
+      <DependentUpon>FormModificaAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificaProd.resx">
+      <DependentUpon>FormModificaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrazione.resx">
+      <DependentUpon>FormRegistrazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRicetta.resx">
+      <DependentUpon>FormRicetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\.sonarlint\provapbcsharp.ruleset">
+      <Link>provapbcsharp.ruleset</Link>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\provapb\CSharp\SonarLint.xml">
+      <Link>SonarLint.xml</Link>
+    </AdditionalFiles>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
