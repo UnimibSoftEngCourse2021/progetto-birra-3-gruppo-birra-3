@@ -20,7 +20,7 @@ namespace ProgettoBirra
         public static List<ListaSpesaMapper> listaSpesa = new List<ListaSpesaMapper>();
         public static List<ProdottoMapper> listaProdottiUtente = new List<ProdottoMapper>();
         public static List<ProdottoMapper> listaProdottiRicettaUtente = new List<ProdottoMapper>();
-        public static List<cheBirraFaccio> listaDisponibilitaBirra = new List<cheBirraFaccio>();
+        public static List<CheBirraFaccio> listaDisponibilitaBirra = new List<CheBirraFaccio>();
         public static int n = 999;
     }
     class GestioneDB
@@ -1384,12 +1384,12 @@ namespace ProgettoBirra
                             int quantitaRicetta = Convert.ToInt32(Globals.listaProdottiRicettaUtente[i].getQuantita());
                             int quantitaProdotto = Convert.ToInt32(Globals.listaProdottiUtente[j].getQuantita());
 
-                            float numVolteProd = quantitaProdotto / quantitaRicetta;
+                            int numVolteProd = quantitaProdotto / quantitaRicetta;
                             if (numVolteProd >= 1)
                             {
-                                if (Convert.ToInt32(numVolteProd) < Globals.n) {
+                                if (numVolteProd < Globals.n) {
 
-                                    Globals.n = Convert.ToInt32(numVolteProd);
+                                    Globals.n = numVolteProd;
                                     //MessageBox.Show("" + Globals.n);
                                     if (Globals.n < min)
                                     {
@@ -1411,7 +1411,7 @@ namespace ProgettoBirra
             }
  
             if (min != 9999) {
-                Globals.listaDisponibilitaBirra.Add(new cheBirraFaccio(idRic, min));
+                Globals.listaDisponibilitaBirra.Add(new CheBirraFaccio(idRic, min));
             }
         }
         //Count statement
