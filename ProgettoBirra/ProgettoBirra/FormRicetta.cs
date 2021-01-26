@@ -48,11 +48,7 @@ namespace ProgettoBirra
             this.Close();
         }
 
-        private void textBoxProdotti_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void buttonModificaRic_Click(object sender, EventArgs e)
         {
             database.UpdateRic(textBoxNome.Text, textBoxNote.Text);

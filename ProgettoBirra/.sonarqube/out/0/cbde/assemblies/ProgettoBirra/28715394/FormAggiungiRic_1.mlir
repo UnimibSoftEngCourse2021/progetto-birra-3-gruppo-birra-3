@@ -34,15 +34,3 @@ br ^1
 return
 
 }
-func @_ProgettoBirra.FormAggiungiRic.label6_Click$object.System.EventArgs$(none, none) -> () loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormAggiungiRic.cs" :27 :8) {
-^entry (%_sender : none, %_e : none):
-%0 = cbde.alloca none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormAggiungiRic.cs" :27 :34)
-cbde.store %_sender, %0 : memref<none> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormAggiungiRic.cs" :27 :34)
-%1 = cbde.alloca none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormAggiungiRic.cs" :27 :49)
-cbde.store %_e, %1 : memref<none> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormAggiungiRic.cs" :27 :49)
-br ^0
-
-^0: // ExitBlock
-return
-
-}

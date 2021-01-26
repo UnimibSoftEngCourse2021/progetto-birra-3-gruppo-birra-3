@@ -5,10 +5,10 @@ namespace ProgettoBirra
 {
     public partial class FormAggiungiRic : Form
     {
-        GestioneDB database;
+        
         public FormAggiungiRic()
         {
-            database = new GestioneDB();
+            
             InitializeComponent();
         }
 
@@ -25,9 +25,6 @@ namespace ProgettoBirra
             this.Show();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

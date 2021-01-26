@@ -4,40 +4,40 @@
 ^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.cs 8r
  !"#$‚!¿
 kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.cs 8r/	
- !"$%&')*-/01234689;>?x‚ "$&)*124689•
-_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs 8r	
- !‚
-‡
+ !"$%&')*-/01234689;>?x‚ "$&)*124689
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs
+ 8r	
+‚	‡
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs 8r	
-‚¬
-cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs 8r+	
- "$%')*,./234789:<=>x‚ 2489´
-hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs 8r.	
- !#%&(*+-/0234678:<=>x‚2468º
-bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs 8r4	 !"&'*+,-.0235689:;<=>@ABCDFIJx‚ *,-589:;<=>C—
+‚¦
+cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs 8r%	
+ "&'*+,/012456x‚ *,01«
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs 8r%	
+!"$%&()*,./0x‚$&(*¼
+bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs 8r5	 !"&'*+,-./134679:;<=>?ABCDEGJKx‚ *,-.69:;<=>?D—
 ^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs 8r 	 !"#$%&x‚"#
-YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs 8jr$ !"#$%&)./0123478x‚!"#&123È
-XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs 8rG	
- !"#$'()*+-.01478:;<=?ABDEFGHIJLNOQRSTUVXYZ[^abx‚#*0147:;<=DFHINQT[©
+YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs 8jr$ !"#$&'(*/012478x‚ !"#$(2Æ
+XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs 8rF	
+ !"#$'()*+-.01478:;<=?ABDEFGHIJLNOQRSTUVXYZ[^abx‚#*0147:;<=DFHINQT[©
 dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.cs 8r&	
-!&'()*,-./1234x‚(*,-/’
-`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs 8r	!%&()*‚!%&¢
+!&'()*,-./1234x‚(*,-/ˆ
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs 8r	
+!"‚¢
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs 8r$	
  "#$%'(),-x‚$%'(£
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.cs 8r$	
- !#$&()*+-.023x‚ !#$*+-.‘
-aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs 8r	
- !‚ú
-[Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs/ 8rc	
-!#'()+,-0134689:;>?ABCDEFIJKLMNOPRSUVWXYZ\^_abcdhijklmnoqrstuvwxz|}†‡ˆx‚+)+,-0:;>IKMNORSUWXY^acdhjnqsw|í
-ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs´ 48Œjñ#)7Raegjmnrw{}€‡Œ’•œ¡¥§ª°µ¹»¾ÅÊÎĞÓÙåè÷†Œ²µÄØÛêş¨«ºÉÑÔ×Úèëîñü†‰Œ›¢¥¨«´»¾ÁÄÊÑÔ×Úåèëîôùüş€ƒ†’•—™œŸ¤©¬®°³¶½ÂÅÇÉÌÏÔÙÜŞàãæğóõ÷úıƒª·ÅÓàìù‡•š £¥¨°³¶¿ÆŞçî‰¢«²ÄÍÔçñù‰	“	›	©	³	»	É	Õ	Ş	á	ğ	ş	„
+ !#$&()*+-.023x‚ !#$*+-.‰
+aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs 8r	
+‚÷
+[Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs/ 8r`	
+!#'()+,-014567:;=>?@ABEFGHIJKLNOQRSTUVXZ[]^_`defghijkmnopqrstvxy‚ƒ„x‚+)+,-067:EGIJKNOQSTUZ]_`dfjmosxë
+ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs´ 48Œjï#)7Raegjmnrw{}€‡Œ’•œ¡¥§ª°µ¹»¾ÅÊÎĞÓÙåè÷†Œ²µÄØÛêş¨«ºÉÑÔ×Úèëîñü†‰Œ›¢¥¨«´»¾ÁÄÊÑÔ×Úåèëîôùüş€ƒ†’•—™œŸ¤©¬®°³¶½ÂÅÇÉÌÏÔÙÜŞàãæğóõ÷úıƒª·ÅÓàìù‡•š £¥¨°³¶¿ÆŞçî‰¢«²ÄÍÔçñù‰	“	›	©	³	»	É	Õ	Ş	á	ğ	ş	„
 –
  
 ³
 ¸
 º
 ¼
-Ö
 î
 ô
 ÷
@@ -150,9 +150,7 @@ rø	 $%&'*+,-./0124589:;<=>?@BCDEFHIJKLMNSTUVWXYZ[\]
 õ
 û
 ş
-€„{
-]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs 8r	
-‚’
+€„’
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs 8r
  !"#$%‚"’
 ^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.cs 8r

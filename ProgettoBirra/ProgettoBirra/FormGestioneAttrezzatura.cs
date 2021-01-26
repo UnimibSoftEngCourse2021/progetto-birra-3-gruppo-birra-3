@@ -29,20 +29,6 @@ namespace ProgettoBirra
             newform.ShowDialog();
         }
 
-        private void buttonModificaAtt_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonEliminaAtt_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {

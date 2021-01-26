@@ -497,7 +497,7 @@ MessageBox 
 ;99 
 };; 	
 }>> 
-}?? ∆
+}?? ¥
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs
 	namespace 	
 ProgettoBirra
@@ -510,26 +510,14 @@ _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 FormAggiungiRic (
 :) *
 Form+ /
-{ 
-
-GestioneDB 
-database 
-; 
+{ 
 public		 
 FormAggiungiRic		 
 (		 
 )		  
 {
 
- 	
-database 
-= 
-new 
-
-GestioneDB %
-(% &
-)& '
-;' (
+ 	
 InitializeComponent 
 (  
 )  !
@@ -614,21 +602,9 @@ ShowDialog 
 ( 
 ) 
 ; 
-} 	
-private 
-void 
-label6_Click !
-(! "
-object" (
-sender) /
-,/ 0
-	EventArgs1 :
-e; <
-)< =
-{ 	
-} 	
-}   
-}!! ∆
+} 	
+} 
+} ∆
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs
 	namespace 	
 ProgettoBirra
@@ -711,7 +687,7 @@ GestioneDB %
 ; 
 } 	
 } 
-} ˇ
+} º
 cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs
 	namespace 	
 ProgettoBirra
@@ -840,87 +816,63 @@ ShowDialog   
 )    
 ;    !
 }"" 	
-private$$ 
-void$$ 
-buttonElimina_Click$$ (
-($$( )
-object$$) /
-sender$$0 6
-,$$6 7
-	EventArgs$$8 A
-e$$B C
-)$$C D
-{%% 	
-}'' 	
-private)) 
-void))  
-buttonModifica_Click)) )
-())) *
-object))* 0
-sender))1 7
-,))7 8
-	EventArgs))9 B
-e))C D
-)))D E
-{** 	
-},, 	
-private.. 
-void.. )
-listBox1_SelectedIndexChanged.. 2
-(..2 3
-object..3 9
-sender..: @
-,..@ A
-	EventArgs..B K
-e..L M
-)..M N
-{// 	
-if22 
-(22 
-listBox122 
-.22 
-SelectedItem22 %
-!=22& (
-null22) -
-)22- .
-{33 
-string44 
-selezionato44 "
-=44# $
-listBox144% -
-.44- .
-SelectedItem44. :
-.44: ;
-ToString44; C
-(44C D
-)44D E
-;44E F
-FormRicetta77 
-newform77 #
-=77$ %
-new77& )
-FormRicetta77* 5
-(775 6
-selezionato776 A
-)77A B
-;77B C
-newform88 
-.88 
+private&& 
+void&& )
+listBox1_SelectedIndexChanged&& 2
+(&&2 3
+object&&3 9
+sender&&: @
+,&&@ A
+	EventArgs&&B K
+e&&L M
+)&&M N
+{'' 	
+if** 
+(** 
+listBox1** 
+.** 
+SelectedItem** %
+!=**& (
+null**) -
+)**- .
+{++ 
+string,, 
+selezionato,, "
+=,,# $
+listBox1,,% -
+.,,- .
+SelectedItem,,. :
+.,,: ;
+ToString,,; C
+(,,C D
+),,D E
+;,,E F
+FormRicetta// 
+newform// #
+=//$ %
+new//& )
+FormRicetta//* 5
+(//5 6
+selezionato//6 A
+)//A B
+;//B C
+newform00 
+.00 
 
-ShowDialog88 
-(88 
-)88  
-;88  !
-this99 
-.99 
-Close99 
-(99 
-)99 
-;99 
-}:: 
-}<< 	
-}== 
-}>> ê
+ShowDialog00 
+(00 
+)00  
+;00  !
+this11 
+.11 
+Close11 
+(11 
+)11 
+;11 
+}22 
+}44 	
+}55 
+}66 ‹
 hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs
 	namespace 	
 ProgettoBirra
@@ -1049,99 +1001,63 @@ ShowDialog 
 )  
 ;  !
 } 	
-private   
-void   #
-buttonModificaAtt_Click   ,
-(  , -
-object  - 3
-sender  4 :
-,  : ;
-	EventArgs  < E
-e  F G
-)  G H
-{!! 	
-}## 	
-private%% 
-void%% "
-buttonEliminaAtt_Click%% +
-(%%+ ,
-object%%, 2
-sender%%3 9
-,%%9 :
-	EventArgs%%; D
-e%%E F
-)%%F G
-{&& 	
-}(( 	
-private** 
-void** )
-listBox1_SelectedIndexChanged** 2
-(**2 3
-object**3 9
-sender**: @
-,**@ A
-	EventArgs**B K
-e**L M
-)**M N
-{++ 	
-}-- 	
-private// 
-void// +
-listBox1_SelectedIndexChanged_1// 4
-(//4 5
-object//5 ;
-sender//< B
-,//B C
-	EventArgs//D M
-e//N O
-)//O P
-{00 	
-if22 
-(22 
-listBox122 
-.22 
-SelectedItem22 %
-!=22& (
-null22) -
-)22- .
-{33 
-string44 
-selezionato44 "
-=44# $
-listBox144% -
-.44- .
-SelectedItem44. :
-.44: ;
-ToString44; C
-(44C D
-)44D E
-;44E F
-this66 
-.66 
-Close66 
-(66 
-)66 
-;66 
-FormModificaAtt77 
-newform77  '
-=77( )
-new77* -
-FormModificaAtt77. =
-(77= >
-selezionato77> I
-)77I J
-;77J K
-newform88 
-.88 
+private!! 
+void!! +
+listBox1_SelectedIndexChanged_1!! 4
+(!!4 5
+object!!5 ;
+sender!!< B
+,!!B C
+	EventArgs!!D M
+e!!N O
+)!!O P
+{"" 	
+if$$ 
+($$ 
+listBox1$$ 
+.$$ 
+SelectedItem$$ %
+!=$$& (
+null$$) -
+)$$- .
+{%% 
+string&& 
+selezionato&& "
+=&&# $
+listBox1&&% -
+.&&- .
+SelectedItem&&. :
+.&&: ;
+ToString&&; C
+(&&C D
+)&&D E
+;&&E F
+this(( 
+.(( 
+Close(( 
+((( 
+)(( 
+;(( 
+FormModificaAtt)) 
+newform))  '
+=))( )
+new))* -
+FormModificaAtt)). =
+())= >
+selezionato))> I
+)))I J
+;))J K
+newform** 
+.** 
 
-ShowDialog88 "
-(88" #
-)88# $
-;88$ %
-}:: 
-}<< 	
-}== 
-}>> Ÿ
+ShowDialog** "
+(**" #
+)**# $
+;**$ %
+},, 
+}.. 	
+}// 
+}00 ß
 bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs
 	namespace 	
 ProgettoBirra
@@ -1205,13 +1121,12 @@ GestioneDB %
 )O P
 { 	
 if 
-( 
-checkBoxPassword  
-.  !
-Checked! (
-!=) +
-true, 0
-)0 1
+( 
+! 
+checkBoxPassword !
+.! "
+Checked" )
+)) *
 { 
 textBoxPassword 
 .  
@@ -1264,86 +1179,92 @@ MessageBox-- 
 (--  
 $str--  5
 )--5 6
-;--6 7
-}.. 
-}00 	
-private22 
-void22 %
-buttonEliminaUtente_Click22 .
-(22. /
-object22/ 5
-sender226 <
-,22< =
-	EventArgs22> G
-e22H I
-)22I J
-{33 	
-if55 
-(55 
-	checkBox155 
-.55 
-Checked55 !
-)55! "
-{66 
-database88 
-.88 #
-DeleteProdRicettaUtente88 0
-(880 1
-)881 2
-;882 3
+;--6 7
+this.. 
+... 
+Close.. 
+(.. 
+).. 
+;.. 
+}// 
+}11 	
+private33 
+void33 %
+buttonEliminaUtente_Click33 .
+(33. /
+object33/ 5
+sender336 <
+,33< =
+	EventArgs33> G
+e33H I
+)33I J
+{44 	
+if66 
+(66 
+	checkBox166 
+.66 
+Checked66 !
+)66! "
+{77 
 database99 
-.99 
-DeleteRicetteUtente99 ,
-(99, -
-)99- .
-;99. /
+.99 #
+DeleteProdRicettaUtente99 0
+(990 1
+)991 2
+;992 3
 database:: 
-.::  
-DeleteAttrezziUtente:: -
-(::- .
-)::. /
-;::/ 0
+.:: 
+DeleteRicetteUtente:: ,
+(::, -
+)::- .
+;::. /
 database;; 
-.;; 
-DeleteProdUtente;; )
-(;;) *
-);;* +
-;;;+ ,
+.;;  
+DeleteAttrezziUtente;; -
+(;;- .
+);;. /
+;;;/ 0
 database<< 
-.<< 
-DeleteUtente<< %
-(<<% &
-)<<& '
-;<<' (
+.<< 
+DeleteProdUtente<< )
+(<<) *
+)<<* +
+;<<+ ,
+database== 
+.== 
+DeleteUtente== %
+(==% &
+)==& '
+;==' (
 
-MessageBox== 
-.== 
-Show== 
-(==  
-$str==  2
-)==2 3
-;==3 4
-this>> 
-.>> 
-Close>> 
-(>> 
-)>> 
-;>> 
-}@@ 
-elseAA 
-{BB 
+MessageBox>> 
+.>> 
+Show>> 
+(>>  
+$str>>  2
+)>>2 3
+;>>3 4
+this?? 
+.?? 
+Close?? 
+(?? 
+)?? 
+;?? 
+}AA 
+elseBB 
+{CC 
 
-MessageBoxCC 
-.CC 
-ShowCC 
-(CC  
-$strCC  >
-)CC> ?
-;CC? @
-}DD 
-}FF 	
-}II 
-}JJ —
+MessageBoxDD 
+.DD 
+ShowDD 
+(DD  
+$strDD  >
+)DD> ?
+;DD? @
+}EE 
+}GG 	
+}JJ 
+}KK —
 ^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs
 	namespace 	
 ProgettoBirra
@@ -1480,7 +1401,7 @@ listaSpesal v
 ;## 
 }$$ 	
 }%% 
-}&& ∏
+}&& ∆
 YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs
 	namespace 	
 ProgettoBirra
@@ -1560,85 +1481,85 @@ GestioneDB #
 true 
 ) 
 { 
-FormMenu   
-newform    
-=  ! "
-new  # &
-FormMenu  ' /
-(  / 0
-)  0 1
-;  1 2
-this!! 
-.!! 
-Hide!! 
-(!! 
-)!! 
-;!! 
-newform"" 
-."" 
+FormMenu 
+newform  
+=! "
+new# &
+FormMenu' /
+(/ 0
+)0 1
+;1 2
+this   
+.   
+Hide   
+(   
+)   
+;   
+newform!! 
+.!! 
 
-ShowDialog"" "
-(""" #
-)""# $
-;""$ %
-this## 
-.## 
-Show## 
-(## 
-)## 
-;## 
-}$$ 
-else%% 
+ShowDialog!! "
+(!!" #
+)!!# $
+;!!$ %
+textBox1"" 
+."" 
+Text"" 
+="" 
+$str""  "
+;""" #
+textBox2## 
+.## 
+Text## 
+=## 
+$str##  "
+;##" #
+this$$ 
+.$$ 
+Show$$ 
+($$ 
+)$$ 
+;$$ 
+}&& 
+else'' 
 
-MessageBox&& 
-.&& 
-Show&& 
-(&&  
-$str&&  .
-)&&. /
-;&&/ 0
-})) 	
-private.. 
-void.. 
-buttonCreaAccount.. &
-(..& '
-object..' -
-sender... 4
-,..4 5
-	EventArgs..6 ?
-e..@ A
-)..A B
-{// 	
-FormRegistrazione00 
-newform00 %
-=00& '
-new00( +
-FormRegistrazione00, =
-(00= >
-)00> ?
-;00? @
-this11 
-.11 
-Hide11 
-(11 
-)11 
-;11 
+MessageBox(( 
+.(( 
+Show(( 
+(((  
+$str((  .
+)((. /
+;((/ 0
+}** 	
+private// 
+void// 
+buttonCreaAccount// &
+(//& '
+object//' -
+sender//. 4
+,//4 5
+	EventArgs//6 ?
+e//@ A
+)//A B
+{00 	
+FormRegistrazione11 
+newform11 %
+=11& '
+new11( +
+FormRegistrazione11, =
+(11= >
+)11> ?
+;11? @
 newform22 
 .22 
 
 ShowDialog22 
 (22 
 )22  
-;22  !
-this33 
-.33 
-Show33 
-(33 
-)33 
-;33 
+;22  !
 }44 	
 }77 
-}88 Œ7
+}88 Ó6
 XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs
 	namespace 	
 ProgettoBirra
@@ -1721,26 +1642,20 @@ ShowDialog 
 FormGestioneUtente- ?
 (? @
 )@ A
-;A B
-this 
-. 
-Close 
-( 
-) 
-; 
-newform 
-. 
+;A B
+newform 
+. 
 
-ShowDialog 
-( 
-)  
-;  !
-this 
-. 
-Show 
-( 
-) 
-; 
+ShowDialog 
+( 
+)  
+;  !
+this 
+. 
+Close 
+( 
+) 
+; 
 } 	
 private   
 void   &
@@ -2235,105 +2150,101 @@ ShowDialog// "
 }11 
 }22 	
 }33 
-}44 ˘
+}44 ì
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs
-	namespace 	
-ProgettoBirra
+	namespace 	
+ProgettoBirra
  
-{ 
-public 
+{ 
+public 
 
-partial 
-class 
-FormAggiuntaProd )
-:* +
-Form, 0
-{ 
+partial 
+class 
+FormAggiuntaProd )
+:* +
+Form, 0
+{ 
 
-GestioneDB 
-database 
-; 
-public 
-FormAggiuntaProd 
-(  
-)  !
-{ 	
-InitializeComponent 
-(  
-)  !
-;! "
-database 
-= 
-new 
+GestioneDB		 
+database		 
+;		 
+public
+
+ 
+FormAggiuntaProd
+
+ 
+(
+
+  
+)
+
+  !
+{ 	
+InitializeComponent 
+(  
+)  !
+;! "
+database 
+= 
+new 
 
-GestioneDB %
-(% &
-)& '
-;' (
-} 	
-private 
-void $
-checkBox1_CheckedChanged -
-(- .
-object. 4
-sender5 ;
-,; <
-	EventArgs= F
-eG H
-)H I
-{ 	
-} 	
-private 
-void 
-buttonSalvaProd $
-($ %
-object% +
-sender, 2
-,2 3
-	EventArgs4 =
-e> ?
-)? @
-{ 	
-database!! 
-.!! 
+GestioneDB %
+(% &
+)& '
+;' (
+} 	
+private 
+void 
+buttonSalvaProd $
+($ %
+object% +
+sender, 2
+,2 3
+	EventArgs4 =
+e> ?
+)? @
+{ 	
+database 
+. 
 
-InsertProd!! 
-(!!  
-Globals!!  '
-.!!' (
-emailGlobal!!( 3
-,!!3 4
-textBoxNomeProd!!5 D
-.!!D E
-Text!!E I
-,!!I J
-Convert!!K R
-.!!R S
-ToInt32!!S Z
-(!!Z [
-this!![ _
-.!!_ `
-textBoxQuantita!!` o
-.!!o p
-Text!!p t
-)!!t u
-)!!u v
-;!!v w
-this%% 
-.%% 
-Close%% 
-(%% 
-)%% 
-;%% 
-this&& 
-.&& 
-Dispose&& 
-(&& 
-)&& 
-;&& 
-}(( 	
-})) 
-}** ¢
+InsertProd 
+(  
+Globals  '
+.' (
+emailGlobal( 3
+,3 4
+textBoxNomeProd5 D
+.D E
+TextE I
+,I J
+ConvertK R
+.R S
+ToInt32S Z
+(Z [
+this[ _
+._ `
+textBoxQuantita` o
+.o p
+Textp t
+)t u
+)u v
+;v w
+this 
+. 
+Close 
+( 
+) 
+; 
+this 
+. 
+Dispose 
+( 
+) 
+; 
+} 	
+}!! 
+}"" ¢
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs
 	namespace 	
 ProgettoBirra
@@ -2719,7 +2630,8 @@ MessageBox++ 
 ;.. 
 }00 	
 }22 
-}33 ä
+}33 “
+
 aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs
 	namespace 	
 ProgettoBirra
@@ -2780,55 +2692,22 @@ GestioneDB %
 .D E
 TextE I
 )I J
-;J K
-	FormLogin 
-newform 
-= 
-new  #
-	FormLogin$ -
-(- .
-). /
-;/ 0
-this 
-. 
-Hide 
-( 
-) 
-; 
-this 
-. 
-Close 
-( 
-) 
-; 
-newform 
-. 
-
-ShowDialog 
-( 
-)  
-;  !
-this 
-. 
-Show 
-( 
-) 
-; 
-} 	
-private 
-void  
-textBox1_TextChanged )
-() *
-object* 0
-sender1 7
-,7 8
-	EventArgs9 B
-eC D
-)D E
-{ 	
-} 	
-}   
-}!! î\
+;J K
+this 
+. 
+Close 
+( 
+) 
+; 
+this 
+. 
+Dispose 
+( 
+) 
+; 
+} 	
+} 
+} ´Z
 [Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs
 	namespace 	
 ProgettoBirra
@@ -3100,369 +2979,377 @@ MessageBox-- 
 )00 
 ;00 
 }11 	
-private33 
-void33 '
-textBoxProdotti_TextChanged33 0
-(330 1
-object331 7
-sender338 >
-,33> ?
-	EventArgs33@ I
-e33J K
-)33K L
-{44 	
-}66 	
-private88 
-void88 #
-buttonModificaRic_Click88 ,
-(88, -
-object88- 3
-sender884 :
-,88: ;
-	EventArgs88< E
-e88F G
-)88G H
-{99 	
-database:: 
-.:: 
-	UpdateRic:: 
-(:: 
-textBoxNome:: *
-.::* +
-Text::+ /
-,::/ 0
-textBoxNote::1 <
-.::< =
-Text::= A
-)::A B
-;::B C
+private44 
+void44 #
+buttonModificaRic_Click44 ,
+(44, -
+object44- 3
+sender444 :
+,44: ;
+	EventArgs44< E
+e44F G
+)44G H
+{55 	
+database66 
+.66 
+	UpdateRic66 
+(66 
+textBoxNome66 *
+.66* +
+Text66+ /
+,66/ 0
+textBoxNote661 <
+.66< =
+Text66= A
+)66A B
+;66B C
 
-MessageBox;; 
-.;; 
-Show;; 
-(;; 
-$str;; E
-);;E F
-;;;F G
-this>> 
-.>> 
-Close>> 
-(>> 
-)>> 
-;>> 
-}?? 	
-privateAA 
-voidAA 
-buttonPreparaAA "
-(AA" #
-objectAA# )
-senderAA* 0
-,AA0 1
-	EventArgsAA2 ;
-eAA< =
-)AA= >
-{BB 	
-boolCC 
-fattaCC 
-=CC 
-trueCC 
-;CC 
-intDD 
-numeroDD 
-;DD 
-intEE 
-quantitaDaTogliereEE "
-;EE" #
-intFF 
-quantitaVecchiaFF 
-;FF  
-forII 
-(II 
-intII 
-iII 
-=II 
-$numII 
-;II 
-iII 
-<II 
-GlobalsII  '
-.II' (
-listaProdottiII( 5
-.II5 6
-CountII6 ;
-;II; <
-iII= >
-++II> @
-)II@ A
-{JJ 
-ifKK 
-(KK 
-databaseKK 
-.KK 
-verificaProdKK )
-(KK) *
-GlobalsKK* 1
-.KK1 2
-listaProdottiKK2 ?
-[KK? @
-iKK@ A
-]KKA B
-.KKB C
-getNomeKKC J
-(KKJ K
-)KKK L
-)KKL M
-==KKN P
-falseKKQ V
-)KKV W
-{LL 
+MessageBox77 
+.77 
+Show77 
+(77 
+$str77 E
+)77E F
+;77F G
+this:: 
+.:: 
+Close:: 
+(:: 
+):: 
+;:: 
+};; 	
+private== 
+void== 
+buttonPrepara== "
+(==" #
+object==# )
+sender==* 0
+,==0 1
+	EventArgs==2 ;
+e==< =
+)=== >
+{>> 	
+bool?? 
+fatta?? 
+=?? 
+true?? 
+;?? 
+int@@ 
+numero@@ 
+;@@ 
+intAA 
+quantitaDaTogliereAA "
+;AA" #
+intBB 
+quantitaVecchiaBB 
+;BB  
+forEE 
+(EE 
+intEE 
+iEE 
+=EE 
+$numEE 
+;EE 
+iEE 
+<EE 
+GlobalsEE  '
+.EE' (
+listaProdottiEE( 5
+.EE5 6
+CountEE6 ;
+;EE; <
+iEE= >
+++EE> @
+)EE@ A
+{FF 
+ifGG 
+(GG 
+databaseGG 
+.GG 
+verificaProdGG )
+(GG) *
+GlobalsGG* 1
+.GG1 2
+listaProdottiGG2 ?
+[GG? @
+iGG@ A
+]GGA B
+.GGB C
+getNomeGGC J
+(GGJ K
+)GGK L
+)GGL M
+==GGN P
+falseGGQ V
+)GGV W
+{HH 
 
-MessageBoxMM 
-.MM 
-ShowMM #
-(MM# $
-$strMM$ a
-)MMa b
-;MMb c
-fattaNN 
-=NN 
-falseNN !
-;NN! "
-breakOO 
-;OO 
-}PP 
-numeroRR 
-=RR 
-ConvertRR  
-.RR  !
-ToInt32RR! (
-(RR( )
-GlobalsRR) 0
-.RR0 1
-listaProdottiRR1 >
-[RR> ?
-iRR? @
-]RR@ A
-.RRA B
-getQuantitaRRB M
-(RRM N
-)RRN O
-)RRO P
-;RRP Q
-numeroSS 
-=SS 
-numeroSS 
-*SS! "
-ConvertSS# *
-.SS* +
-ToInt32SS+ 2
-(SS2 3
-thisSS3 7
-.SS7 8
-numericUpDown1SS8 F
-.SSF G
-TextSSG K
-)SSK L
-;SSL M
-ifUU 
-(UU 
-databaseUU 
-.UU  
-verificaQuantitaProdUU 1
-(UU1 2
-GlobalsUU2 9
-.UU9 :
-listaProdottiUU: G
-[UUG H
-iUUH I
-]UUI J
-.UUJ K
-getNomeUUK R
-(UUR S
-)UUS T
-,UUT U
-numeroUUV \
-)UU\ ]
->UU^ _
-$numUU` a
-)UUb c
-{VV 
+MessageBoxII 
+.II 
+ShowII #
+(II# $
+$strII$ a
+)IIa b
+;IIb c
+fattaJJ 
+=JJ 
+falseJJ !
+;JJ! "
+breakKK 
+;KK 
+}LL 
+numeroNN 
+=NN 
+ConvertNN  
+.NN  !
+ToInt32NN! (
+(NN( )
+GlobalsNN) 0
+.NN0 1
+listaProdottiNN1 >
+[NN> ?
+iNN? @
+]NN@ A
+.NNA B
+getQuantitaNNB M
+(NNM N
+)NNN O
+)NNO P
+;NNP Q
+numeroOO 
+=OO 
+numeroOO 
+*OO! "
+ConvertOO# *
+.OO* +
+ToInt32OO+ 2
+(OO2 3
+thisOO3 7
+.OO7 8
+numericUpDown1OO8 F
+.OOF G
+TextOOG K
+)OOK L
+;OOL M
+ifQQ 
+(QQ 
+databaseQQ 
+.QQ  
+verificaQuantitaProdQQ 1
+(QQ1 2
+GlobalsQQ2 9
+.QQ9 :
+listaProdottiQQ: G
+[QQG H
+iQQH I
+]QQI J
+.QQJ K
+getNomeQQK R
+(QQR S
+)QQS T
+,QQT U
+numeroQQV \
+)QQ\ ]
+>QQ^ _
+$numQQ` a
+)QQb c
+{RR 
 
-MessageBoxWW 
-.WW 
-ShowWW #
-(WW# $
-$strWW$ E
-+WWE F
-GlobalsWWG N
-.WWN O
-listaProdottiWWO \
-[WW\ ]
-iWW] ^
-]WW^ _
-.WW_ `
-getNomeWW` g
-(WWg h
-)WWh i
-)WWi j
-;WWj k
-fattaXX 
-=XX 
-falseXX !
-;XX! "
-breakYY 
-;YY 
-}ZZ 
-}\\ 
-if^^ 
-(^^ 
-fatta^^ 
-==^^ 
-true^^ 
-)^^ 
-{__ 
-foraa 
-(aa 
-intaa 
-jaa 
-=aa 
-$numaa 
-;aa 
-jaa  !
-<aa" #
-Globalsaa$ +
-.aa+ ,
-listaProdottiaa, 9
-.aa9 :
-Countaa: ?
-;aa? @
-jaaA B
-++aaB D
-)aaD E
-{bb 
-quantitaVecchiacc #
-=cc$ %
-databasecc& .
-.cc. / 
-recuperoQuantitaProdcc/ C
-(ccC D
-GlobalsccD K
-.ccK L
-listaProdotticcL Y
-[ccY Z
-jccZ [
-]cc[ \
-.cc\ ]
-getNomecc] d
-(ccd e
-)cce f
-)ccf g
-;ccg h
-quantitaDaToglieredd &
-=dd' (
-Convertdd) 0
-.dd0 1
-ToInt32dd1 8
-(dd8 9
-Globalsdd9 @
-.dd@ A
-listaProdottiddA N
-[ddN O
-jddO P
-]ddP Q
-.ddQ R
-getQuantitaddR ]
-(dd] ^
-)dd^ _
-)dd_ `
-*dda b
-Convertddc j
-.ddj k
-ToInt32ddk r
-(ddr s
-thisdds w
-.ddw x
-numericUpDown1	ddx Ü
+MessageBoxSS 
+.SS 
+ShowSS #
+(SS# $
+$strSS$ E
++SSE F
+GlobalsSSG N
+.SSN O
+listaProdottiSSO \
+[SS\ ]
+iSS] ^
+]SS^ _
+.SS_ `
+getNomeSS` g
+(SSg h
+)SSh i
+)SSi j
+;SSj k
+fattaTT 
+=TT 
+falseTT !
+;TT! "
+breakUU 
+;UU 
+}VV 
+}XX 
+ifZZ 
+(ZZ 
+fattaZZ 
+==ZZ 
+trueZZ 
+)ZZ 
+{[[ 
+for]] 
+(]] 
+int]] 
+j]] 
+=]] 
+$num]] 
+;]] 
+j]]  !
+<]]" #
+Globals]]$ +
+.]]+ ,
+listaProdotti]], 9
+.]]9 :
+Count]]: ?
+;]]? @
+j]]A B
+++]]B D
+)]]D E
+{^^ 
+quantitaVecchia__ #
+=__$ %
+database__& .
+.__. / 
+recuperoQuantitaProd__/ C
+(__C D
+Globals__D K
+.__K L
+listaProdotti__L Y
+[__Y Z
+j__Z [
+]__[ \
+.__\ ]
+getNome__] d
+(__d e
+)__e f
+)__f g
+;__g h
+quantitaDaTogliere`` &
+=``' (
+Convert``) 0
+.``0 1
+ToInt32``1 8
+(``8 9
+Globals``9 @
+.``@ A
+listaProdotti``A N
+[``N O
+j``O P
+]``P Q
+.``Q R
+getQuantita``R ]
+(``] ^
+)``^ _
+)``_ `
+*``a b
+Convert``c j
+.``j k
+ToInt32``k r
+(``r s
+this``s w
+.``w x
+numericUpDown1	``x Ü
 .
-ddÜ á
+``Ü á
 Text
-ddá ã
+``á ã
 )
-ddã å
+``ã å
 ;
-ddå ç
-ifhh 
-(hh 
-databasehh  
-.hh  !"
-verificaProdListaSpesahh! 7
-(hh7 8
-Globalshh8 ?
-.hh? @
-listaProdottihh@ M
-[hhM N
-jhhN O
-]hhO P
-.hhP Q
-getNomehhQ X
-(hhX Y
-)hhY Z
-)hhZ [
-)hh[ \
+``å ç
+ifdd 
+(dd 
+databasedd  
+.dd  !"
+verificaProdListaSpesadd! 7
+(dd7 8
+Globalsdd8 ?
+.dd? @
+listaProdottidd@ M
+[ddM N
+jddN O
+]ddO P
+.ddP Q
+getNomeddQ X
+(ddX Y
+)ddY Z
+)ddZ [
+)dd[ \
+{ee 
+databaseff  
+.ff  !!
+UpdateListaDellaSpesaff! 6
+(ff6 7
+quantitaDaTogliereff7 I
+,ffI J
+GlobalsffK R
+.ffR S
+listaProdottiffS `
+[ff` a
+jffa b
+]ffb c
+.ffc d
+getNomeffd k
+(ffk l
+)ffl m
+)ffm n
+;ffn o
+}gg 
+elsehh 
 {ii 
 databasejj  
-.jj  !!
-UpdateListaDellaSpesajj! 6
-(jj6 7
-quantitaDaToglierejj7 I
-,jjI J
-GlobalsjjK R
-.jjR S
-listaProdottijjS `
-[jj` a
-jjja b
-]jjb c
-.jjc d
-getNomejjd k
-(jjk l
-)jjl m
-)jjm n
-;jjn o
-}kk 
-elsell 
-{mm 
-databasenn  
-.nn  !
-InsertListaSpesann! 1
-(nn1 2
-Globalsnn2 9
-.nn9 :
-listaProdottinn: G
-[nnG H
-jnnH I
-]nnI J
-.nnJ K
-getNomennK R
-(nnR S
-)nnS T
-,nnT U
-quantitaDaToglierennV h
-)nnh i
-;nni j
-}oo 
-ifqq 
-(qq 
-quantitaVecchiaqq '
--qq( )
-quantitaDaTogliereqq* <
-==qq= ?
-$numqq@ A
-)qqA B
+.jj  !
+InsertListaSpesajj! 1
+(jj1 2
+Globalsjj2 9
+.jj9 :
+listaProdottijj: G
+[jjG H
+jjjH I
+]jjI J
+.jjJ K
+getNomejjK R
+(jjR S
+)jjS T
+,jjT U
+quantitaDaToglierejjV h
+)jjh i
+;jji j
+}kk 
+ifmm 
+(mm 
+quantitaVecchiamm '
+-mm( )
+quantitaDaToglieremm* <
+==mm= ?
+$nummm@ A
+)mmA B
+{nn 
+databaseoo  
+.oo  !
+
+DeleteProdoo! +
+(oo+ ,
+Globalsoo, 3
+.oo3 4
+listaProdottioo4 A
+[ooA B
+jooB C
+]ooC D
+.ooD E
+getNomeooE L
+(ooL M
+)ooM N
+)ooN O
+;ooO P
+}pp 
+elseqq 
 {rr 
 databasess  
 .ss  !
 
-DeleteProdss! +
+UpdateProdss! +
 (ss+ ,
 Globalsss, 3
 .ss3 4
@@ -3474,58 +3361,39 @@ DeleteProdss! +
 getNomessE L
 (ssL M
 )ssM N
-)ssN O
-;ssO P
-}tt 
-elseuu 
-{vv 
-databaseww  
-.ww  !
+,ssN O
+quantitaVecchiassP _
+-ss` a
+quantitaDaToglieressb t
+)sst u
+;ssu v
+}tt 
+}vv 
 
-UpdateProdww! +
-(ww+ ,
-Globalsww, 3
-.ww3 4
-listaProdottiww4 A
-[wwA B
-jwwB C
-]wwC D
-.wwD E
-getNomewwE L
-(wwL M
-)wwM N
-,wwN O
-quantitaVecchiawwP _
--ww` a
-quantitaDaToglierewwb t
-)wwt u
-;wwu v
-}xx 
-}zz 
-
-MessageBox|| 
-.|| 
-Show|| 
-(||  
-$str||  6
-)||6 7
-;||7 8
-}}} 
+MessageBoxxx 
+.xx 
+Showxx 
+(xx  
+$strxx  6
+)xx6 7
+;xx7 8
+}yy 
 }
-ÜÜ 	
+ÇÇ 	
 }
-áá 
-}àà π”
+ÉÉ 
+}ÑÑ â”
 ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs
 	namespace 	
 ProgettoBirra
  
 { 
 public 
-
-class 
-Globals 
-{ 
+
+static 
+class 
+Globals 
+{  !
 public 
 static 
 string 
@@ -5946,11 +5814,11 @@ MessageBox
 (
 ÛÛ# $
 $str
-ÛÛ$ B
+ÛÛ$ >
 )
-ÛÛB C
+ÛÛ> ?
 ;
-ÛÛC D
+ÛÛ? @
 }
 ÙÙ 
 }
@@ -5969,11 +5837,11 @@ MessageBox
 (
 ¯¯  
 $str
-¯¯  B
+¯¯  ;
 )
-¯¯B C
+¯¯; <
 ;
-¯¯C D
+¯¯< =
 }
 ˘˘ 
 }
@@ -12342,34 +12210,26 @@ connection
 √
 √
 C H
-(
-√
-√
-H I
-)
-√
-√
-I J
 ;
 √
 √
-J K
+H I
 i
 √
 √
-L M
+J K
 ++
 √
 √
-M O
+K M
 )
 √
 √
-O P
+M N
 {
 √
 √
-P Q
+N O
 if
 ƒ
 ƒ
@@ -12446,30 +12306,22 @@ connection
 «
 «
 D I
-(
-«
-«
-I J
-)
-«
-«
-J K
 ;
 «
 «
-K L
+I J
 j
 «
 «
-M N
+K L
 ++
 «
 «
-N P
+L N
 )
 «
 «
-P Q
+N O
 {
 »
 »
@@ -13339,61 +13191,7 @@ connection
 ÜÜ 	
 }
 àà 
-}ââ º
-]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs
-	namespace 	
-ProgettoBirra
- 
-{ 
-class 	
-ListaProdotti
- 
-{ 
-private 
-List 
-< 
-ProdottoMapper #
-># $
-listaProdotti% 2
-=3 4
-new5 8
-List9 =
-<= >
-ProdottoMapper> L
->L M
-(M N
-)N O
-;O P
-public		 
-ListaProdotti		 
-(		 
-)		 
-{
-
- 	
-}
-
-	 
-
-public 
-ListaProdotti 
-( 
-List !
-<! "
-ProdottoMapper" 0
->0 1
-listaProdotti2 ?
-)? @
-{ 	
-this 
-. 
-listaProdotti 
-=  
-listaProdotti! .
-;. /
-} 	
-} 
-} ﬁ
+}ââ ﬁ
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs
 	namespace 	
 ProgettoBirra

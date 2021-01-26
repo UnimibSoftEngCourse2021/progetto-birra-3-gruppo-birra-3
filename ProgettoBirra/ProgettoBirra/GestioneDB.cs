@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 namespace ProgettoBirra
 {
     //inizializzazione variabili globali
-    public class Globals {
+    public static class Globals {
         public static string emailGlobal;
         public static string passwordGlobal;
         public static List<ProdottoMapper> listaProdotti = new List<ProdottoMapper>();
@@ -1344,11 +1344,11 @@ namespace ProgettoBirra
             bool blocco1 = true;
 
             
-            for (int i = 0; i < Globals.listaProdottiRicettaUtente.Count(); i++){
+            for (int i = 0; i < Globals.listaProdottiRicettaUtente.Count; i++){
                 if (blocco1)
                 {
 
-                    for (int j = 0; j < Globals.listaProdottiUtente.Count(); j++)
+                    for (int j = 0; j < Globals.listaProdottiUtente.Count; j++)
                     {
 
                         if (Globals.listaProdottiRicettaUtente[i].getNome().Equals(Globals.listaProdottiUtente[j].getNome()))
@@ -1363,7 +1363,7 @@ namespace ProgettoBirra
                                 if (numVolteProd < Globals.n) {
 
                                     Globals.n = numVolteProd;
-                                    //MessageBox.Show("" + Globals.n);
+                                    
                                     if (Globals.n < min)
                                     {
                                         min = Globals.n;

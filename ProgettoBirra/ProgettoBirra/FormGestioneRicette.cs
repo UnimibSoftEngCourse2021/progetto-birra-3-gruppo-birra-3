@@ -33,15 +33,7 @@ namespace ProgettoBirra
             
         }
 
-        private void buttonElimina_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void buttonModifica_Click(object sender, EventArgs e)
-        {
-          
-        }
+    
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

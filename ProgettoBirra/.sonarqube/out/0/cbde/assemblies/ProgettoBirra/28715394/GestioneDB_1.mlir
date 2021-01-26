@@ -706,14 +706,14 @@ cond_br %19, ^3, ^4 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\Pr
 %26 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :497 :20) // this (ThisExpression)
 %27 = cbde.unknown : i1 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :497 :20) // this.CloseConnection() (InvocationExpression)
 // Entity from another assembly: MessageBox
-%28 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :498 :36) // "Utente inserito nel database" (StringLiteralExpression)
-%29 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :498 :20) // MessageBox.Show("Utente inserito nel database") (InvocationExpression)
+%28 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :498 :36) // "Registrazione completata" (StringLiteralExpression)
+%29 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :498 :20) // MessageBox.Show("Registrazione completata") (InvocationExpression)
 br ^4
 
 ^2: // SimpleBlock
 // Entity from another assembly: MessageBox
-%30 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :503 :32) // "Utente già presente nel database" (StringLiteralExpression)
-%31 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :503 :16) // MessageBox.Show("Utente già presente nel database") (InvocationExpression)
+%30 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :503 :32) // "Nome utente gia esistente" (StringLiteralExpression)
+%31 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :503 :16) // MessageBox.Show("Nome utente gia esistente") (InvocationExpression)
 br ^4
 
 ^4: // ExitBlock
@@ -2312,7 +2312,7 @@ br ^11
 %88 = cbde.load %87 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :28)
 // Skipped because MethodDeclarationSyntax or ClassDeclarationSyntax or NamespaceDeclarationSyntax: Globals
 %89 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :32) // Globals.listaProdottiRicettaUtente (SimpleMemberAccessExpression)
-%90 = cbde.unknown : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :32) // Globals.listaProdottiRicettaUtente.Count() (InvocationExpression)
+%90 = cbde.unknown : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :32) // Globals.listaProdottiRicettaUtente.Count (SimpleMemberAccessExpression)
 %91 = cmpi "slt", %88, %90 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :28)
 cond_br %91, ^12, ^13 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :28)
 
@@ -2330,7 +2330,7 @@ br ^16
 %95 = cbde.load %94 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :36)
 // Skipped because MethodDeclarationSyntax or ClassDeclarationSyntax or NamespaceDeclarationSyntax: Globals
 %96 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :40) // Globals.listaProdottiUtente (SimpleMemberAccessExpression)
-%97 = cbde.unknown : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :40) // Globals.listaProdottiUtente.Count() (InvocationExpression)
+%97 = cbde.unknown : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :40) // Globals.listaProdottiUtente.Count (SimpleMemberAccessExpression)
 %98 = cmpi "slt", %95, %97 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :36)
 cond_br %98, ^17, ^15 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :36)
 
@@ -2406,17 +2406,17 @@ cbde.store %136, %85 : memref<i1> loc("Z:\\Scuola\\c# git\\progetto-birra-3-grup
 br ^15 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1375 :32) // break
 
 ^19: // SimpleBlock
-%137 = cbde.load %94 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :77)
-%138 = constant 1 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :77)
-%139 = addi %137, %138 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :77)
-cbde.store %139, %94 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :77)
+%137 = cbde.load %94 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :75)
+%138 = constant 1 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :75)
+%139 = addi %137, %138 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :75)
+cbde.store %139, %94 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1350 :75)
 br ^16
 
 ^15: // SimpleBlock
-%140 = cbde.load %87 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :76)
-%141 = constant 1 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :76)
-%142 = addi %140, %141 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :76)
-cbde.store %142, %87 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :76)
+%140 = cbde.load %87 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :74)
+%141 = constant 1 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :74)
+%142 = addi %140, %141 : i32 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :74)
+cbde.store %142, %87 : memref<i32> loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\GestioneDB.cs" :1346 :74)
 br ^11
 
 ^13: // BinaryBranchBlock

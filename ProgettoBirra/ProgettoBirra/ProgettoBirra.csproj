@@ -155,7 +155,6 @@
       <DependentUpon>FormRicetta.cs</DependentUpon>
     </Compile>
     <Compile Include="GestioneDB.cs" />
-    <Compile Include="ListaProdotti.cs" />
     <Compile Include="ListaSpesaMapper.cs" />
     <Compile Include="ProdottoMapper.cs" />
     <Compile Include="Program.cs" />

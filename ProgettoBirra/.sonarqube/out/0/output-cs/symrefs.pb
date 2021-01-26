@@ -76,11 +76,10 @@ kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 //. 4
 
 //@ A
-44 66# ,≈
+44 66# ,ã
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs
 
- (
-  
+ (
 
 		 
 
@@ -93,13 +92,7 @@ _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
  X `
  b n
  p t
-( / 
-
- !
-
-) /
-
-; <Ω
+( / Ω
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs
 
  (
@@ -111,7 +104,7 @@ _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 0 6
 
-B Cô
+B C—
 cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs
 
  ,
@@ -127,25 +120,13 @@ cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 C D
  #   
 
-$$ (
+&& 2
 
-$$0 6
+&&: @
 
-$$B C
-
-)) )
-
-))1 7
-
-))C D
-
-.. 2
-
-..: @
-
-..L M
-44 "776 A
-77 #88 ¬
+&&L M
+,, "//6 A
+// #00 ÷
 hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs
 
  1
@@ -161,35 +142,17 @@ hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 F G
  # 
 
-   ,
+!! 4
 
-  4 :
+!!< B
 
-  F G
-
-%% +
-
-%%3 9
-
-%%E F
-
-** 2
-
-**: @
-
-**L M
-
-// 4
-
-//< B
-
-//N O
-44 "77> I
-77  '88 ∫
+!!N O
+&& "))> I
+))  '** ∫
 bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs
 
  +P
-		  ,, 88 99 :: ;; << 
+		  ,, 99 :: ;; << == 
 
  !
 
@@ -205,11 +168,11 @@ bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 &&@ A
 
-22 .
+33 .
 
-226 <
+336 <
 
-22H I˙
+33H I˙
 ^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs
 
  '(
@@ -236,14 +199,14 @@ YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 ; <
    
-    "" 
+  !! 
 
-.. &
+// &
 
-... 4
+//. 4
 
-..@ A
-00 %22 ≥
+//@ A
+11 %22 ≥
 XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs
 
  !<
@@ -263,7 +226,7 @@ XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 1 7
 
 C D
- & 
+ & 
 
    /
 
@@ -318,25 +281,21 @@ dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 &&L M
 ** "..@ K
-..! (// ‚
+..! (// æ
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs
 
- )
-  !! 
+ )
+		   
 
- 
+
+
+ 
 
- -
+ $
 
-5 ;
+, 2
 
-G H
-
- $
-
-, 2
-
-> ?ø
+> ?ø
 _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs
 
  ((
@@ -376,7 +335,7 @@ _Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 ((+ 1
 
-((= >˘
+((= >ø
 aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs
 
  *
@@ -388,18 +347,11 @@ aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 
 - 3
 
-? @
-  
-
- )
-
-1 7
-
-C Dÿ
+? @¥
 [Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs
 
  $ñ
-   ))  ++ ,, :: KK UU cc& .hh  jj  nn  ss  ww  
+   ))  ++ ,, 66 GG QQ __& .dd  ff  jj  oo  ss  
 
 		 (
 		" - (9 D' 2P
@@ -413,31 +365,25 @@ aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Fo
 ''B C
 )) ++# (
 
-33 0
+44 ,
 
-338 >
+444 :
 
-33J K
+44F G
 
-88 ,
+== "
 
-884 :
+==* 0
 
-88F G
-
-AA "
-
-AA* 0
-
-AA< =(
-CC NN XX ^^ 2
-DD RR SS SS UUV \<
-EE "dd &jj7 InnV hqq* <wwb t(
-FF cc #qq 'wwP _F
-II II II= >KK@ ARR? @UUH IWW] ^d
-aa aa  !aaA BccZ [ddO PhhN Ojja bnnH IssB CwwB C«S
+==< =(
+?? JJ TT ZZ 2
+@@ NN OO OO QQV \<
+AA "`` &ff7 IjjV hmm* <ssb t(
+BB __ #mm 'ssP _F
+EE EE EE= >GG@ ANN? @QQH ISS] ^d
+]] ]]  !]]A B__Z [``O PddN Offa bjjH IooB CssB C«S
 ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.csó
- ââà èØØä ë’’É ä˚˚ä ë••¶ ≠
+ ââà èØØä ë’’É ä˚˚ä ë••¶ ≠
 ûû_ fππ≤ πœœ• ¨
 „„g n
 êê^ e
@@ -1591,7 +1537,7 @@ ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Ge
  
 √
 √
-L M
+J K
  
  
 ? @
@@ -1607,7 +1553,7 @@ ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Ge
 $ %
 «
 «
-M N
+K L
  
  
 o p
@@ -1667,17 +1613,7 @@ ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Ge
   
 ˚
 ˚
-" %Ø
-]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs
-
-
- 
-% 2 
-
-		 
-
- 
-2 ?! .÷
+" %÷
 `Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs
 
  !(

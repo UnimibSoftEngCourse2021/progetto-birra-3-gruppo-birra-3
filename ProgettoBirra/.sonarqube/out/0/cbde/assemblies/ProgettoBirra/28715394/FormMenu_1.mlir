@@ -26,12 +26,10 @@ br ^0
 
 ^0: // SimpleBlock
 %2 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :25 :41) // new FormGestioneUtente() (ObjectCreationExpression)
-%4 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :26 :12) // this (ThisExpression)
-%5 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :26 :12) // this.Close() (InvocationExpression)
-%6 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :27 :12) // Not a variable of known type: newform
-%7 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :27 :12) // newform.ShowDialog() (InvocationExpression)
-%8 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :28 :12) // this (ThisExpression)
-%9 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :28 :12) // this.Show() (InvocationExpression)
+%4 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :26 :12) // Not a variable of known type: newform
+%5 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :26 :12) // newform.ShowDialog() (InvocationExpression)
+%6 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :27 :12) // this (ThisExpression)
+%7 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.cs" :27 :12) // this.Close() (InvocationExpression)
 br ^1
 
 ^1: // ExitBlock

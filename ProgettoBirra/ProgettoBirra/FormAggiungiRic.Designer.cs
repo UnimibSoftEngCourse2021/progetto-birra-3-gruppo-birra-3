@@ -130,7 +130,7 @@ namespace ProgettoBirra
             this.label6.Size = new System.Drawing.Size(230, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Inserire gli attrezzi uno per riga andando a capo";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+
             // 
             // labelCapacitaAtt
             // 

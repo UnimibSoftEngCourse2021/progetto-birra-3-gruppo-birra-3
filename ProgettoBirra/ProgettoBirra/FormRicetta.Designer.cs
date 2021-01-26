@@ -117,7 +117,7 @@ namespace ProgettoBirra
             this.textBoxProdotti.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxProdotti.Size = new System.Drawing.Size(192, 220);
             this.textBoxProdotti.TabIndex = 6;
-            this.textBoxProdotti.TextChanged += new System.EventHandler(this.textBoxProdotti_TextChanged);
+
             // 
             // label4
             // 
