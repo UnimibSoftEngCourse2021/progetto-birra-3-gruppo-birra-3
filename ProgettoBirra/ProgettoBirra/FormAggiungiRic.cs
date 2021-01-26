@@ -5,10 +5,8 @@ namespace ProgettoBirra
 {
     public partial class FormAggiungiRic : Form
     {
-        
         public FormAggiungiRic()
         {
-            
             InitializeComponent();
         }
 
@@ -24,7 +22,5 @@ namespace ProgettoBirra
             newform.ShowDialog();
             this.Show();
         }
-
-     
     }
 }

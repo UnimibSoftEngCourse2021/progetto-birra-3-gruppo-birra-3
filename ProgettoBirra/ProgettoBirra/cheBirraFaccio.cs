@@ -6,14 +6,11 @@
         private int idRicetta;
         private int quantitaMin;
 
-
         public CheBirraFaccio(int idRicetta, int quantitaMin)
         {
             this.idRicetta = idRicetta;
             this.quantitaMin = quantitaMin;
-
         }
-
         public int getidRicetta()
         {
             return idRicetta;
@@ -22,7 +19,7 @@
         {
             return quantitaMin;
         }
-
+        /*
         public void setidRicetta(int idRicetta)
         {
             this.idRicetta = idRicetta;
@@ -32,5 +29,6 @@
         {
             this.quantitaMin = quantitaMin;
         }
+        */
     }
 }

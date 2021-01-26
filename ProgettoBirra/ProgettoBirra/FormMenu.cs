@@ -10,15 +10,12 @@ namespace ProgettoBirra
         {
             database = new GestioneDB();
             InitializeComponent();
-            
         }
-
 
         private void buttonGestioneProdotti(object sender, EventArgs e)
         {
             FormGestioneProdotti newform = new FormGestioneProdotti();
             newform.ShowDialog();
-        
         }
 
         private void buttonGestioneUtente(object sender, EventArgs e)
@@ -43,22 +40,17 @@ namespace ProgettoBirra
 
         private void buttonCheBirraFaccio(object sender, EventArgs e)
         {
-
             Globals.listaRicette.Clear();
             Globals.listaDisponibilitaBirra.Clear();
 
-
             database.recuperoRic();
-
 
             for (int i = 0; i < Globals.listaRicette.Count; i++)
             {
-                
                 Globals.listaProdottiRicettaUtente.Clear();
                 Globals.listaProdottiUtente.Clear();
                 Globals.n = 999;
                 database.cheBirraFaccioOggi(database.recuperoIdRic(Globals.listaRicette[i].getNome()));
-
             }
 
             int idRicettamin=0;
@@ -71,12 +63,10 @@ namespace ProgettoBirra
                     idRicettamin = Globals.listaDisponibilitaBirra[j].getidRicetta();
                     quantitaricettamin= Globals.listaDisponibilitaBirra[j].getquantitaMin();
                 }
-
             }
 
             if (quantitaricettamin != 0)
             {
-                
                 MessageBox.Show("Puoi fare la ricetta  " + database.recuperoNomeRic(idRicettamin) + " fino a " + quantitaricettamin + "  volte, per massimizzare l'uso dei tuoi prodotti");
             }
             else {
@@ -88,10 +78,7 @@ namespace ProgettoBirra
         {
             FormGestioneRicette newform = new FormGestioneRicette();
             newform.ShowDialog();
-
-            
         }
 
-      
     }
 }

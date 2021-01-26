@@ -15,14 +15,8 @@ namespace ProgettoBirra
         private void buttonRegistrati(object sender, EventArgs e)
         {
             database.InsertUtente(textBoxEmail.Text, textBoxPassword.Text);
-
             this.Close();
             this.Dispose();
-            
-           
-
         }
-
-      
     }
 }

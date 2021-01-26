@@ -14,9 +14,7 @@ namespace ProgettoBirra
             InitializeComponent();
             for (int i = 0; i < Globals.listaAttrezzi.Count; i++)
             {
-
                 listBox1.Items.Add(Globals.listaAttrezzi[i].getNome());
-
             }
 
         }
@@ -29,20 +27,15 @@ namespace ProgettoBirra
             newform.ShowDialog();
         }
 
-
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
             if (listBox1.SelectedItem != null)
             {
                 string selezionato = listBox1.SelectedItem.ToString();
-
                 this.Close();
                 FormModificaAtt newform = new FormModificaAtt(selezionato);
                 newform.ShowDialog();
-                
             }
-
         }
     }
 }

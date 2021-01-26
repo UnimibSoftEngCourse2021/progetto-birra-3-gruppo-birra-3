@@ -15,8 +15,6 @@ namespace ProgettoBirra
         private void buttonCreaAtt_Click(object sender, EventArgs e)
         {
             database.InsertAtt(textBoxNomeAtt.Text, Convert.ToInt32(this.textBoxCapacita.Text));
-
-       
             this.Close();
             this.Dispose();
         }

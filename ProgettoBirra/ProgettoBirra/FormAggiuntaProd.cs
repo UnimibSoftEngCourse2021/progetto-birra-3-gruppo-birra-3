@@ -1,5 +1,4 @@
 ﻿using System;
-
 using System.Windows.Forms;
 
 namespace ProgettoBirra
@@ -13,22 +12,11 @@ namespace ProgettoBirra
             database = new GestioneDB();
         }
 
-
-
         private void buttonSalvaProd(object sender, EventArgs e)
         {
-
-
-
             database.InsertProd(Globals.emailGlobal, textBoxNomeProd.Text, Convert.ToInt32(this.textBoxQuantita.Text));
-
-
-
             this.Close();
             this.Dispose();
-
         }
-
-    
     }
 }
