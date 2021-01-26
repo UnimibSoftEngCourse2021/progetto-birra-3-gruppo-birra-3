@@ -1,5 +1,5 @@
-ï
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.cs
+à
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.cs
 
  (
    !! (
@@ -21,8 +21,8 @@ mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 # '!! 
 
 $$ 
-$$' /&& $ã
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.cs
+$$' /&& $Ô
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.cs
 
  (
     (
@@ -46,8 +46,8 @@ mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 % . &
 
  "
-' 2!! *–
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.cs
+' 2!! *‡
+kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.cs
 
  4d
       "" $&& 11 22 44 $66 P
@@ -76,31 +76,8 @@ zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 //. 4
 
 //@ A
-44 66# ,®
-ƒC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.Designer.cs
-
- -
-		1 ; ( 
-
-  '
-- 6  "
-
- (R
-
-ƒƒ- 5   ++ ,, -- .. // xx# +R
-
-„„- 5!! 33 44 55 66 77 ww# +f
-
-……+ 1"" ;; << == >> ?? @@ AA vv# )f
-
-††+ 1## EE FF GG HH II JJ KK uu# )p
-
-‡‡, 3$$ OO PP QQ RR SS TT UU VV tt# *p
-
-ˆˆ, 3%% ZZ [[ \\ ]] ^^ __ `` aa ss# *f
-
-‰‰+ 1&& ee ff gg hh ii jj kk rr# )Ô
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs
+44 66# ,Å
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs
 
  (
   
@@ -122,65 +99,8 @@ nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 ) /
 
-; <®
-
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.Designer.cs
-
- !
-		1 ; ( 
-
-  '
-- 6  "
-
- (^
-
-¬¬+ 1   // 00 11 22 33 44 
-¢¢# )^
-
-­­+ 1!! 88 99 :: ;; << == 
-¡¡# )J
-
-®®- 8"" AA BB CC DD 
-  # .^
-
-¯¯- <##  HH  II  JJ  KK  LL  MM  
-ŸŸ# 2^
-
-°°+ 1$$ QQ RR SS TT UU VV 
-žž# )^
-
-±±- 8%% ZZ [[ \\ ]] ^^ __ 
-# .h
-
-²², ?&& $cc $dd $ee $ff $gg $hh $ii $
-œœ# 6^
-
-³³- @'' $mm $nn $oo $pp $qq $rr $
-šš# 6^
-
-´´+ 1(( vv ww xx yy zz {{ 
-››# )t
-
-µµ+ 1))  
-€€ 
- 
-‚‚ 
-ƒƒ 
-„„ 
-…… 
-™™# )‚
-
-¶¶+ ;** !
-‰‰ !
-ŠŠ !
-‹‹ !
-ŒŒ !
- !
-ŽŽ !
- !
- !
-˜˜# 3Ì
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs
+; <½
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs
 
  (
    
@@ -191,23 +111,8 @@ nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 0 6
 
-B Cç
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.Designer.cs
-
- !
-		1 ; ( 
-
-  '
-- 6  "
-
- (F
-oo- ;   ** ++ ,, -- ee# 1F
-pp- <!!  11  22  33  44  dd# 2Z
-qq+ 7"" 88 99 :: ;; << == cc# /Z
-rr+ ;## !AA !BB !CC !DD !EE !FF !bb# 3d
-ss, 9$$ JJ KK LL MM NN OO PP aa# 0Z
-tt+ 1%% TT UU VV WW XX YY ``# )¨
-rC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs
+B C™
+cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs
 
  ,
    
@@ -240,19 +145,8 @@ rC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 ..L M
 44 "776 A
-77 #88 Á
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.Designer.cs
-
- %
-		1 ; ( 
-
-  '
-- 6  "
-
- (n
-JJ, :   && '' (( )) ** ++ ,, -- @@# 1n
-KK- 5!! 11 22 33 44 55 66 77 88 ??# +Ñ
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs
+77 #88 Â
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs
 
  1
    
@@ -291,19 +185,8 @@ wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 //N O
 44 "77> I
-77  '88 Ç
-€C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.Designer.cs
-
- *
-		1 ; ( 
-
-  '
-- 6  "
-
- (n
-JJ, =   "&& "'' "(( ")) "** "++ ",, "-- "@@# 4n
-KK- 5!! 11 22 33 44 55 66 77 88 ??# +¹
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs
+77  '88 ª
+bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs
 
  +
 
@@ -368,41 +251,8 @@ qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 ``5 ;
 
-``G HÎ
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.Designer.cs
-
- $
-		1 ; ( 
-
-  '
-- 6  "
-
- (|
-
-••. >   !,, !-- !.. !// !00 !11 !22 !33 !44 !
-‰‰# 3h
-
-––- <!!  88  99  ::  ;;  <<  ==  >>  
-ˆˆ# 2r
-
-——+ 1"" BB CC DD EE FF GG HH II 
-‡‡# )^
-
-˜˜- 9## MM NN OO PP QQ RR 
-††# /h
-
-™™, 7$$ VV WW XX YY ZZ [[ \\ 
-……# .h
-
-šš, ?%% $`` $aa $bb $cc $dd $ee $ff $
-„„# 6r
-
-››. 7&& jj kk ll mm nn oo pp qq 
-ƒƒ# ,h
-
-œœ+ 1'' uu vv ww xx yy zz {{ 
-‚‚# )‰
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs
+``G Hú
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs
 
  '(
    "" 
@@ -414,20 +264,8 @@ mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
   . 4
 
-  @ Aú
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.Designer.cs
-
-  
-		1 ; ( 
-
-  '
-- 6  "
-
- (Z
-RR- >   "'' "(( ")) "** "++ ",, "HH# 4Z
-SS+ 1!! 00 11 22 33 44 55 GG# )d
-TT, 7"" 99 :: ;; << == >> ?? FF# .ˆ
-hC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs
+  @ Aù
+YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs
 
  "(
     
@@ -459,23 +297,8 @@ hC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 99* 0
 
-99< =±
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.Designer.cs
-
- 
-		1 ; ( 
-
-  '
-- 6  "
-
- (d
-xx+ 1   ** ++ ,, -- .. // 00 mm# )P
-yy- 5!! 44 55 66 77 88 ll# +Z
-zz- 5"" << == >> ?? @@ AA kk# +n
-{{, 3## EE FF GG HH II JJ KK LL jj# *n
-||, 3$$ PP QQ RR SS TT UU VV WW ii# *d
-}}+ 1%% [[ \\ ]] ^^ __ `` aa hh# )Š
-gC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs
+99< =û
+XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs
 
  !<
   :: DD DD, 4XX; C
@@ -537,27 +360,8 @@ gC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 gg* 0
 
-gg< =ô
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.Designer.cs
-
- 
-		1 ; ( 
-
-  '
-- 6  "
-
- (n
-~~, 3   ** ++ ,, -- .. // 00 11 ss# *n
-, 3!! 55 66 77 88 99 :: ;; << rr# *p
-
-€€, 3"" @@ AA BB CC DD EE FF GG qq# *p
-
-, 3## KK LL MM NN OO PP QQ RR pp# *p
-
-‚‚, 3$$ VV WW XX YY ZZ [[ \\ ]] oo# *f
-
-ƒƒ, 3%% aa bb cc dd ee ff gg nn# *á
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.cs
+gg< =Ò
+dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.cs
 
  -
 		   
@@ -580,19 +384,8 @@ sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 &&L M
 ** "..@ K
-..! (// Â
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.Designer.cs
-
- &
-		1 ; ( 
-
-  '
-- 6  "
-
- (n
-JJ- 5   && '' (( )) ** ++ ,, -- @@# +n
-KK, 3!! 11 22 33 44 55 66 77 88 ??# *ñ
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs
+..! (// â
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs
 
  )
   !! 
@@ -609,23 +402,8 @@ oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 , 2
 
-> ?è
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.Designer.cs
-
- "
-		1 ; ( 
-
-  '
-- 6  "
-
- (Z
-oo+ 1   ** ++ ,, -- .. // ee# )d
-pp, 3!! 33 44 55 66 77 88 99 dd# *F
-qq- <""  ==  >>  ??  @@  cc# 2Z
-rr+ 1## DD EE FF GG HH II bb# )F
-ss- <$$  MM  NN  OO  PP  aa# 2Z
-tt+ 1%% TT UU VV WW XX YY ``# )ò
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs
+> ?ã
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs
 
  ((
    (( 
@@ -650,30 +428,8 @@ nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 331 7
 
-33C D÷
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.Designer.cs
-
- !
-		1 ; ( 
-
-  '
-- 6  "
-
- (Z
-+ 7   ,, -- .. // 00 11 ss# /\
-
-€€+ 7!! 55 66 77 88 99 :: rr# /R
-
-- ;"" >> ?? @@ AA BB qq# 1f
-
-‚‚, @## %FF %GG %HH %II %JJ %KK %LL %pp# 7f
-
-ƒƒ, 9$$ PP QQ RR SS TT UU VV oo# 0\
-
-„„3 A%% ''= KZZ [[ \\ ]] nn# 1ww= K\
-
-……+ ;&& !aa !bb !cc !dd !ee !ff !mm# 3ó
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.cs
+33C Dä
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.cs
 
  )(
      .. 
@@ -698,32 +454,8 @@ oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 ::2 8
 
-::D E®
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.Designer.cs
-
- "
-		1 ; ( 
-
-  '
-- 6  "
-
- (p
-
-‰‰, @   %,, %-- %.. %// %00 %11 %22 %33 %||# 7R
-
-ŠŠ- 8!! 77 88 99 :: ;; {{# .f
-
-‹‹+ 1"" ?? @@ AA BB CC DD EE zz# )f
-
-ŒŒ+ 1## II JJ KK LL MM NN OO yy# )f
-
-, 3$$ SS TT UU VV WW XX YY xx# *h
-
-ŽŽ3 A%% ''= K]] ^^ cc dd ee ww# 1
-= Kf
-
-+ ;&& !ii !jj !kk !ll !mm !nn !oo !vv# 3ˆ
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs
+::D Eù
+aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs
 
  *
    
@@ -741,22 +473,8 @@ pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 
 1 7
 
-C DÉ
-yC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.Designer.cs
-
- #
-		1 ; ( 
-
-  '
-- 6  "
-
- (d
-kk+ 1   )) ** ++ ,, -- .. // ``# )n
-ll, 3!! 33 44 55 66 77 88 99 :: __# *Z
-mm- 9"" >> ?? @@ AA BB CC ^^# /d
-nn+ 1## GG HH II JJ KK LL MM ]]# )P
-oo- <$$  QQ  RR  SS  TT  UU  \\# 2“
-jC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs
+C D„
+[Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs
 
  $˜
    ,,  .. // AA VV `` nn& .ss  uu  yy  ~~  
@@ -805,119 +523,8 @@ jC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 ‚‚P _F
 TT TT TT= >VV@ A]]? @``H Ibb] ^f
 ll ll  !llA BnnZ [ooO PssN Ouua byyH I~~B C
-‚‚B CÖ
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.Designer.cs
-
- 
-		1 ; ( 
-
-  '
-- 6  "
-
- (h
-
-÷÷+ 1   44 55 66 77 88 99 :: 
-êê# )^
-
-øø- 8!! >> ?? @@ AA BB CC 
-éé# .h
-
-ùù+ 1"" GG HH II JJ KK LL MM 
-èè# )h
-
-úú- 8## QQ RR SS TT UU VV WW 
-çç# .r
-
-ûû- @$$ $[[ $\\ $]] $^^ $__ $`` $aa $bb $
-ææ# 6h
-
-üü+ 1%% ff gg hh ii jj kk ll 
-åå# )|
-
-ýý- <&&  pp  qq  rr  ss  tt  uu  vv  ww  xx  
-ää# 2n
-
-þþ+ 1'' || }} ~~  
-€€ 
- 
-‚‚ 
-ãã# )v
-
-ÿÿ+ 1(( 
-†† 
-‡‡ 
-ˆˆ 
-‰‰ 
-ŠŠ 
-‹‹ 
-ŒŒ 
-ââ# )‚
-
-€€- <))  
-  
-‘‘  
-’’  
-““  
-””  
-••  
-––  
-——  
-áá# 2‚
-
-, =** "
-›› "
-œœ "
- "
-žž "
-ŸŸ "
-   "
-¡¡ "
-¢¢ "
-àà# 4‚
-
-‚‚, 3++ 
-¦¦ 
-§§ 
-¨¨ 
-©© 
-ªª 
-«« 
-¬¬ 
-­­ 
-ßß# *‚
-
-ƒƒ, 3,, 
-±± 
-²² 
-³³ 
-´´ 
-µµ 
-¶¶ 
-·· 
-¸¸ 
-ÞÞ# *v
-
-„„+ 1-- 
-¼¼ 
-½½ 
-¾¾ 
-¿¿ 
-ÀÀ 
-ÁÁ 
-ÂÂ 
-ÝÝ# )Œ
-
-……3 A.. //= K
-ÆÆ 
-ÇÇ 
-ÈÈ 
-ÍÍ 
-ÎÎ 
-ÏÏ 
-ÐÐ 
-ÜÜ# 1
-ïï= KØS
-iC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs—
+‚‚B CÉS
+ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs—
  ””ˆ ººŠ ‘ààƒ Š††Š ‘°°¦ ­
 ©©_ fÎÎ² ¹ää¥ ¬
 øøg n
@@ -2133,8 +1740,8 @@ iC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 ŸŸ 
 
 ““  
-––" %¾
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs
+––" %¯
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs
 
 
  
@@ -2143,8 +1750,8 @@ lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 		 
 
  
-2 ?! .å
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs
+2 ?! .Ö
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs
 
  !(
     (
@@ -2168,8 +1775,8 @@ oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 ' / $
 
    
-  ' /"" $ï
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.cs
+  ' /"" $à
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.cs
 
  (
    !! (
@@ -2191,14 +1798,14 @@ mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 # '!! 
 
 $$ 
-$$' /&& $€
-fC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.cs
+$$' /&& $q
+WZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.cs
 
  
 
- x
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.cs¸
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.cs
+ i
+gZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.cs©
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.cs
 
  (
   // ?? (
@@ -2239,8 +1846,8 @@ lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 BB# 'DD 
 
 GG #
-GG+ 7II  ,í
-kC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.cs
+GG+ 7II  ,Þ
+\Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.cs
 
 
  (
@@ -2261,24 +1868,4 @@ kC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 $ ) 
 
 !! 
-!!' /## $°
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Resources.Designer.cs
- 
-**ž §(
-@ K))+ 6++ -- "
-@ O88 &;; 
-
-   
-
-''A P
-**= A++" &
-
-66A H
-:: ;;" 'Õ
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Settings.Designer.cs4
-" * 4 <
-„ Œ 
-  / &
-
- &›
-˜C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\obj\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs
+!!' /## $

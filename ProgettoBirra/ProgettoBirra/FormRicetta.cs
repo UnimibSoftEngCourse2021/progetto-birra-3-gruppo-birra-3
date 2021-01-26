@@ -34,10 +34,7 @@ namespace ProgettoBirra
 
         }
 
-        private void FormRicetta_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void buttonElimina_Click(object sender, EventArgs e)
         {
@@ -47,11 +44,7 @@ namespace ProgettoBirra
             database.DeleteRic(textBoxNome.Text);
             MessageBox.Show("La ricetta è stata eliminata dal ricettario");
 
-            /*FormMenu newform = new FormMenu();
-            this.Hide();
-            this.Close();
-            newform.ShowDialog();
-            this.Show();*/
+           
             this.Close();
         }
 
@@ -65,11 +58,7 @@ namespace ProgettoBirra
             database.UpdateRic(textBoxNome.Text, textBoxNote.Text);
             MessageBox.Show("La nota è stata modificata con successo");
 
-            /*FormMenu newform = new FormMenu();
-            this.Hide();
-            this.Close();
-            newform.ShowDialog();
-            this.Show();*/
+           
             this.Close();
         }
 

@@ -24,11 +24,11 @@ namespace ProgettoBirra
             //Bottone login 
 
             bool b = false;
-            //database.SelectUtente(textBox1.Text, textBox2.Text);
+            
             b = database.SelectUtente(textBox1.Text, textBox2.Text);
             if (b == true)
             {
-                //MessageBox.Show("Benvenuto");
+                
                 FormMenu newform = new FormMenu();
                 this.Hide();
                 newform.ShowDialog();
@@ -41,10 +41,7 @@ namespace ProgettoBirra
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void buttonCreaAccount(object sender, EventArgs e)
         { 
@@ -54,9 +51,6 @@ namespace ProgettoBirra
             this.Show();           
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

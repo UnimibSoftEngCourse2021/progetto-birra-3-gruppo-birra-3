@@ -22,7 +22,7 @@ namespace ProgettoBirra
 
             database.recuperoListaSpesa();
 
-            for (int i = 0; i < Globals.listaSpesa.Count(); i++)
+            for (int i = 0; i < Globals.listaSpesa.Count; i++)
             {
                 textBoxListaSpesa.AppendText(Globals.listaSpesa[i].getnomeProd() + "  quantità  " + Globals.listaSpesa[i].getQuantita()+"\r\n");
             }

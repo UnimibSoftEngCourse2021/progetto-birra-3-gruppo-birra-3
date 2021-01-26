@@ -11,8 +11,6 @@ namespace ProgettoBirra
             database = new GestioneDB();
             InitializeComponent();
             
-
-
         }
 
 
@@ -20,7 +18,7 @@ namespace ProgettoBirra
         {
             FormGestioneProdotti newform = new FormGestioneProdotti();
             newform.ShowDialog();
-            //this.Close();
+        
         }
 
         private void buttonGestioneUtente(object sender, EventArgs e)
@@ -37,11 +35,7 @@ namespace ProgettoBirra
             newform.ShowDialog();
         }
 
-        private void buttonPreparaBirra(object sender, EventArgs e)
-        {
-
-        }
-
+  
         private void buttonListaDellaSpesa(object sender, EventArgs e)
         {
             FormListaSpesa newform = new FormListaSpesa();
@@ -60,8 +54,7 @@ namespace ProgettoBirra
 
             for (int i = 0; i < Globals.listaRicette.Count; i++)
             {
-
-                //database.recuperoIdRic(Globals.listaRicette[i].getNome());
+                
                 Globals.listaProdottiRicettaUtente.Clear();
                 Globals.listaProdottiUtente.Clear();
                 Globals.n = 999;
@@ -100,9 +93,6 @@ namespace ProgettoBirra
             
         }
 
-        private void FormMenu_Load(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

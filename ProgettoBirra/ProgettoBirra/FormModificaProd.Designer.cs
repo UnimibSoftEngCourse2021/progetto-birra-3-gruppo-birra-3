@@ -125,7 +125,7 @@ namespace ProgettoBirra
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormModificaProd";
             this.Text = "MODIFICA PRODOTTO";
-            this.Load += new System.EventHandler(this.FormModificaProd_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

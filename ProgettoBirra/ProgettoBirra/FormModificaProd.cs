@@ -31,11 +31,7 @@ namespace ProgettoBirra
         {
             database.UpdateProd(textBoxNome.Text, Convert.ToInt32(this.numericUpDown1.Text));
             MessageBox.Show("Il prodotto è stato modificato con successo");
-            /* FormGestioneProdotti newform = new FormGestioneProdotti();
-             this.Hide();
-             this.Close();
-             newform.ShowDialog();
-             this.Show();*/
+           
             this.Close();
             this.Dispose();
 
@@ -45,19 +41,11 @@ namespace ProgettoBirra
         {
             database.DeleteProd(textBoxNome.Text);
             MessageBox.Show("Il prodotto è stato rimosso dalla dispensa");
-            /* FormGestioneProdotti newform = new FormGestioneProdotti();
-             this.Hide();
-             this.Close();
-             newform.ShowDialog();
-             this.Show();*/
+           
             this.Close();
             this.Dispose();
 
         }
 
-        private void FormModificaProd_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

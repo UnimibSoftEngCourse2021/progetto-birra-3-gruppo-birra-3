@@ -1,56 +1,41 @@
-°
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.cs 8r
- !"$%&'()Ç!&ü
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.cs 8r
- !"#$Ç!Œ
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.cs 8r/	
- !"$%&')*-/01234689;>?xÇ "$&)*124689€
-ÉC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.Designer.csI 8j)19CMXcmrh	 !"#$%&'+,-./34567;<=>?@AEFGHIJKOPQRSTUVZ[\]^_`aefghijkopqrstuvwxyz{|}ÉÑÖÜáàâäãxÇI !"#$%&'+,-./34567;<=>?@AEFGHIJKOPQRSTUVZ[\]^_`aefghijkopqrstuvwxyz{|}§
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs 8r	
+í
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.cs 8r
+ !"$%&'()Ç!&ê
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.cs 8r
+ !"#$Ç!ø
+kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.cs 8r/	
+ !"$%&')*-/01234689;>?xÇ "$&)*124689ï
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.cs 8r	
  !Ç
-€
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.Designer.csf 8j-6?FOXakt}áírØ	 !"#$%&'()*+/0123489:;<=ABCDHIJKLMQRSTUVZ[\]^_cdefghimnopqrvwxyz{ÄÅÇÉÑÖâäãåçéèêîïñóòôöõúùûü†°¢£§•¶®¨≠ÆØ∞±≤≥¥µ∂∑∏xÇá !"#$%&'()*+/0123489:;<=ABCDHIJKLMQRSTUVZ[\]^_cdefghimnopqrvwxyz{ÄÅÇÉÑÖâäãåçéèêîïñóòôöõúùûü†°¢£§•¶ñ
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs 8r	
-Ç°
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.Designer.cs8 8j(/6?HR[rM	 !"#$%&*+,-123489:;<=ABCDEFJKLMNOPTUVWXY]^_`abcdefghikopqrstuvxÇ8 !"#$%&*+,-123489:;<=ABCDEFJKLMNOPTUVWXY]^_`abcdefghiª
-rC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs 8r+	
- "$%')*,./234789:<=>xÇ 2489Î
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.Designer.cs 8j$/:r0	 !"&'()*+,-12345678<=>?@ABCDFJKLMxÇ !"&'()*+,-12345678<=>?@ABCD√
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs 8r.	
- !#%&(*+-/0234678:<=>xÇ2468Ò
-ÄC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.Designer.cs 8j$/:r0	 !"&'()*+,-12345678<=>?@ABCDFJKLMxÇ !"&'()*+,-12345678<=>?@ABCD›
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs 
+á
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.cs 8r	
+Ç¨
+cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.cs 8r+	
+ "$%')*,./234789:<=>xÇ 2489¥
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.cs 8r.	
+ !#%&(*+-/0234678:<=>xÇ2468Œ
+bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.cs 
 8rH	
-#$&()+-./012345679:<>?BCDEFHJKMNPQRSTUVXYZ[\^`acdexÇ/15BDEMPQRSTUV[î
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.Designer.csX 8j*6@KT^hs}rä	 !"#$%&'(,-./0123489:;<=>BCDEFGHIMNOPQRVWXYZ[\`abcdefjklmnopquvwxyz{ÄÅÇÉÑÖÜáàâäãåçéèëïñóòôöõúùûxÇh !"#$%&'(,-./0123489:;<=>BCDEFGHIMNOPQRVWXYZ[\`abcdefjklmnopquvwxyz{ÄÅÇÉÑÖÜáàâäãåçéè¶
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs 8r 	 !"#$%&xÇ"#Ú
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.Designer.cs$ 8j%.7Ar6	 !"#'()*+,0123459:;<=>?CDEFGHIJKLNRSTUVxÇ$ !"#'()*+,0123459:;<=>?CDEFGHIJKL¥
-hC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs 8jr* !"#$%&),-/12345679:<=>xÇ!"#&456Ø
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.Designer.csB 8j(2:CNYcrW	 !"#$%&*+,-./045678<=>?@AEFGHIJKLPQRSTUVW[\]^_`aefghijklmnopqrsuxyz{|}~xÇB !"#$%&*+,-./045678<=>?@AEFGHIJKLPQRSTUVW[\]^_`aefghijklmnopqrs·
-gC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs 	8j@rM	
- "#$%&()+-./013467:=>ABCDFHIKLMNOPQSUVXYZ[\]_`abeghjklxÇ%067:=ABCDKMOPUX[bæ
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.Designer.csG 8j(3>IT_irb	 !"#$%&*+,-./0156789:;<@ABCDEFGKLMNOPQRVWXYZ[\]abcdefgklmnopqrstuvwxz~ÄÅÇÉÑÖxÇG !"#$%&*+,-./0156789:;<@ABCDEFGKLMNOPQRVWXYZ[\]abcdefgklmnopqrstuvwx∏
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.cs 8r&	
-!&'()*,-./1234xÇ(*,-/Ï
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.Designer.cs 8j$/:r0	 !"&'()*+,-12345678<=>?@ABCDFJKLMxÇ !"&'()*+,-12345678<=>?@ABCD°
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs 8r	!%&()*Ç!%&¢
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.Designer.cs8 8j(1;BKR[rM	 !"#$%&*+,-./3456789=>?@DEFGHIMNOPTUVWXY]^_`abcdefghikopqrstuvxÇ8 !"#$%&*+,-./3456789=>?@DEFGHIMNOPTUVWXY]^_`abcdefghi¿
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs 8j
+#$&()+-./012345679:<>?BCDEFHJKMNPQRSTUVXYZ[\^`acdexÇ/15BDEMPQRSTUV[ó
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.cs 8r 	 !"#$%&xÇ"#•
+YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.cs 8jr* !"#$%&),-/12345679:<=>xÇ!"#&456“
+XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.cs 	8j@rM	
+ "#$%&()+-./013467:=>ABCDFHIKLMNOPQSUVXYZ[\]_`abeghjklxÇ%067:=ABCDKMOPUX[b©
+dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.cs 8r&	
+!&'()*,-./1234xÇ(*,-/í
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.cs 8r	!%&()*Ç!%&±
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.cs 8j
  !*+,-.r'	
-"#$&'()/0134678xÇ"#()/0≈
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.Designer.csE 8j*3<DNX_hrc	 !"#$%&'(,-./0156789:>?@ABFGHIJKLPQRSTUVZ[\]abcdefjklmnopqrstuvwxy{ÄÅÇÉÑÖÜáxÇE !"#$%&'(,-./0156789:>?@ABFGHIJKLPQRSTUVZ[\]abcdefjklmnopqrstuvwxy¡
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.cs 8j
+"#$&'()/0134678xÇ"#()/0≤
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.cs 8j
 "#$%&01234r'	
- !'(*,-./568:;=>?xÇ !'(./56‡
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.Designer.csK 8j*5=GQ[gqrs	 !"#$%&'(,-./0123789:;?@ABCDEIJKLMNOSTUVWXY]^_`abcdeijklmnostuvwxyz{|}~ÄÅÇÉÖâäãåçéèêëxÇO !"#$%&'(,-./0123789:;?@ABCDEIJKLMNOSTUVWXY]^cdeijklmnostuvwxyz{|}~ÄÅÇÉ†
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs 8r	
- !Çü
-yC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.Designer.cs7 8j'1<EOWrK	 !"#$%)*+,-./3456789:>?@ABCGHIJKLMQRSTUYZ[\]^_`abcdegklmnopqxÇ7 !"#$%)*+,-./3456789:>?@ABCGHIJKLMQRSTUYZ[\]^_`abcde°
-jC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs/ 8j
+ !'(*,-./568:;=>?xÇ !'(./56ë
+aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.cs 8r	
+ !Çí
+[Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.cs/ 8j
 23456DEFGHrm	
-!#%&(*+,./078:;=?@ABIJLMNOPQTUVWXYZ[]^`abcdegijlmnostuvwxyz|}~ÄÅÇÉÖáàëíìxÇ-,./07ABITVXYZ]^`bcdilnosuy|~Çá 
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.Designer.csù 8j#2<EOYdnzÑéô§Ø∫ƒ÷rØ	 !"#$%&'()*+,-./0456789:>?@ABCGHIJKLMQRSTUVW[\]^_`abfghijklpqrstuvwx|}~ÄÅÇÜáàâäãåêëíìîïñóõúùûü†°¢¶ß®©™´¨≠±≤≥¥µ∂∑∏ºΩæø¿¡¬∆«»… ÀÃÕŒœ–—“”‘ÿŸ⁄€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÛ˜¯˘˙˚¸˝˛ˇÄÅÇÉÑÖÜáxÇÔ !"#$%&'()*+,-./0456789:>?@ABCGHIJKLMQRSTUVW[\]^_`abfghijklpqrstuvwx|}~ÄÅÇÜáàâäãåêëíìîïñóõúùûü†°¢¶ß®©™´¨≠±≤≥¥µ∂∑∏ºΩæø¿¡¬∆«»ÕŒœ–ÿŸ⁄€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒ∑
-iC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs¥ 48åj©#)7ABCDEVeiknqrv{ÅÑáàåëïóöùû¢ß´≠∞≥¥∏Ω¡√∆… Œ”◊Ÿ‹ﬂ‡‰ÛÇëóö©Ω¿œ„Êıâåõ≥∂≈‘‹ﬂ‚ÂÛˆ˘¸áëîóö¶≠∞≥∂ø√ƒ∆«…À–”÷ŸﬂÊÈÏÔ˙˝ÄÉâéëìïòõ§ß™¨Æ±¥πæ¡√≈»À“◊⁄‹ﬁ·‰ÈÓÒÛı¯˚Öàäåèíò•≤øÃ⁄ËıÅéú™Øµ∏∫Ω≈»À‘€Û¸Éñû•∑¿«Ÿ‚È¸Ü	é	û	®	∞	æ	¬	»	–	ﬁ	‚	Í	Û	ˆ	É
+!#%&(*+,./078:;=?@ABIJLMNOPQTUVWXYZ[]^`abcdegijlmnostuvwxyz|}~ÄÅÇÉÖáàëíìxÇ-,./07ABITVXYZ]^`bcdilnosuy|~Çá®
+ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.cs¥ 48åj©#)7ABCDEVeiknqrv{ÅÑáàåëïóöùû¢ß´≠∞≥¥∏Ω¡√∆… Œ”◊Ÿ‹ﬂ‡‰ÛÇëóö©Ω¿œ„Êıâåõ≥∂≈‘‹ﬂ‚ÂÛˆ˘¸áëîóö¶≠∞≥∂ø√ƒ∆«…À–”÷ŸﬂÊÈÏÔ˙˝ÄÉâéëìïòõ§ß™¨Æ±¥πæ¡√≈»À“◊⁄‹ﬁ·‰ÈÓÒÛı¯˚Öàäåèíò•≤øÃ⁄ËıÅéú™Øµ∏∫Ω≈»À‘€Û¸Éñû•∑¿«Ÿ‚È¸Ü	é	û	®	∞	æ	¬	»	–	ﬁ	‚	Í	Û	ˆ	É
 Ñ
 Ü
 é
@@ -170,20 +155,17 @@ iC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\P
 Ù
 ˙
 ˚
-ÖÜêñôõüä
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs 8r	
-Ç°
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs 8r
- !"#$%Ç"°
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.cs 8r
- !"$%&'()Ç!&å
-fC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.cs 8j	
-rÇö
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.csj !"r	
-#$«
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.cs 8r=	 !#$%&()*+-./02345789:=>?@BCDEGHIJKLÇ %*/49?DIù
-kC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.cs 8r	
-!"#$'(Ç#√
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Resources.Designer.cs 8j#$%1234r  !&'()*+,-./56789:;<=>?xÇ)*+-8;ò
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Settings.Designer.cs 8rÇ†
-òC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\obj\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.csr
+ÖÜêñôõü{
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.cs 8r	
+Çí
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.cs 8r
+ !"#$%Ç"í
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.cs 8r
+ !"$%&'()Ç!&}
+WZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.cs 8j	
+rÇã
+gZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.csj !"r	
+#$∏
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.cs 8r=	 !#$%&()*+-./02345789:=>?@BCDEGHIJKLÇ %*/49?DIé
+\Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.cs 8r	
+!"#$'(Ç#

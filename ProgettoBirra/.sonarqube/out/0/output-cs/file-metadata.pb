@@ -1,44 +1,44 @@
-v
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.csutf-8v
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.csutf-8É
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.csutf-8è
-ÉC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.Designer.csutf-8w
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.csutf-8Ç
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.Designer.csutf-8w
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.csutf-8Ç
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.Designer.csutf-8{
-rC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.csutf-8Ü
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.Designer.csutf-8Ä
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.csutf-8å
-ÄC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.Designer.csutf-8z
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.csutf-8Ö
-zC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.Designer.csutf-8v
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.csutf-8Å
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.Designer.csutf-8q
-hC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.csutf-8|
-qC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.Designer.csutf-8p
-gC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.csutf-8{
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.Designer.csutf-8|
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.csutf-8á
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.Designer.csutf-8x
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.csutf-8É
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.Designer.csutf-8w
-nC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.csutf-8Ç
-wC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.Designer.csutf-8x
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.csutf-8É
-xC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.Designer.csutf-8y
-pC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.csutf-8Ñ
-yC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.Designer.csutf-8s
-jC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.csutf-8~
-sC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.Designer.csutf-8r
-iC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.csutf-8u
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.csutf-8x
-oC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.csutf-8v
-mC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.csutf-8o
-fC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.csutf-8
-vC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.csutf-8u
-lC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.csutf-8t
-kC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.csutf-8á
-|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Resources.Designer.csutf-8Ü
-{C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Settings.Designer.csutf-8§
-òC:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\obj\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.csutf-8
+g
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\AttrezzoMapper.csutf-8g
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\CheBirraFaccio.csutf-8t
+kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.csutf-8
+tZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiProdottiRicetta.Designer.csutf-8h
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.csutf-8s
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiungiRic.Designer.csutf-8h
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.csutf-8s
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaAtt.Designer.csutf-8l
+cZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.csutf-8w
+lZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneRicette.Designer.csutf-8q
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.csutf-8|
+qZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneAttrezzatura.Designer.csutf-8k
+bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.csutf-8v
+kZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneUtente.Designer.csutf-8g
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.csutf-8r
+gZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormListaSpesa.Designer.csutf-8b
+YZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.csutf-8m
+bZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormLogin.Designer.csutf-8a
+XZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.csutf-8l
+aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormMenu.Designer.csutf-8m
+dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.csutf-8x
+mZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormGestioneProdotti.Designer.csutf-8i
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.csutf-8t
+iZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormAggiuntaProd.Designer.csutf-8h
+_Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.csutf-8s
+hZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaAtt.Designer.csutf-8i
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.csutf-8t
+iZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormModificaProd.Designer.csutf-8j
+aZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.csutf-8u
+jZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRegistrazione.Designer.csutf-8d
+[Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.csutf-8o
+dZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\FormRicetta.Designer.csutf-8c
+ZZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\GestioneDB.csutf-8f
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaProdotti.csutf-8i
+`Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ListaSpesaMapper.csutf-8g
+^Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProdottoMapper.csutf-8`
+WZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Program.csutf-8p
+gZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\AssemblyInfo.csutf-8f
+]Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\RicettaMapper.csutf-8e
+\Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\UtenteMapper.csutf-8x
+mZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Resources.Designer.csutf-8w
+lZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\Properties\Settings.Designer.csutf-8ï
+âZ:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\obj\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.csutf-8

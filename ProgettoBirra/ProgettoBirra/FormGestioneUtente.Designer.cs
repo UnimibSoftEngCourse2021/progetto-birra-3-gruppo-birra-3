@@ -59,7 +59,7 @@ namespace ProgettoBirra
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(222, 20);
             this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // label1
             // 
@@ -70,7 +70,7 @@ namespace ProgettoBirra
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "COSA DESIDERI?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // textBoxEmail
             // 
@@ -110,7 +110,7 @@ namespace ProgettoBirra
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "CONFERMA ELIMINAZIONE";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            
             // 
             // label2
             // 
@@ -138,7 +138,7 @@ namespace ProgettoBirra
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormGestioneUtente";
             this.Text = "MODIFICA ACCOUNT";
-            this.Load += new System.EventHandler(this.formGestioneUt_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

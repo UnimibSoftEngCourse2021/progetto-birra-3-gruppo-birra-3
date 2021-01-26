@@ -4,14 +4,14 @@
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
   <ProjectGuid>be88753a-00c0-44a8-859b-806e6c5aa318</ProjectGuid>
-  <FullPath>C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProgettoBirra.csproj</FullPath>
+  <FullPath>Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\ProgettoBirra.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\.sonarqube\out\0\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\.sonarqube\out\0\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\bin\Debug\ProgettoBirra.exe.RoslynCA.json|C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\bin\Debug\ProgettoBirra.exe.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\aless\Desktop\Progetto\progetto-birra-3-gruppo-birra-3\ProgettoBirra\.sonarqube\out\0</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\bin\Debug\ProgettoBirra.exe.RoslynCA.json|Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\ProgettoBirra\bin\Debug\ProgettoBirra.exe.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">Z:\Scuola\c# git\progetto-birra-3-gruppo-birra-3\ProgettoBirra\.sonarqube\out\0</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

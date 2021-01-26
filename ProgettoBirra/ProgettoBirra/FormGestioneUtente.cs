@@ -5,8 +5,7 @@ namespace ProgettoBirra
 {
     public partial class FormGestioneUtente : Form
     {
-        string email;
-        string password;
+       
         GestioneDB database;
         
 
@@ -20,27 +19,7 @@ namespace ProgettoBirra
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void formGestioneUt_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void checkBoxPassword_CheckedChanged(object sender, EventArgs e)
         {
@@ -54,10 +33,7 @@ namespace ProgettoBirra
             }
         }
 
-        private void checkBoxEmail_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
+  
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
@@ -93,9 +69,6 @@ namespace ProgettoBirra
             
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

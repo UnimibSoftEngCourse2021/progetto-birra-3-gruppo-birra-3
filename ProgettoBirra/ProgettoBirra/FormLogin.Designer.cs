@@ -110,7 +110,7 @@ namespace ProgettoBirra
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLogin";
             this.Text = "LOGIN";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
