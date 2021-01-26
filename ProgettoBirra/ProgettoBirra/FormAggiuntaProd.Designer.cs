@@ -101,6 +101,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.label1);
             this.Name = "FormAggiuntaProd";
             this.Text = "NUOVO PRODOTTO";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

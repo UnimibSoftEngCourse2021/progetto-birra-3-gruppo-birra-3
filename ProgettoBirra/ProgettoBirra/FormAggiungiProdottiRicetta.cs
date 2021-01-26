@@ -27,7 +27,7 @@ namespace ProgettoBirra
         private void buttonFine_Click(object sender, EventArgs e)
         {
             MessageBox.Show("La ricetta è stata salvata nel ricettario");
-            if (database.verificaRic(nomeRic) == false)
+            if (!database.verificaRic(nomeRic))
             {
                 database.InsertRic(nomeRic, attRic, prepRic, noteRic);
             }
@@ -46,7 +46,7 @@ namespace ProgettoBirra
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            if (database.verificaRic(nomeRic) == false){
+            if (!database.verificaRic(nomeRic)){
                 database.InsertRic(nomeRic, attRic, prepRic, noteRic);
             }
             int idRicetta = database.recuperoIdRic(nomeRic);

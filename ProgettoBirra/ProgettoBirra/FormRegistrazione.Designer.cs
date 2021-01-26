@@ -64,7 +64,7 @@ namespace ProgettoBirra
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(319, 26);
             this.textBoxEmail.TabIndex = 2;
-            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // label2
             // 

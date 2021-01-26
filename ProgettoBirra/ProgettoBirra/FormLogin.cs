@@ -28,16 +28,17 @@ namespace ProgettoBirra
             b = database.SelectUtente(textBox1.Text, textBox2.Text);
             if (b == true)
             {
-                
                 FormMenu newform = new FormMenu();
                 this.Hide();
                 newform.ShowDialog();
+                textBox1.Text = "";
+                textBox2.Text = "";
                 this.Show();
+                                                
             }
             else
                 MessageBox.Show("Login errato");
-
-
+            
         }
 
 
@@ -46,9 +47,8 @@ namespace ProgettoBirra
         private void buttonCreaAccount(object sender, EventArgs e)
         { 
             FormRegistrazione newform = new FormRegistrazione();
-            this.Hide();
             newform.ShowDialog();
-            this.Show();           
+            
         }
 
    

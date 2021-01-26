@@ -16,18 +16,13 @@ namespace ProgettoBirra
         {
             database.InsertUtente(textBoxEmail.Text, textBoxPassword.Text);
 
-
-
-            FormLogin newform = new FormLogin();
-            this.Hide();
             this.Close();
-            newform.ShowDialog();
-            this.Show();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            this.Dispose();
+            
+           
 
         }
+
+      
     }
 }

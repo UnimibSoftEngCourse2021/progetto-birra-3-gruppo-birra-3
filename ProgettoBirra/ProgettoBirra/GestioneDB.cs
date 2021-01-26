@@ -496,12 +496,12 @@ namespace ProgettoBirra
 
                     //close connection
                     this.CloseConnection();
-                    MessageBox.Show("Utente inserito nel database");
+                    MessageBox.Show("Registrazione completata");
                 }
             }
             else
             {
-                MessageBox.Show("Utente già presente nel database");
+                MessageBox.Show("Nome utente gia esistente");
             }
         }
 

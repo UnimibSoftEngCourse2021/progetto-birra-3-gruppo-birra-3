@@ -23,7 +23,7 @@ namespace ProgettoBirra
 
         private void checkBoxPassword_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxPassword.Checked != true)
+            if (!checkBoxPassword.Checked)
             {
                 textBoxPassword.Enabled = false;
             }
@@ -43,6 +43,7 @@ namespace ProgettoBirra
             {
                 database.UpdateUtente(textBoxPassword.Text);
                 MessageBox.Show("Password aggiornata");
+                this.Close();
             }
            
         }
