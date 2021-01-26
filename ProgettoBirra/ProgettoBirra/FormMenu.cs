@@ -25,8 +25,7 @@ namespace ProgettoBirra
         {
             FormGestioneUtente newform = new FormGestioneUtente();
             newform.ShowDialog();
-            this.Close();
-            
+            this.Close();            
         }
 
         private void buttonGestioneAttrezzatura(object sender, EventArgs e)

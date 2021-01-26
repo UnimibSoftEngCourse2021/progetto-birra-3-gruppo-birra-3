@@ -68,7 +68,7 @@ namespace ProgettoBirra
 
             for (int i = 0; i < Globals.listaProdotti.Count; i++)
             {
-                if (database.verificaProd(Globals.listaProdotti[i].getNome()) == false)
+                if (!database.verificaProd(Globals.listaProdotti[i].getNome()))
                 {
                     MessageBox.Show("Impossibile preparare ricetta, non hai i prodotti necessari");
                     fatta = false;
@@ -87,7 +87,7 @@ namespace ProgettoBirra
 
             }
 
-            if(fatta==true)
+            if(fatta)
             {
 
                 for (int j = 0; j < Globals.listaProdotti.Count; j++)

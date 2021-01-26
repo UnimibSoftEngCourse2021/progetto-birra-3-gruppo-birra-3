@@ -26,7 +26,8 @@ namespace ProgettoBirra
             bool b = false;
             
             b = database.SelectUtente(textBox1.Text, textBox2.Text);
-            if (b == true)
+
+            if (b)
             {
                 FormMenu newform = new FormMenu();
                 this.Hide();

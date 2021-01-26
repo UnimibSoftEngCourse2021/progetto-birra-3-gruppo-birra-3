@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
+
 
 namespace ProgettoBirra
 {
@@ -26,10 +22,7 @@ namespace ProgettoBirra
     class GestioneDB
     {
         private MySqlConnection connection;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
+      
        
 
         //Constructor
@@ -40,8 +33,14 @@ namespace ProgettoBirra
 
         //Initialize values
         private void Initialize()
-        {
-            server = "den1.mysql3.gear.host";
+        {  
+            string server;
+        string database;
+        string uid;
+        string password;
+
+
+        server = "den1.mysql3.gear.host";
             database = "birradb";
             uid = "birradb";
             password = "password.";
@@ -80,17 +79,17 @@ namespace ProgettoBirra
 
 
         //Close connection
-        private bool CloseConnection()
+        private void CloseConnection()
         {
             try
             {
                 connection.Close();
-                return true;
+                
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
-                return false;
+                
             }
         }
 
@@ -101,7 +100,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `iscritti`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -123,7 +122,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `Prodotto`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -144,7 +143,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `attrezzo`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -165,7 +164,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `Ricetta`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -185,7 +184,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `prodRicetta`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -206,7 +205,7 @@ namespace ProgettoBirra
             //string query = string.Format("DROP TABLE `ListaDellaSpesa`");
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -227,7 +226,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -266,7 +265,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -304,7 +303,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -342,7 +341,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -380,7 +379,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -422,7 +421,7 @@ namespace ProgettoBirra
 
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -463,7 +462,7 @@ namespace ProgettoBirra
             create_table();
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -483,10 +482,10 @@ namespace ProgettoBirra
 
             string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
 
-            if (verificaUtente(email) == false)
+            if (!verificaUtente(email))
             {
                 //open connection
-                if (this.OpenConnection() == true)
+                if (this.OpenConnection())
                 {
                     //create command and assign the query and connection from the constructor
                     MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -512,11 +511,11 @@ namespace ProgettoBirra
 
 
 
-            if (verificaProd(nomeProd) == false)
+            if (!verificaProd(nomeProd))
             {
 
                 //open connection
-                if (this.OpenConnection() == true)
+                if (this.OpenConnection())
                 {
                     //create command and assign the query and connection from the constructor
                     MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -541,10 +540,10 @@ namespace ProgettoBirra
         {
             string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + Globals.emailGlobal+ "', '" + nomeAtt + "','" + capacita + "')";
 
-            if (verificaAttr(nomeAtt) == false)
+            if (!verificaAttr(nomeAtt))
             {
                 //open connection
-                if (this.OpenConnection() == true)
+                if (this.OpenConnection())
                 {
                     //create command and assign the query and connection from the constructor
                     MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -569,7 +568,7 @@ namespace ProgettoBirra
             string query = "INSERT INTO Ricetta (nomeRic, preparazione, note, proprietario, elencoAttrezzi) VALUES('" + nomeRic + "', '" + preparazione + "','" + note + "', '" + Globals.emailGlobal + "', '" + attrezzi + "')";
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -591,7 +590,7 @@ namespace ProgettoBirra
             string query = "INSERT INTO prodricetta (idRicetta, nomeProd, quantita, proprietario) VALUES('" + idRicetta + "', '" + nome + "','" + quantita + "','" + Globals.emailGlobal+"')";
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -611,7 +610,7 @@ namespace ProgettoBirra
             string query = "INSERT INTO ListaDellaSpesa (proprietario, Prodotto, quantita) VALUES('" + Globals.emailGlobal  + "', '" + prodotto+ "', '" + quantita + "')";
 
             //open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -631,7 +630,7 @@ namespace ProgettoBirra
             string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -656,7 +655,7 @@ namespace ProgettoBirra
             string query = "UPDATE utenti SET password='" + password + "' WHERE password='" + Globals.passwordGlobal + "'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -679,7 +678,7 @@ namespace ProgettoBirra
             string query = "UPDATE Prodotto SET quantita='" + nuovaQT + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeProd='" + nomeProd + "'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -704,7 +703,7 @@ namespace ProgettoBirra
             string query = "UPDATE Attrezzo SET capacita='" + nuovaCP + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeAtt ='" + nomeAtt + "'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -727,7 +726,7 @@ namespace ProgettoBirra
             string query = "UPDATE Ricetta SET note='" + note + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeRic ='" + nomeRic + "'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -750,7 +749,7 @@ namespace ProgettoBirra
             string query = "UPDATE ListaDellaSpesa SET quantita=quantita+" + numero + " WHERE proprietario='" + Globals.emailGlobal + "' AND Prodotto ='" + nomeProd + "'";
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //create mysql command
                 MySqlCommand cmd = new MySqlCommand();
@@ -773,7 +772,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM tableinfo WHERE name='John Smith'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -786,7 +785,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Utenti WHERE email='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -799,7 +798,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Prodotto WHERE proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -812,7 +811,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Attrezzo WHERE proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -825,7 +824,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM prodRicetta WHERE proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -839,7 +838,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Ricetta WHERE proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -853,7 +852,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Prodotto WHERE nomeProd='" + nomeProd + "' AND proprietario='"+ Globals.emailGlobal +"'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -866,7 +865,7 @@ namespace ProgettoBirra
         {
             string query = "DELETE FROM Attrezzo WHERE nomeAtt='" + nomeAtt + "' AND proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -879,7 +878,7 @@ namespace ProgettoBirra
 
             string query = "DELETE FROM listadellaspesa WHERE proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -892,7 +891,7 @@ namespace ProgettoBirra
            
             string query = "DELETE FROM Ricetta WHERE nomeRic='" + nomeRic + "' AND proprietario='" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -906,7 +905,7 @@ namespace ProgettoBirra
            
             string query = "DELETE FROM prodRicetta WHERE idRicetta='" + idRicetta + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQueryAsync();
@@ -926,7 +925,7 @@ namespace ProgettoBirra
             list[2] = new List<string>();
 
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -961,7 +960,7 @@ namespace ProgettoBirra
         {
             string query = "SELECT * FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1001,7 +1000,7 @@ namespace ProgettoBirra
         {
             string query = "SELECT * FROM listadellaspesa WHERE proprietario = '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1035,7 +1034,7 @@ namespace ProgettoBirra
         {
             string query = "SELECT * FROM attrezzo WHERE proprietario= '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1069,7 +1068,7 @@ namespace ProgettoBirra
         {
             string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
 
-          if (this.OpenConnection() == true)
+          if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1103,7 +1102,7 @@ namespace ProgettoBirra
         {
             string query = "SELECT * FROM prodricetta WHERE idRicetta= '"+ Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal+"'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1140,7 +1139,7 @@ namespace ProgettoBirra
             string quantita = "";
             string query = "SELECT quantita FROM prodotto WHERE nomeProd= '" + nomeProd+ "' AND proprietario = '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1174,7 +1173,7 @@ namespace ProgettoBirra
             string nomeRic="";
             string query = "SELECT nomeRic FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "' AND idRicetta='" + id + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1206,7 +1205,7 @@ namespace ProgettoBirra
             string idric="";
             string query = "SELECT idRicetta FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "' AND nomeRic='" + nomeric + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1244,7 +1243,7 @@ namespace ProgettoBirra
 
         
             //Open connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1279,7 +1278,7 @@ namespace ProgettoBirra
         public void cheBirraFaccioOggi(int idRic) {
             string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -1307,7 +1306,7 @@ namespace ProgettoBirra
 
             string query2 = "SELECT * FROM prodricetta WHERE idRicetta= '" + Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal + "'";
 
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection() )
             {
                 //Create Command
                 MySqlCommand cmd2 = new MySqlCommand(query2, connection);
@@ -1333,11 +1332,7 @@ namespace ProgettoBirra
 
 
             }
-           // MessageBox.Show(" " + idRic);
-
-            //List<int> listaVolteProd = new List<int>();
-
-            //int n = 999;
+         
 
             int min = 9999;
 
@@ -1394,7 +1389,7 @@ namespace ProgettoBirra
             int Count = -1;
 
             //Open Connection
-            if (this.OpenConnection() == true)
+            if (this.OpenConnection())
             {
                 //Create Mysql Command
                 MySqlCommand cmd = new MySqlCommand(query, connection);
