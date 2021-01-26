@@ -333,15 +333,9 @@ br ^0
 %318 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :117 :12) // this (ThisExpression)
 %319 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :117 :12) // this.Text (SimpleMemberAccessExpression)
 %320 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :117 :24) // "MENU\'" (StringLiteralExpression)
-%321 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :118 :12) // this (ThisExpression)
-%322 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :118 :12) // this.Load (SimpleMemberAccessExpression)
-%323 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :118 :49) // this (ThisExpression)
-%324 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :118 :25) // new System.EventHandler(this.FormMenu_Load) (ObjectCreationExpression)
-%325 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :118 :12) // Binary expression on unsupported types this.Load += new System.EventHandler(this.FormMenu_Load)
-// No identifier name for binary assignment expression
-%326 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :12) // this (ThisExpression)
-%327 = constant 0 : i1 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :30) // false
-%328 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :12) // this.ResumeLayout(false) (InvocationExpression)
+%321 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :12) // this (ThisExpression)
+%322 = constant 0 : i1 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :30) // false
+%323 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormMenu.Designer.cs" :119 :12) // this.ResumeLayout(false) (InvocationExpression)
 br ^1
 
 ^1: // ExitBlock

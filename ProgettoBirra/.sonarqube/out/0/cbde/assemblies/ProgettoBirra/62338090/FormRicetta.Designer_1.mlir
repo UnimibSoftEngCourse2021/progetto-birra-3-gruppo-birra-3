@@ -760,21 +760,15 @@ br ^0
 %743 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :236 :12) // this (ThisExpression)
 %744 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :236 :12) // this.Text (SimpleMemberAccessExpression)
 %745 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :236 :24) // "MODIFICA RICETTA" (StringLiteralExpression)
-%746 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :237 :12) // this (ThisExpression)
-%747 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :237 :12) // this.Load (SimpleMemberAccessExpression)
-%748 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :237 :49) // this (ThisExpression)
-%749 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :237 :25) // new System.EventHandler(this.FormRicetta_Load) (ObjectCreationExpression)
-%750 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :237 :12) // Binary expression on unsupported types this.Load += new System.EventHandler(this.FormRicetta_Load)
-// No identifier name for binary assignment expression
-%751 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :56) // this (ThisExpression)
-%752 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :56) // this.numericUpDown1 (SimpleMemberAccessExpression)
-%753 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :13) // (System.ComponentModel.ISupportInitialize)(this.numericUpDown1) (CastExpression)
-%754 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :12) // ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit() (InvocationExpression)
-%755 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :12) // this (ThisExpression)
-%756 = constant 0 : i1 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :30) // false
-%757 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :12) // this.ResumeLayout(false) (InvocationExpression)
-%758 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :240 :12) // this (ThisExpression)
-%759 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :240 :12) // this.PerformLayout() (InvocationExpression)
+%746 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :56) // this (ThisExpression)
+%747 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :56) // this.numericUpDown1 (SimpleMemberAccessExpression)
+%748 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :13) // (System.ComponentModel.ISupportInitialize)(this.numericUpDown1) (CastExpression)
+%749 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :238 :12) // ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit() (InvocationExpression)
+%750 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :12) // this (ThisExpression)
+%751 = constant 0 : i1 loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :30) // false
+%752 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :239 :12) // this.ResumeLayout(false) (InvocationExpression)
+%753 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :240 :12) // this (ThisExpression)
+%754 = cbde.unknown : none loc("Z:\\Scuola\\c# git\\progetto-birra-3-gruppo-birra-3\\ProgettoBirra\\ProgettoBirra\\FormRicetta.Designer.cs" :240 :12) // this.PerformLayout() (InvocationExpression)
 br ^1
 
 ^1: // ExitBlock

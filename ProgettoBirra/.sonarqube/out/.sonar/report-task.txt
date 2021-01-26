@@ -2,5 +2,5 @@ projectKey=test_birra
 serverUrl=http://localhost:9000
 serverVersion=8.6.0.39681
 dashboardUrl=http://localhost:9000/dashboard?id=test_birra
-ceTaskId=AXc-hDI8rgyMbqokBDlf
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXc-hDI8rgyMbqokBDlf
+ceTaskId=AXc-je6GrgyMbqokBDlg
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXc-je6GrgyMbqokBDlg

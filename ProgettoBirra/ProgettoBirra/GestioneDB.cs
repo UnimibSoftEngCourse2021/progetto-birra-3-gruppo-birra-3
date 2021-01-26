@@ -62,11 +62,7 @@ namespace ProgettoBirra
             }
             catch (MySqlException ex)
             {
-                //When handling errors, you can your application's response based 
-                //on the error number.
-                //The two most common error numbers when connecting are as follows:
-                //0: Cannot connect to server.
-                //1045: Invalid user name and/or password.
+             
                 switch (ex.Number)
                 {
                     case 0:
@@ -132,8 +128,7 @@ namespace ProgettoBirra
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
+              
 
                 cmd.ExecuteNonQueryAsync();
 
@@ -154,8 +149,7 @@ namespace ProgettoBirra
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
+              
 
                 cmd.ExecuteNonQueryAsync();
 
@@ -176,9 +170,7 @@ namespace ProgettoBirra
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
-
+              
                 cmd.ExecuteNonQueryAsync();
 
                 //close connection
@@ -198,8 +190,7 @@ namespace ProgettoBirra
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
+              
 
                 cmd.ExecuteNonQueryAsync();
 
@@ -220,8 +211,6 @@ namespace ProgettoBirra
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
 
                 cmd.ExecuteNonQueryAsync();
 
@@ -575,17 +564,7 @@ namespace ProgettoBirra
         //Metodo per inserire un nuovo attrezzo nel DB
         public void InsertRic(string nomeRic, string attrezzi, string preparazione, string note)
         {
-            /*
-            string[] ListaAtrezzi = attrezzi.Split('\n');
-            string[] ListaProdotti = prodotti.Split('\n');
-
-            foreach (var sub in ListaAtrezzi) {
-                MessageBox.Show($"valore: {sub}");
-            }
-            foreach (var sub in ListaProdotti)
-            {
-                MessageBox.Show($"valore: {sub}");
-            }*/
+       
 
             string query = "INSERT INTO Ricetta (nomeRic, preparazione, note, proprietario, elencoAttrezzi) VALUES('" + nomeRic + "', '" + preparazione + "','" + note + "', '" + Globals.emailGlobal + "', '" + attrezzi + "')";
 
@@ -1215,7 +1194,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
 
             }
-            //Convert.ToInt32(idric);
+           
             
             return nomeRic;
 
@@ -1247,7 +1226,7 @@ namespace ProgettoBirra
                 this.CloseConnection();
                 
             }
-            //Convert.ToInt32(idric);
+      
             int valoreRitorno = Convert.ToInt32(idric);
             return valoreRitorno;
 
@@ -1280,8 +1259,7 @@ namespace ProgettoBirra
                     p += $"{reader.GetString("password")};";
                 }
 
-                //MessageBox.Show("a = " + a.ToString());
-                //MessageBox.Show("b = " + b.ToString());
+               
 
                 //close Connection
                 this.CloseConnection();
@@ -1291,11 +1269,6 @@ namespace ProgettoBirra
                     return false;
 
 
-                //return list to be displayed
-                //utente.setEmail(e);
-                //utente.setPassword(p);
-                /*Globals.emailGlobal = e;
-                Globals.passwordGlobal = p;*/
                 return true;
             }
 
