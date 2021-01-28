@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgettoBirra", "ProgettoBirra\ProgettoBirra.csproj", "{BE88753A-00C0-44A8-859B-806E6C5AA318}"
 EndProject
@@ -15,6 +15,7 @@ Global
 		{BE88753A-00C0-44A8-859B-806E6C5AA318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE88753A-00C0-44A8-859B-806E6C5AA318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE88753A-00C0-44A8-859B-806E6C5AA318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE88753A-00C0-44A8-859B-806E6C5AA318}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
