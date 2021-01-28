@@ -45,7 +45,9 @@ namespace ProgettoBirra
                 database.DeleteRicetteUtente();
                 database.DeleteAttrezziUtente();
                 database.DeleteProdUtente();
+                database.DeleteSpesa();
                 database.DeleteUtente();
+                
                 MessageBox.Show("Utente Eliminato");
                 this.Close();
             }
