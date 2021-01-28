@@ -409,29 +409,37 @@ namespace ProgettoBirra
         //metodo per inserire un nuovo utente del DB
          public void InsertUtente(string email, string password)
         {
-            string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
-
-            //verifichiamo che l'utente non sia già presente nel DB.
-            if (!verificaUtente(email))
+            if (email.Contains("@") && email.Contains("."))
             {
-                //open connection
-                if (this.OpenConnection())
+
+                string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
+
+                //verifichiamo che l'utente non sia già presente nel DB.
+                if (!verificaUtente(email))
                 {
-                    
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    //open connection
+                    if (this.OpenConnection())
+                    {
 
-                    //Execute command
-                    cmd.ExecuteNonQueryAsync();
+                        MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                    //close connection
-                    this.CloseConnection();
-                    MessageBox.Show("Registrazione completata");
+                        //Execute command
+                        cmd.ExecuteNonQueryAsync();
+
+                        //close connection
+                        this.CloseConnection();
+                        MessageBox.Show("Registrazione completata");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nome utente già esistente");
                 }
             }
-            else
-            {
-                MessageBox.Show("Nome utente già esistente");
+            else {
+                MessageBox.Show("Errore inserimento email"); 
             }
+            
         }
 
         //Metodo per inserire un nuovo prodotto nel DB
