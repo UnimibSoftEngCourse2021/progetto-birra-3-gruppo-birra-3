@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ProgettoBirra
 {
-    //inizializzazione variabili globali
+    //Inizializzazione variabili globali, in modo da poterle recuperare all'interno di tutto il progetto.
     public static class Globals {
         public static string emailGlobal;
         public static string passwordGlobal;
@@ -29,7 +29,7 @@ namespace ProgettoBirra
             Initialize();
         }
 
-        //Initialize values
+        //Inizializzazione dei parametri del database remoto per permettere la connessione
         private void Initialize()
         {  
             string server;
@@ -49,7 +49,7 @@ namespace ProgettoBirra
             connection = new MySqlConnection(connectionString);
         }
 
-        //open connection to database
+        //Metodo che permette di aprire la connessione con il DB
         private bool OpenConnection()
         {
             try
@@ -74,7 +74,7 @@ namespace ProgettoBirra
             }
         }
 
-        //Close connection
+        //Metodo che permette di chiudere la connessione con il DB
         private void CloseConnection()
         {
             try
@@ -89,7 +89,7 @@ namespace ProgettoBirra
             }
         }
 
-        //create table
+        //Metodo che permette di creare la tabaella utenti nel database.
         public void create_table()
         {
             string query = string.Format($"CREATE TABLE IF NOT EXIST `Utenti` (`email` VARCHAR(45) NOT NULL,`password` VARCHAR(45) NOT NULL, PRIMARY KEY (`email`))");
@@ -98,15 +98,14 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                //Execute command
-                //cmd.ExecuteNonQuery();
+                
 
                 cmd.ExecuteNonQueryAsync();
 
-                //close connection
+               
                 this.CloseConnection();
             }
         }
@@ -120,7 +119,7 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.ExecuteNonQueryAsync();
@@ -139,7 +138,7 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.ExecuteNonQueryAsync();
@@ -158,7 +157,7 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+               
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.ExecuteNonQueryAsync();
@@ -168,7 +167,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo creazione tabella prodotto per ricetta
+        //metodo creazione tabella prodotto di una determinata ricetta
         public void create_tableProdHasRicetta()
         {
             string query = string.Format($"CREATE TABLE IF NOT EXISTS `prodRicetta` (`idRicetta` INT NOT NULL, `nomeProd` VARCHAR(45) NOT NULL,  `quantita` INT NOT NULL, `proprietario` VARCHAR(45) NOT NULL, CONSTRAINT `idRicettar`FOREIGN KEY(`idRicetta`) REFERENCES `ricetta` (`idRicetta`))");
@@ -196,7 +195,7 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.ExecuteNonQueryAsync();
@@ -206,7 +205,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo per verifica l'esistenza di un utente
+        //metodo per verifica se l'utente inserito esiste nel database
         public bool verificaUtente(string email)
         {
             string query = "SELECT Utenti.email FROM Utenti WHERE Utenti.email = '" + email + "'";
@@ -214,7 +213,7 @@ namespace ProgettoBirra
             //Open connection
             if (this.OpenConnection())
             {
-                //Create Command
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 string e = "";
 
@@ -229,6 +228,7 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+                //controllo se il risultato della query è un elemento vuoto (utente non presente) o il contrario.
                 if (e == "")
                     return false;
 
@@ -245,7 +245,7 @@ namespace ProgettoBirra
             //Open connection
             if (this.OpenConnection())
             {
-                //Create Command
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 string e = "";
 
@@ -260,6 +260,7 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+                //controllo se il risultato della query è un elemento vuoto (attrezzo non presente) o il contrario.
                 if (e == "")
                     return false;
 
@@ -291,6 +292,7 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+                //controllo se il risultato della query è un elemento vuoto (prodotto non presente) o il contrario.
                 if (e == "")
                     return false;
 
@@ -322,6 +324,7 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+                //controllo se il risultato della query è un elemento vuoto (ricetta non presente) o il contrario.
                 if (e == "")
                     return false;
 
@@ -338,12 +341,13 @@ namespace ProgettoBirra
             //Open connection
             if (this.OpenConnection())
             {
-                //Create Command
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 string e = "";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
+                //recupero la quantità di prodotto che l'utente ha a disposizione
                 while (reader.Read())
                 {
                     e += $"{reader.GetString("quantita")}";
@@ -353,6 +357,8 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+
+                //verifichiamo che la quantità sia abbastanza per fare la ricetta.
                 int quanitaMancante = Convert.ToInt32(e) - quantita;
 
                 if (quanitaMancante < 0) 
@@ -391,6 +397,7 @@ namespace ProgettoBirra
                 //close Connection
                 this.CloseConnection();
 
+                //controllo se il risultato della query è un elemento vuoto (prodotto non presente) o il contrario.
                 if (e == "")
                     return false;
 
@@ -400,16 +407,17 @@ namespace ProgettoBirra
         }
 
         //metodo per inserire un nuovo utente del DB
-        public void InsertUtente(string email, string password)
+         public void InsertUtente(string email, string password)
         {
             string query = "INSERT INTO Utenti (email, password) VALUES('" + email + "', '" + password + "')";
 
+            //verifichiamo che l'utente non sia già presente nel DB.
             if (!verificaUtente(email))
             {
                 //open connection
                 if (this.OpenConnection())
                 {
-                    //create command and assign the query and connection from the constructor
+                    
                     MySqlCommand cmd = new MySqlCommand(query, connection);
 
                     //Execute command
@@ -431,13 +439,14 @@ namespace ProgettoBirra
         {
             string query = "INSERT INTO Prodotto (proprietario, nomeProd, quantita) VALUES('" + emailp + "', '" + nomeProd + "','" + quantita + "')";
 
+            //Verifichiamo che il prodotto non sia già presente nel DB
             if (!verificaProd(nomeProd))
             {
 
                 //open connection
                 if (this.OpenConnection())
                 {
-                    //create command and assign the query and connection from the constructor
+                    
                     MySqlCommand cmd = new MySqlCommand(query, connection);
 
                     //Execute command
@@ -459,12 +468,13 @@ namespace ProgettoBirra
         {
             string query = "INSERT INTO Attrezzo (proprietario, nomeAtt, capacita) VALUES('" + Globals.emailGlobal+ "', '" + nomeAtt + "','" + capacita + "')";
 
+            //controllo che l'attrezzo non sia già presente nel DB.
             if (!verificaAttr(nomeAtt))
             {
                 //open connection
                 if (this.OpenConnection())
                 {
-                    //create command and assign the query and connection from the constructor
+                    
                     MySqlCommand cmd = new MySqlCommand(query, connection);
 
                     //Execute command
@@ -507,7 +517,7 @@ namespace ProgettoBirra
             //open connection
             if (this.OpenConnection())
             {
-                //create command and assign the query and connection from the constructor
+                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 //Execute command
@@ -518,7 +528,7 @@ namespace ProgettoBirra
             }
         }
 
-        //inserisci prodotti nella lista della spesa
+        //Inserisci prodotti nella lista della spesa una volta preparata la ricetta
         public void InsertListaSpesa(string prodotto, int quantita)
         {
             string query = "INSERT INTO ListaDellaSpesa (proprietario, Prodotto, quantita) VALUES('" + Globals.emailGlobal  + "', '" + prodotto+ "', '" + quantita + "')";
@@ -537,7 +547,7 @@ namespace ProgettoBirra
             }
         }
          
-        //metodo per la modifica della password di un utente
+        //Metodo per la modifica della password di un utente
         public void UpdateUtente( string password)
         {
             string query = "UPDATE utenti SET password='" + password + "' WHERE password='" + Globals.passwordGlobal + "'";
@@ -545,11 +555,11 @@ namespace ProgettoBirra
             //Open connection
             if (this.OpenConnection() )
             {
-                //create mysql command
+                
                 MySqlCommand cmd = new MySqlCommand();
-                //Assign the query using CommandText
+               
                 cmd.CommandText = query;
-                //Assign the connection using Connection
+                
                 cmd.Connection = connection;
 
                 //Execute query
@@ -560,7 +570,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo per la modifica della quantita di un prodotto
+        //Metodo per la modifica della quantita di un prodotto
         public void UpdateProd(string nomeProd, int nuovaQT)
         {
             string query = "UPDATE Prodotto SET quantita='" + nuovaQT + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeProd='" + nomeProd + "'";
@@ -583,7 +593,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo per la modifica della capacità di un attrezzo
+        //Metodo per la modifica della capacità di un attrezzo
         public void UpdateAtt(string nomeAtt, int nuovaCP)
         {
             string query = "UPDATE Attrezzo SET capacita='" + nuovaCP + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeAtt ='" + nomeAtt + "'";
@@ -606,7 +616,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo per la modifica delle note di una ricetta
+        //Metodo per la modifica delle note di una ricetta
         public void UpdateRic(string nomeRic, string note)
         {
             string query = "UPDATE Ricetta SET note='" + note + "' WHERE proprietario='" + Globals.emailGlobal + "' AND nomeRic ='" + nomeRic + "'";
@@ -629,7 +639,7 @@ namespace ProgettoBirra
             }
         }
 
-        //metodo per il riempimento della lista della spesa
+        //Metodo per il riempimento della lista della spesa, se i prodotti sono già presenti viene modificata la quantità.
         public void UpdateListaDellaSpesa(int numero, string nomeProd)
         {
             string query = "UPDATE ListaDellaSpesa SET quantita=quantita+" + numero + " WHERE proprietario='" + Globals.emailGlobal + "' AND Prodotto ='" + nomeProd + "'";
@@ -665,7 +675,7 @@ namespace ProgettoBirra
             }
         }
         
-        //elimina tutti i prodotti associati all'utente 
+        //Elimina tutti i prodotti associati all'utente 
         public void DeleteProdUtente()
         {
             string query = "DELETE FROM Prodotto WHERE proprietario='" + Globals.emailGlobal + "'";
@@ -678,7 +688,7 @@ namespace ProgettoBirra
             }
         }
 
-        //elimina tutti gli attrezzi associati all'utente 
+        //Elimina tutti gli attrezzi associati all'utente 
         public void DeleteAttrezziUtente()
         {
             string query = "DELETE FROM Attrezzo WHERE proprietario='" + Globals.emailGlobal + "'";
@@ -691,7 +701,7 @@ namespace ProgettoBirra
             }
         }
 
-        //elimina tutti i prodotti associati alle ricette dell'utente 
+        //Elimina tutti i prodotti associati alle ricette dell'utente 
         public void DeleteProdRicettaUtente()
         {
             string query = "DELETE FROM prodRicetta WHERE proprietario='" + Globals.emailGlobal + "'";
@@ -704,7 +714,7 @@ namespace ProgettoBirra
             }
         }
 
-        //elimina tutte le ricette dell'utente 
+        //Elimina tutte le ricette dell'utente 
         public void DeleteRicetteUtente()
         {
             string query = "DELETE FROM Ricetta WHERE proprietario='" + Globals.emailGlobal + "'";
@@ -717,7 +727,7 @@ namespace ProgettoBirra
             }
         }
 
-        //elimina la lista della spesa di un utente
+        //Elimina la lista della spesa di un utente
         public void DeleteSpesa()
         {
             string query = "DELETE FROM listadellaspesa WHERE proprietario='" + Globals.emailGlobal + "'";
@@ -730,7 +740,7 @@ namespace ProgettoBirra
             }
         }
 
-        //Elimina Prodotto
+        //Elimina Prodotto passato come attributo
         public void DeleteProd(string nomeProd)
         {
             string query = "DELETE FROM Prodotto WHERE nomeProd='" + nomeProd + "' AND proprietario='"+ Globals.emailGlobal +"'";
@@ -743,7 +753,7 @@ namespace ProgettoBirra
             }
         }
 
-        //Elimina Attrezzo
+        //Elimina Attrezzo passato come attributo
         public void DeleteAtt(string nomeAtt)
         {
             string query = "DELETE FROM Attrezzo WHERE nomeAtt='" + nomeAtt + "' AND proprietario='" + Globals.emailGlobal + "'";
@@ -756,7 +766,7 @@ namespace ProgettoBirra
             }
         }
 
-        //Elimina Ricetta
+        //Elimina Ricetta passata come attributo
         public void DeleteRic(string nomeRic)
         {
             string query = "DELETE FROM Ricetta WHERE nomeRic='" + nomeRic + "' AND proprietario='" + Globals.emailGlobal + "'";
@@ -782,7 +792,7 @@ namespace ProgettoBirra
             }
         }
 
-        //recupero delle ricette associate ad un utente
+        //Recupero delle ricette associate ad un utente
         public void recuperoRic()
         {
             string query = "SELECT * FROM Ricetta WHERE proprietario = '" + Globals.emailGlobal + "'";
@@ -815,7 +825,7 @@ namespace ProgettoBirra
 
         }
 
-        //metodo per recuperare la lista della spesa di un determinato utente
+        //Metodo per recuperare la lista della spesa di un determinato utente
         public void recuperoListaSpesa()
         {
             string query = "SELECT * FROM listadellaspesa WHERE proprietario = '" + Globals.emailGlobal + "'";
@@ -842,7 +852,7 @@ namespace ProgettoBirra
             }
         }
 
-        //recupero delle attrezzature di un determinato utente
+        //Recupero delle attrezzature di un determinato utente
         public void recuperoAttr()
         {
             string query = "SELECT * FROM attrezzo WHERE proprietario= '" + Globals.emailGlobal + "'";
@@ -868,7 +878,7 @@ namespace ProgettoBirra
             }
         }
         
-        //recupero dei prodotti di un determinato utente
+        //Recupero dei prodotti di un determinato utente
         public void recuperoProdUtente()
         {
             string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
@@ -894,7 +904,7 @@ namespace ProgettoBirra
             }
         }
         
-        //recupero dei prodotti associati ad una ricetta di un utente
+        //Recupero dei prodotti associati ad una ricetta di un utente
         public void recuperoProd(string idRic)
         {
             string query = "SELECT * FROM prodricetta WHERE idRicetta= '"+ Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal+"'";
@@ -920,7 +930,7 @@ namespace ProgettoBirra
             }
         }
 
-        //recupero della quantita di un prodotto 
+        //Recupero della quantita di un prodotto 
         public int recuperoQuantitaProd(string nomeProd)
         {
             string quantita = "";
@@ -944,7 +954,7 @@ namespace ProgettoBirra
             return (Convert.ToInt32(quantita));
         }
 
-        //metodo per recuperare il nome di una ricetta, dato il suo ID
+        //Metodo per recuperare il nome di una ricetta, dato il suo ID
         public string recuperoNomeRic(int id)
         {
             string nomeRic="";
@@ -970,7 +980,7 @@ namespace ProgettoBirra
             return nomeRic;
         }
         
-        //recupera id ricetta
+        //Recupera id della ricetta passata come attributo
         public int recuperoIdRic(string nomeric)
         {
             string idric="";
@@ -1031,8 +1041,10 @@ namespace ProgettoBirra
             return false;
         }
 
-        //massimizza birra
+        //Metodo che permette di svolgere la funzionalità: Che birra faccio.
         public void cheBirraFaccioOggi(int idRic) {
+
+            //Recupero di tutti i prodotti di un determinato utente
             string query = "SELECT * FROM prodotto WHERE proprietario= '" + Globals.emailGlobal + "'";
 
             if (this.OpenConnection() )
@@ -1056,6 +1068,7 @@ namespace ProgettoBirra
 
             }
 
+            //Recupero di tutti i prodotti relativi alla ricetta richiesta.
             string query2 = "SELECT * FROM prodricetta WHERE idRicetta= '" + Convert.ToInt32(idRic) + "' AND proprietario = '" + Globals.emailGlobal + "'";
 
             if (this.OpenConnection() )
