@@ -17,15 +17,6 @@
         {
             return quantita;
         }
-        /*
-        public void setnomeProd(string nomeProd)
-        {
-            this.nomeProd = nomeProd;
-        }
-        public void setQuantita(string quantita)
-        {
-            this.quantita = quantita;
-        }
-        */
+       
     }
 }

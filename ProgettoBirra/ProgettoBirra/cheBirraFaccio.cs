@@ -19,16 +19,6 @@
         {
             return quantitaMin;
         }
-        /*
-        public void setidRicetta(int idRicetta)
-        {
-            this.idRicetta = idRicetta;
-        }
-
-        public void setquantitaMin(int quantitaMin)
-        {
-            this.quantitaMin = quantitaMin;
-        }
-        */
+       
     }
 }

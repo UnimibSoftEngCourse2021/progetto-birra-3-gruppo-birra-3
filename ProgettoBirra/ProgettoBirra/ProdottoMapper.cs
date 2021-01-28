@@ -20,15 +20,6 @@
         {
             return quantita;
         }
-        /*
-        public void setNome(string nome)
-        {
-            this.nome = nome;
-        }
-        public void setQuantita(string quantita)
-        {
-            this.quantita = quantita;
-        }
-        */
+       
     }
 }

@@ -19,15 +19,6 @@
         {
             return capacita;
         }
-        /*
-        public void setNome(string nome)
-        {
-            this.nome = nome;
-        }
-        public void setCapacita(string capacita)
-        {
-            this.capacita = capacita;
-        }
-        */
+        
     }
 }

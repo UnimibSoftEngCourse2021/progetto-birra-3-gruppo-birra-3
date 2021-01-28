@@ -36,27 +36,6 @@
         {
             return preparazione;
         }
-        /*
-        public void setAttrezzi(string attrezzi)
-        {
-            this.attrezzi = attrezzi;
-        }
-        public void setidRicetta(string idRicetta)
-        {
-            this.idRicetta = idRicetta;
-        }
-        public void setNome(string nome)
-        {
-            this.nome = nome;
-        }
-        public void setNote(string note)
-        {
-            this.note = note;
-        }
-        public void setPreparazione(string preparazione)
-        {
-            this.preparazione = preparazione;
-        }
-        */
+        
     }
 }
