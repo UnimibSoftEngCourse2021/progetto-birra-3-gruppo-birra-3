@@ -799,6 +799,8 @@ namespace ProgettoBirra
                 this.CloseConnection();
             }
         }
+         
+
 
         //Recupero delle ricette associate ad un utente
         public void recuperoRic()
