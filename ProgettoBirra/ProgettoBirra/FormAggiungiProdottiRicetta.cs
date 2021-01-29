@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProgettoBirra
@@ -17,7 +10,6 @@ namespace ProgettoBirra
         string attRic;
         string prepRic;
         string noteRic;
-
         public FormAggiungiProdottiRicetta(string nomeRic, string attRic, string prepRic, string noteRic)
         {
             InitializeComponent();
@@ -26,15 +18,11 @@ namespace ProgettoBirra
             this.attRic = attRic;
             this.prepRic = prepRic;
             this.noteRic = noteRic;
-
         }
-
-        
 
         private void buttonFine_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("La ricetta è stata salvata nel ricettario");
-            if (database.verificaRic(nomeRic) == false)
+            if (!database.verificaRic(nomeRic))
             {
                 database.InsertRic(nomeRic, attRic, prepRic, noteRic);
             }
@@ -44,16 +32,14 @@ namespace ProgettoBirra
             {
                 database.InsertProdRic(idRicetta, textBox1.Text, Int32.Parse(textBox2.Text));
             }
-            
+            MessageBox.Show("La ricetta è stata salvata nel ricettario");
             this.Close();
             this.Dispose();
-
-
         }
 
         private void buttonSalva_Click(object sender, EventArgs e)
         {
-            if (database.verificaRic(nomeRic) == false){
+            if (!database.verificaRic(nomeRic)){
                 database.InsertRic(nomeRic, attRic, prepRic, noteRic);
             }
             int idRicetta = database.recuperoIdRic(nomeRic);
@@ -64,7 +50,5 @@ namespace ProgettoBirra
             textBox2.Text = "";
 
         }
-
-     
     }
 }

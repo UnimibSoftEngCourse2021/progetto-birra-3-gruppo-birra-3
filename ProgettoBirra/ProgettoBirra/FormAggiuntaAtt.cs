@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProgettoBirra
@@ -22,8 +15,6 @@ namespace ProgettoBirra
         private void buttonCreaAtt_Click(object sender, EventArgs e)
         {
             database.InsertAtt(textBoxNomeAtt.Text, Convert.ToInt32(this.textBoxCapacita.Text));
-
-       
             this.Close();
             this.Dispose();
         }

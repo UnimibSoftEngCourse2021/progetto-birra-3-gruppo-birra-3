@@ -116,7 +116,7 @@ namespace ProgettoBirra
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormMenu";
             this.Text = "MENU\'";
-            this.Load += new System.EventHandler(this.FormMenu_Load);
+            
             this.ResumeLayout(false);
 
         }

@@ -1,15 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System.Text;
-using MySql.Data.MySqlClient;
 
 namespace ProgettoBirra
 {
@@ -17,56 +7,35 @@ namespace ProgettoBirra
     {
         GestioneDB database;
 
-        
         public FormLogin()
         {
             InitializeComponent();
             database=new GestioneDB();
-
-
             database.create_tableListaDellaSpesa();
-            
-            
         }
 
         private void bottoneLogin(object sender, EventArgs e)
         {
             //Bottone login 
-
             bool b = false;
-            //database.SelectUtente(textBox1.Text, textBox2.Text);
             b = database.SelectUtente(textBox1.Text, textBox2.Text);
-            if (b == true)
+            if (b)
             {
-                //MessageBox.Show("Benvenuto");
                 FormMenu newform = new FormMenu();
                 this.Hide();
                 newform.ShowDialog();
+                textBox1.Text = "";
+                textBox2.Text = "";
                 this.Show();
             }
             else
                 MessageBox.Show("Login errato");
-
-
-        }
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonCreaAccount(object sender, EventArgs e)
         { 
             FormRegistrazione newform = new FormRegistrazione();
-            this.Hide();
             newform.ShowDialog();
-            this.Show();           
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

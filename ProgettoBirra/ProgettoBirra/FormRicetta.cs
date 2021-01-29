@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProgettoBirra
@@ -19,7 +12,6 @@ namespace ProgettoBirra
             Globals.listaProdotti.Clear();
             textBoxNome.Text=selezionato;
             database = new GestioneDB();
-            
             for (int i = 0; i < Globals.listaRicette.Count; i++)
             {
                 if (Globals.listaRicette[i].getNome() == selezionato)
@@ -30,53 +22,27 @@ namespace ProgettoBirra
                     textBoxPreparazione.Text = Globals.listaRicette[i].getPreparazione();
                     database.recuperoProd(Globals.listaRicette[i].getidRicetta());
                 }
-
             }
 
-            for (int i = 0; i < Globals.listaProdotti.Count; i++) {
-
+            for (int i = 0; i < Globals.listaProdotti.Count; i++)
+            {
                 textBoxProdotti.AppendText(Globals.listaProdotti[i].getNome() + " Con quanitità --> " + Globals.listaProdotti[i].getQuantita() + "\r\n");
-       
             }
-
-        }
-
-        private void FormRicetta_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonElimina_Click(object sender, EventArgs e)
         {
             int idRic = database.recuperoIdRic(textBoxNome.Text);
-
             database.DeleteProdRic(idRic);
             database.DeleteRic(textBoxNome.Text);
             MessageBox.Show("La ricetta è stata eliminata dal ricettario");
-
-            /*FormMenu newform = new FormMenu();
-            this.Hide();
             this.Close();
-            newform.ShowDialog();
-            this.Show();*/
-            this.Close();
-        }
-
-        private void textBoxProdotti_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonModificaRic_Click(object sender, EventArgs e)
         {
             database.UpdateRic(textBoxNome.Text, textBoxNote.Text);
             MessageBox.Show("La nota è stata modificata con successo");
-
-            /*FormMenu newform = new FormMenu();
-            this.Hide();
-            this.Close();
-            newform.ShowDialog();
-            this.Show();*/
             this.Close();
         }
 
@@ -86,11 +52,10 @@ namespace ProgettoBirra
             int numero;
             int quantitaDaTogliere;
             int quantitaVecchia;
-            
 
             for (int i = 0; i < Globals.listaProdotti.Count; i++)
             {
-                if (database.verificaProd(Globals.listaProdotti[i].getNome()) == false)
+                if (!database.verificaProd(Globals.listaProdotti[i].getNome()))
                 {
                     MessageBox.Show("Impossibile preparare ricetta, non hai i prodotti necessari");
                     fatta = false;
@@ -109,15 +74,12 @@ namespace ProgettoBirra
 
             }
 
-            if(fatta==true)
+            if(fatta)
             {
-
                 for (int j = 0; j < Globals.listaProdotti.Count; j++)
                 {
                     quantitaVecchia = database.recuperoQuantitaProd(Globals.listaProdotti[j].getNome());
                     quantitaDaTogliere = Convert.ToInt32(Globals.listaProdotti[j].getQuantita()) * Convert.ToInt32(this.numericUpDown1.Text);
-
-
 
                     if (database.verificaProdListaSpesa(Globals.listaProdotti[j].getNome()))
                     {
@@ -138,17 +100,8 @@ namespace ProgettoBirra
                     }
                     
                 }
-
                 MessageBox.Show("Hai fatto la ricetta");
             }
-
-
-            
-
-
-
-
-
         }
     }
 }

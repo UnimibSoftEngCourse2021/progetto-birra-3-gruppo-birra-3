@@ -1,25 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProgettoBirra
+﻿namespace ProgettoBirra
 {
-   public class cheBirraFaccio
+   public class CheBirraFaccio
     {
 
         private int idRicetta;
         private int quantitaMin;
 
-
-        public cheBirraFaccio(int idRicetta, int quantitaMin)
+        public CheBirraFaccio(int idRicetta, int quantitaMin)
         {
             this.idRicetta = idRicetta;
             this.quantitaMin = quantitaMin;
-
         }
-
         public int getidRicetta()
         {
             return idRicetta;
@@ -28,15 +19,6 @@ namespace ProgettoBirra
         {
             return quantitaMin;
         }
-
-        public void setidRicetta(int idRicetta)
-        {
-            this.idRicetta = idRicetta;
-        }
-
-        public void setquantitaMin(int quantitaMin)
-        {
-            this.quantitaMin = quantitaMin;
-        }
+       
     }
 }

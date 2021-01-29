@@ -115,7 +115,7 @@ namespace ProgettoBirra
             this.Controls.Add(this.labelNomeAtt);
             this.Name = "FormModificaAtt";
             this.Text = "MODIFICA ATTREZZO";
-            this.Load += new System.EventHandler(this.FormModificaAtt_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
