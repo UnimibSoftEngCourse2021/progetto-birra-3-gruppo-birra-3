@@ -1,0 +1,12 @@
+{
+  "ServerUri": "http://localhost:9000/",
+  "Organization": null,
+  "ProjectKey": "provaPB",
+  "ProjectName": "provaPB",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AXYo5jrdhYaKlC7-0Tkc",
+      "ProfileTimestamp": "2020-12-03T13:59:05Z"
+    }
+  }
+}
