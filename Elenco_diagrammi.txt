@@ -1,9 +1,9 @@
-Creazione diagrammi:
+Diagrammi:
  il diagramma dei Casi d’Uso (FATTO)
- diagramma delle classi a livello di dominio (fatto, versione 1)
- diagramma delle classi a livello di progettazione (fatto, versione 1)
- diagramma SSD (fatti, versione base)
- almeno un diagramma di sequenza di progettazione (non SSD)
- diagramma dell’architettura software
- almeno un diagramma stati
- almeno un digramma attività
+ diagramma delle classi a livello di dominio (FATTO)
+ diagramma delle classi a livello di progettazione (FATTO)
+ diagramma SSD (FATTO)
+ almeno un diagramma di sequenza di progettazione (non SSD) (FATTO, gestioneRicette)
+ diagramma dell’architettura software (FATTO)
+ almeno un diagramma stati (FATTO, login)
+ almeno un digramma attività (FATTO, registrazione)
