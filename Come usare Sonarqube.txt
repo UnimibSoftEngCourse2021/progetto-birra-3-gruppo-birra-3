@@ -1,0 +1,6 @@
+COME FUNZIONA SONARQUBE:
+Prima lo fai partire per i fatti suoi
+Poi entri dal cmd entri nella cartella che contiene il file .sln e fai partire una dopo l'altra queste tre operazioni
+dotnet sonarscanner begin /k:"provaPB"  /d:sonar.login="d63b94b91d3010cc6f59aad26250aa6ec5791914"
+dotnet build ProgettoBirra.sln
+dotnet sonarscanner end /d:sonar.login="d63b94b91d3010cc6f59aad26250aa6ec5791914"
