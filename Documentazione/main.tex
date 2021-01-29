@@ -461,44 +461,47 @@ Questo diagramma rappresenta la struttura del database creato come appoggio all'
 \\E' stato utilizzato un database esterno di supporto dell'applicazione in quanto è possibile installarla su dispositivi diversi e recuperare le proprie informazioni.
 \newpage
 
-\section{Pattern}
-\vphantom{}
-\subsection{Singleton}
+\section{Progettazione}
+\subsection{Design Principles}
+\subsubsection{ISP}
+E' stato applicato il design principles Interface Segregation di Martin Fowler. Lo scopo di questo è di creare diverse interfacce client al posto di usarne una unica, per questo motivo si è deciso di creare diversi windows form suddividendo le responsabilità.
+\subsection{Pattern}
+\subsubsection{Singleton}
 Il pattern Singleton viene utilizzato dalla classe 'GestioneDB'. Questa classe ha il compito di svolgere tutte le operazioni che si interfacciano al database di supporto. Abbiamo introdotto questo pattern al fine di evitare errori di comunicazione, infatti è presente una sola classe mediatrice tra il database e le altre classi.\\\\
 \includegraphics[scale=0.80]{Immagini/Singleton.png}
-\subsection{Data Mapper}
+\subsubsection{Data Mapper}
 Il pattern Data Mapper viene utilizzato nella creazione delle classi che rappresentano gli oggetti manipolati nel database.
 E' stato rivisitato il suo utilizzo rendendolo più semplice togliendo uno step intermedio.
 Nel nostro caso vengono creati degli oggetti di tipo prodotto, ricetta e listaSpesa in modo da non dover richiedere ogni volta l'intervento del database.\\\\
 \includegraphics[scale=0.70]{Immagini/DataMapper.PNG}
 \newpage
-\subsection{Identity Field}
+\subsubsection{Identity Field}
 Il pattern Identity Field è presente in tutte le tabelle del database, ma viene utilizzato in modo particolare nelle funzionalità inerenti alla tabella Ricetta.
 La chiave primaria idRicetta viene utilizzata per richiamare i prodotti contenuti nella tabella 'prodricetta' per le funzionalità di preparazione di una ricetta e "Che birra faccio oggi?".\\\\
 \includegraphics[scale=0.40]{Immagini/IdentityField.jpg}
-\subsection{Association Table Mapping}
+\subsubsection{Association Table Mapping}
 Il pattern Asssociation Table Mapping viene utilizzato nella tabella 'prodricetta' come collegamento tra le tabelle 'ricetta' e 'prodotto'. All'interno del database non è presente come un'associazione molti-a-molti, viene però utilizzata in questo modo nell'implementazione.\\\\ 
 \includegraphics[scale=0.40]{Immagini/AssociationTableMapping_.jpg}
-\subsection{Facade}
+\subsubsection{Facade}
 Il pattern Facade è presente nella gestione delle finestre, l'utente preme il bottone e il metodo che svolge questa funzionalità è semplice e nasconde la complessità dell'utilizzo dell'applicazione.
 \newpage
 
-\section{Analisi Understand}
+\subsection{Analisi Understand}
 Tramite l'utilizzo del software Understand è stata svolta un'analisi del codice e della struttura dell'applicazione sviluppata.\\\\
 \includegraphics[scale=0.40]{Immagini/Understand_1.png}\\
 \includegraphics[scale=0.40]{Immagini/Understand_3.png}\\
 \includegraphics[scale=0.40]{Immagini/Understand_2.png}\\
 \\Sono stati individuati alcuni antipatterns.
-\subsection{God Class}
+\subsubsection{God Class}
 E' stata individuata la classe 'GestioneDB' come la classe che "sa tutto". Essa infatti contiene tutte le informazioni riguardanti tutte le funzioni svolte dall'applicazione.
-\subsection{Accumulate and fire}
+\subsubsection{Accumulate and fire}
 All'interno del progetto vengono usate variabili globali per facilitare la comunicazione tra le classi.
-\subsection{Copy and paste programming}
+\subsubsection{Copy and paste programming}
 All’interno del progetto è possibile notare la presente di metodi diversi che svolgono la stessa funzione. Ciò è stato necessario perchè la comunicazione con il database richiedeva, anche per operazioni simili, query diverse per interpellare la tabella interessata.
-\subsection{Reinventing the wheet}
+\subsubsection{Reinventing the wheet}
 E' stato usato un metodo già testato per effettuare la connessione con il database.
 
-\section{Analisi Sonarqube}
+\subsection{Analisi Sonarqube}
 Viene riportata la schermata di analisi del progetto software.\\\\
 \includegraphics[scale=0.60]{Immagini/form/Sonarqube.png}
 \\\\
