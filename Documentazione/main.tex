@@ -75,14 +75,11 @@ Con il presente progetto si è sviluppata un’applicazione per i produttori di 
 Per utilizzare questa applicazione non sono necessari particolari pre-requisiti, è sufficiente disporre di un computer.\\
 Per avviare l'applicazione è necessario eseguire i seguenti passi:
 \begin{enumerate}
-    \item aprire la cartella "ProgettoBirra";
-    \item selezionare e aprire la cartella "installer";
-    \item selezionare ed eseguire il file "setup.exe"\\
-    comparirà la finestra sottostante\\
-    \includegraphics[scale=0.30]{Immagini/imgpsh_fullsize_anim.png}
-    \item premere installa.\\
-    \includegraphics[scale=0.30]{Immagini/imgpsh_fullsize_anim (1).png}\\
-    Al termine dell'installazione l'applicazione si avvierà automaticamente, in caso contrario è possibile travarla nel menù applicazione.
+    \item selezionare e aprire la cartella "ProgettoBirra";
+    \item selezionare e aprire nuovamente la cartella "ProgettoBirra";
+    \item selezionare e aprire la cartella "bin";
+    \item selezionare e aprire la cartella "Debug";
+    \item selezionare ed eseguire il file "ProgettoBirra.exe".\\
 \end{enumerate}
 
 \section{Funzionamento}
@@ -92,6 +89,7 @@ All’avvio dell’applicazione viene mostrata la schermata iniziale così strut
 \\Per poter utilizzare l’applicazione è necessaria la registrazione, di conseguenza il primo passo da compiere è creare un account premendo “CREA ACCOUNT”. Dopodiché verrà mostrata una finestra così organizzata:\\\\
 \includegraphics[scale=0.30]{Immagini/form/Form Registrazione.jpg}
 \\Una volta inseriti i dati richiesti è possibile procedere con la registrazione premendo “ISCRIVIMI”. Al termine verrà mostrata la schermata iniziale.
+\newpage
 \subsection{Login}
 All’avvio dell’applicazione viene visualizzata la schermata iniziale. Dopo aver inserito le credenziali (email e password) e dopo aver premuto “LOGIN”, viene mostrata la schermata “MENU’” così strutturata:\\\\
 \includegraphics[scale=0.30]{Immagini/form/Form Menu.jpg}
@@ -160,6 +158,9 @@ Premendo “LISTA DELLA SPESA” dal MENU’ viene visualizzata una schermata co
 \subsection{"Che birra faccio oggi?"}
 Premendo “CHE BIRRA FACCIO OGGI?” dal MENU’ viene visualizzato un messaggio che mostra il nome della birra (tra quelle presenti nel ricettario)  e la relativa quantità massima, di cui è possibile preparare la maggior quantità considerando i prodotti presenti nella dispensa.
 
+\section{Troubleshooting}
+Al primo avvio dell'applicazione all'interno dell'ambiente  Visual Studio è possibile che compaia una finestra di dialogo, è sufficiente premere su "Ok" e l'applicazione continuerà la sua esecuzione, al successivo avvio dovrebbe procedere tutto senza interruzioni.\\\\
+\includegraphics[scale=0.60]{Immagini/Finestra di dialogo.png}
 \newpage
 \section{Analisi}
 \subsection{Diagramma dei casi d'uso}
@@ -461,14 +462,6 @@ Questo diagramma rappresenta la struttura del database creato come appoggio all'
 \\E' stato utilizzato un database esterno di supporto dell'applicazione in quanto è possibile installarla su dispositivi diversi e recuperare le proprie informazioni.
 \newpage
 
-<<<<<<< HEAD
-\section{Pattern}
-\vphantom{}
-\subsection{Singleton}
-Il pattern Singleton viene utilizzato dalla classe 'GestioneDB'. Questa classe ha il compito di svolgere tutte le operazioni che si interfacciano al database di supporto. Abbiamo introdotto questo pattern al fine di evitare errori di comunicazione, infatti è presente una sola classe mediatrice tra il database e le altre classi.\\\\
-\includegraphics[scale=0.80]{Immagini/Singleton.png}
-\subsection{Data Mapper}
-=======
 \section{Progettazione}
 \subsection{Design Principles}
 \subsubsection{ISP}
@@ -478,26 +471,11 @@ E' stato applicato il design principles Interface Segregation di Martin Fowler. 
 Il pattern Singleton viene utilizzato dalla classe 'GestioneDB'. Questa classe ha il compito di svolgere tutte le operazioni che si interfacciano al database di supporto. Abbiamo introdotto questo pattern al fine di evitare errori di comunicazione, infatti è presente una sola classe mediatrice tra il database e le altre classi.\\\\
 \includegraphics[scale=0.80]{Immagini/Singleton.png}
 \subsubsection{Data Mapper}
->>>>>>> ba73c7984a7bf7b14a77d8f4496d9f310ee91651
 Il pattern Data Mapper viene utilizzato nella creazione delle classi che rappresentano gli oggetti manipolati nel database.
 E' stato rivisitato il suo utilizzo rendendolo più semplice togliendo uno step intermedio.
 Nel nostro caso vengono creati degli oggetti di tipo prodotto, ricetta e listaSpesa in modo da non dover richiedere ogni volta l'intervento del database.\\\\
 \includegraphics[scale=0.70]{Immagini/DataMapper.PNG}
 \newpage
-<<<<<<< HEAD
-\subsection{Identity Field}
-Il pattern Identity Field è presente in tutte le tabelle del database, ma viene utilizzato in modo particolare nelle funzionalità inerenti alla tabella Ricetta.
-La chiave primaria idRicetta viene utilizzata per richiamare i prodotti contenuti nella tabella 'prodricetta' per le funzionalità di preparazione di una ricetta e "Che birra faccio oggi?".\\\\
-\includegraphics[scale=0.40]{Immagini/IdentityField.jpg}
-\subsection{Association Table Mapping}
-Il pattern Asssociation Table Mapping viene utilizzato nella tabella 'prodricetta' come collegamento tra le tabelle 'ricetta' e 'prodotto'. All'interno del database non è presente come un'associazione molti-a-molti, viene però utilizzata in questo modo nell'implementazione.\\\\ 
-\includegraphics[scale=0.40]{Immagini/AssociationTableMapping_.jpg}
-\subsection{Facade}
-Il pattern Facade è presente nella gestione delle finestre, l'utente preme il bottone e il metodo che svolge questa funzionalità è semplice e nasconde la complessità dell'utilizzo dell'applicazione.
-\newpage
-
-\section{Analisi Understand}
-=======
 \subsubsection{Identity Field}
 Il pattern Identity Field è presente in tutte le tabelle del database, ma viene utilizzato in modo particolare nelle funzionalità inerenti alla tabella Ricetta.
 La chiave primaria idRicetta viene utilizzata per richiamare i prodotti contenuti nella tabella 'prodricetta' per le funzionalità di preparazione di una ricetta e "Che birra faccio oggi?".\\\\
@@ -510,24 +488,11 @@ Il pattern Facade è presente nella gestione delle finestre, l'utente preme il b
 \newpage
 
 \subsection{Analisi Understand}
->>>>>>> ba73c7984a7bf7b14a77d8f4496d9f310ee91651
 Tramite l'utilizzo del software Understand è stata svolta un'analisi del codice e della struttura dell'applicazione sviluppata.\\\\
 \includegraphics[scale=0.40]{Immagini/Understand_1.png}\\
 \includegraphics[scale=0.40]{Immagini/Understand_3.png}\\
 \includegraphics[scale=0.40]{Immagini/Understand_2.png}\\
 \\Sono stati individuati alcuni antipatterns.
-<<<<<<< HEAD
-\subsection{God Class}
-E' stata individuata la classe 'GestioneDB' come la classe che "sa tutto". Essa infatti contiene tutte le informazioni riguardanti tutte le funzioni svolte dall'applicazione.
-\subsection{Accumulate and fire}
-All'interno del progetto vengono usate variabili globali per facilitare la comunicazione tra le classi.
-\subsection{Copy and paste programming}
-All’interno del progetto è possibile notare la presente di metodi diversi che svolgono la stessa funzione. Ciò è stato necessario perchè la comunicazione con il database richiedeva, anche per operazioni simili, query diverse per interpellare la tabella interessata.
-\subsection{Reinventing the wheet}
-E' stato usato un metodo già testato per effettuare la connessione con il database.
-
-\section{Analisi Sonarqube}
-=======
 \subsubsection{God Class}
 E' stata individuata la classe 'GestioneDB' come la classe che "sa tutto". Essa infatti contiene tutte le informazioni riguardanti tutte le funzioni svolte dall'applicazione.
 \subsubsection{Accumulate and fire}
@@ -538,9 +503,8 @@ All’interno del progetto è possibile notare la presente di metodi diversi che
 E' stato usato un metodo già testato per effettuare la connessione con il database.
 
 \subsection{Analisi Sonarqube}
->>>>>>> ba73c7984a7bf7b14a77d8f4496d9f310ee91651
 Viene riportata la schermata di analisi del progetto software.\\\\
-\includegraphics[scale=0.60]{Immagini/form/Sonarqube.png}
+\includegraphics[scale=0.60]{Immagini/Sonarqube.png}
 \\\\
 Sono stati individuati e corretti i principali issue presenti nel codice.
 Non è stato possibile rimuovere i code smells rimanenti in quanto sono parte integrante della struttura del codice e rimuoverli avrebbe richiesto un completo refactor del progetto.
