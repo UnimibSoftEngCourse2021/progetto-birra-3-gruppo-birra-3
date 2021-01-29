@@ -31,7 +31,7 @@
     <ProductName>ProgettoBirraGruppo3</ProductName>
     <PublisherName>ProgettoBirraGruppo3</PublisherName>
     <SuiteName>ProgettoBirraGruppo3</SuiteName>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -62,7 +62,8 @@
     <ManifestCertificateThumbprint>2974D69E442E13AA999D7B9F3425BF3F1B77C2D9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ProgettoBirra_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
