@@ -1,0 +1,507 @@
+\documentclass[a4paper, titlepage]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\geometry{a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm,%
+heightrounded,bindingoffset=5mm}
+% commenti su più righe
+\usepackage{verbatim}
+% librerie per tabelle
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\begin{document}
+
+% Frontespizio
+\begin{titlepage}
+\centering
+\vspace{5cm}
+{\LARGE\bfseries Universit\`a degli Studi di Milano-Bicocca\par}
+\vspace{1ex}
+\hrule
+\vspace{1ex}
+Dipartimento di Informatica, Sistemistica e Comunicazione\\
+Corso di Laurea Triennale in Informatica\\
+\vspace{6cm}
+Documentazione di progetto\\
+\vspace{1cm}
+{\Huge \bfseries \scshape Brew Day!\par}
+\vspace{6cm}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{}}
+Alessia Calzari,   a.calzari@campus.unimib.it\\
+Matricola: 844884\\
+\\
+Dario Gianotti,   d.gianotti2@campus.unimib.it\\
+Matricola: 847052\\
+\\
+Andrea Provasi,   a.provasi2@campus.unimib.it\\
+Matricola: 847015\\
+\\
+Riccardo Riva,   r.riva36@campus.unimib.it\\
+Matricola: 844936
+\end{tabular*}
+\vspace{\fill}
+\hrule
+\vspace{1ex}
+\centering
+\textbf{Anno Accademico 2020-2021}
+\end{titlepage}
+
+% Sommario
+\tableofcontents
+
+\newpage
+\section{Introduzione}
+Con il presente progetto si è sviluppata un’applicazione per i produttori di birra artigianale. In particolare viene permessa la registrazione degli utenti, ciascuno dei quali può salvare le proprie ricette, segnare l’elenco dei prodotti disponibili e la propria attrezzatura. Una volta effettuato il login con le proprie credenziali (email e password definite nella registrazione), l’utente può compiere diverse azioni, tra cui:
+\begin{itemize}
+    \item modificare il proprio account o eliminarlo;
+    \item aggiungere una nuova ricetta (con prodotti, attrezzatura necessaria, preparazione e note) o eliminarne una dalla lista delle ricette;
+    \item modificare una ricetta (aggiornare le note);
+    \item aggiungere, rimuovere o modificare un attrezzo dalla lista delle attrezzature;
+    \item aggiungere o rimuovere o modificare un prodotto alla lista dei prodotti;
+    \item consultare la lista della spesa che contiene tutti i prodotti impiegati nella preparazione delle ricette e le loro quantità;
+    \item scegliere la ricetta della birra da preparare, indicarne la quantità, dopodichè gli ingredienti necessari verranno aggiunti automaticamente alla lista della spesa;
+    \item usare la funzionalità "Che birra faccio?" che mostrerà la ricetta che massimizza l'utilizzo degli ingredienti disponibili.
+\end{itemize}
+
+
+\newpage
+
+\section{Avvio}
+Per utilizzare questa applicazione non sono necessari particolari pre-requisiti, è sufficiente disporre di un computer.\\
+Per avviare l'applicazione è necessario eseguire i seguenti passi:
+\begin{enumerate}
+    \item aprire la cartella "ProgettoBirra";
+    \item selezionare e aprire la cartella "installer";
+    \item selezionare ed eseguire il file "setup.exe"\\
+    comparirà la finestra sottostante\\
+    \includegraphics[scale=0.30]{Immagini/imgpsh_fullsize_anim.png}
+    \item premere installa.\\
+    \includegraphics[scale=0.30]{Immagini/imgpsh_fullsize_anim (1).png}\\
+    Al termine dell'installazione l'applicazione si avvierà automaticamente, in caso contrario è possibile travarla nel menù applicazione.
+\end{enumerate}
+
+\section{Funzionamento}
+\subsection{Registrazione}
+All’avvio dell’applicazione viene mostrata la schermata iniziale così strutturata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form Login.jpg}
+\\Per poter utilizzare l’applicazione è necessaria la registrazione, di conseguenza il primo passo da compiere è creare un account premendo “CREA ACCOUNT”. Dopodiché verrà mostrata una finestra così organizzata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form Registrazione.jpg}
+\\Una volta inseriti i dati richiesti è possibile procedere con la registrazione premendo “ISCRIVIMI”. Al termine verrà mostrata la schermata iniziale.
+\subsection{Login}
+All’avvio dell’applicazione viene visualizzata la schermata iniziale. Dopo aver inserito le credenziali (email e password) e dopo aver premuto “LOGIN”, viene mostrata la schermata “MENU’” così strutturata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form Menu.jpg}
+\\Si può quindi notare che sono disponibili diverse funzioni.
+\subsection{Profilo}
+Premendo “PROFILO” dal MENU’ viene visualizzata una schermata “MODIFICA ACCOUNT” così organizzata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form GestioneUtente.jpg}
+\\In particolare è possibile:
+\begin{itemize}
+    \item modificare la password spuntando “MODIFICA PASSWORD” e premendo “SALVA MODIFICHE”;
+    \item eliminare l’account, e di conseguenza tutti i dati relativi ad esso, spuntando “CONFERMA ELIMINAZIONE” e premendo “ELIMINA ACCOUNT”.
+\end{itemize} 
+Al termine di queste operazioni verrà visualizzata la schermata iniziale.
+\newpage
+\subsection{Prodotti}
+Premendo “PRODOTTI” dal MENU’ viene visualizzata una schermata “DISPENSA” così strutturata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form GestioneProdotti.jpg}
+\\Da questa finestra:
+\begin{itemize}
+    \item è possibile selezionare un prodotto presente nella lista schiacciandone il nome dall'elenco visualizzato\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form ModificaProd.jpg}
+    \\Da questa finestra è possibile scegliere:
+        \subitem - di modificarne la quantità, scegliendo se inserire manualmente il numero oppure utilizzare le freccine, e premendo il bottone "SALVA MODIFICHE" salvare le modifiche apportate;
+        \subitem - di eliminare il prodotto tramite il bottone "ELIMINA PRODOTTO".
+    \item premendo “AGGIUNGI NUOVO PRODOTTO” dal MENU’ viene visualizzata una schermata “NUOVO PRODOTTO” così organizzata:\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form AggiuntaProd.jpg}
+    \\Compilando i campi “nome prodotto” e “quantità” e premendo “AGGIUNGI!”, il nuovo prodotto verrà aggiunto alla dispensa.
+\end{itemize}
+\newpage
+\subsection{Ricette}
+Premendo “RICETTE” dal MENU’ viene visualizzata una schermata “RICETTARIO” così strutturata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form GestioneRicette.jpg}
+\\Da questa finestra:
+\begin{itemize}
+    \item premendo “AGGIUNGI NUOVA RICETTA” dal RICETTARIO, così che venga visualizzata una schermata “NUOVA RICETTA” organizzata come segue:\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form AggiungiRic.jpg}
+    \\Nella definizione di una nuova ricetta vengono richieste le seguenti informazioni: nome, preparazione, attrezzi ed eventuali note. Premendo “CONTINUA” viene visualizzata una schermata “PRODOTTI DELLA RICETTA” così strutturata:\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form AggiungiProdottiRicetta.jpg}
+    \\Compilando i campi e premendo “SALVA PRODOTTO”, si potranno aggiungere tutti i prodotti necessari alla preparazione della ricetta che si sta inserendo, premendo "TERMINA" si conclude il salvataggio della ricetta nel ricettario.
+    \newpage
+    \item selezionando il nome di una ricetta dal ricettario viene mostrata la schermata “MODIFICA RICETTA” così organizzata:\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form Ricetta.jpg}
+    \\Sono disponibili diverse funzioni:
+        \subitem - modificare le note sostituendo semplicemente quelle già presenti, salvando poi le modifiche premendo “SALVA MODIFICHE”;
+        \subitem - eliminare la ricetta premendo “ELIMINA RICETTA”;
+        \subitem - procedere con la preparazione di una birra selezionando i litri desiderati (manualmente o tramite le freccine), procedendo poi premendo “PREPARA QUESTA BIRRA”.
+\end{itemize}
+\subsection{Attrezzatura}
+Premendo “ATTREZZATURA” dal MENU’ viene visualizzata una schermata “MAGAZZINO” così strutturata:\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form GestioneAttrezzatura.jpg}
+\\Da questa finestra è possibile:
+\begin{itemize}
+    \item selezionare un attrezzo presente nella lista schiacciandone il nome dall'elenco visualizzato\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form ModificaAtt.jpg}
+    \\e quindi scegliere:
+        \subitem - di modificarne la capacità, scegliendo se inserire manualmente il numero oppure utilizzare le freccine, e premendo il bottone "SALVA MODIFICHE" salvare le modifiche apportate;
+        \subitem - di eliminare l'attrezzo tramite il bottone "ELIMINA ATTREZZO".
+    \item aggiungere un nuovo attrezzo premendo “AGGIUNGI NUOVO ATTREZZO”\\\\
+    \includegraphics[scale=0.30]{Immagini/form/Form AggiuntaAtt.jpg}
+    \\definendone nome e capacità e salvandolo premendo “AGGIUNGI!”, così da inserire il nuovo attrezzo nel magazzino.
+\end{itemize}
+\subsection{Lista della spesa}
+Premendo “LISTA DELLA SPESA” dal MENU’ viene visualizzata una schermata così strutturata:\\\\\
+\includegraphics[scale=0.30]{Immagini/form/Form ListaSpesa.jpg}
+\\Sono visibili i prodotti che sono stati stati utilizzati nella preparazione di ricette le relative quantità. E’ possibile svuotarla premendo “HO FATTO LA SPESA”.
+\subsection{"Che birra faccio oggi?"}
+Premendo “CHE BIRRA FACCIO OGGI?” dal MENU’ viene visualizzato un messaggio che mostra il nome della birra (tra quelle presenti nel ricettario)  e la relativa quantità massima, di cui è possibile preparare la maggior quantità considerando i prodotti presenti nella dispensa.
+
+\newpage
+\section{Analisi}
+\subsection{Diagramma dei casi d'uso}
+Sono stati identificati otto casi d’uso. Di seguito viene riportato il diagramma ed una rappresentazione in forma dettagliata degli stessi.
+\vphantom{}
+\subsection{Casi d'uso}
+\vphantom{}
+\includegraphics[scale=0.65]{Immagini/Use Case Diagram_Brew Day!.png}
+\vphantom{}
+\subsubsection{Login}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & Login\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birre artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI & L’attore Utente vuole accedere al sito “Brew Day!” inserendo le proprie credenziali\\\midrule
+    PRE-CONDIZIONI & L’attore Utente deve aver effettuato la registrazione\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente riesce ad accedere al sito di “Brew Day!”\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) il sistema visualizza la schermata login\\
+    SUCCESSO & 2) l’utente inserisce le credenziali\\
+    & 3) il sistema verifica la correttezza
+    dei dati sul database\\\midrule
+    ESTENSIONI &
+    3.1) in caso di dati corretti viene effettuato il login\\
+    & 3.2) in caso di dati errati il sistema
+    visualizza un messaggio di errore\\\midrule
+    REQUISITI SPECIALI & Nessuno \\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\subsubsection{Registrazione}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & Registrazione\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI & L’attore Utente vuole registrarsi al sito di “Brew Day!" inserendo e-mail e password\\\midrule
+    PRE-CONDIZIONI & Nessuna\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente viene registrato\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente preme su "Crea Account"\\
+    SUCCESSO & 2) il sistema visualizza la schermata di registrazione (e-mail e password)\\
+    & 3) l’utente inserisce i propri dati\\
+    & 4) il sistema   verifica la correttezza dei dati inseriti\\\midrule
+    ESTENSIONI
+    & 4.1) in caso di dati corretti essi vengono inseriti
+    nel database ed il sistema visualizza un messaggio di successo\\
+    & 4.2) in caso di dati errati viene visualizzato un messaggio di errore ed il cliente può reinserire i dati\\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Una volta per utente\\\midrule
+    VARIE & Nessuna\\\bottomrule                                
+\end{longtable}
+\newpage
+\vphantom{}
+\subsubsection{gestioneUtente}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & gestioneUtente\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI & L’attore Utente vuole visualizzare il proprio profilo, modificare le credenziali o eliminarlo\\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente riesce a visualizzare il proprio profilo, modificare le credenziali o eliminarlo\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente seleziona la voce "Profilo"\\
+    SUCCESSO & 2) il sistema restituisce la schermata con i dati del profilo\\
+    & 3.1) l’utente seleziona “modifica password” e scrive la nuova password\\
+    & 3.2) l’utente seleziona “elimina profilo”\\
+    & 4.1) l'utente preme “salva modifiche”\\
+    & 4.2) il sistema visualizza una schermata di conferma eliminazione\\
+    & 5.2) l’utente conferma\\
+    & 5.1) il sistema salva il nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.2) il sistema elimina i dati relativi dal database e restituisce un messaggio di conferma\\\midrule
+    ESTENSIONI
+    & 5.1.1) se il profilo non viene salvato correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.2.1) se il profilo non viene eliminato correttamente, il sistema restituisce un messaggio di errore\\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\newpage
+\subsubsection{gestioneProdotto}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & gestioneProdotto\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI & L’attore Utente vuole visualizzare la lista dei prodotti, modificare, aggiungere o rimuovere i prodotti che ha in casa\\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO &  L’attore Utente riesce a visualizzare la lista dei prodotti, modificare, aggiungere o rimuovere i prodotti che ha in casa\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente seleziona la voce prodotti\\
+    SUCCESSO & 2) il sistema restituisce la lista dei prodotti\\
+    & 3.1) l’utente seleziona “aggiungi prodotto”\\
+    & 3.2) l’utente seleziona il prodotto desiderato dalla lista\\
+    & 4.1) il sistema restituisce la schermata per aggiungere il prodotto\\
+    & 4.2) il sistema restituisce la schermata del prodotto\\
+    & 5.1) l’utente inserisce i dati del prodotto e salva\\
+    & 5.2) l’utente modifica i dati che desidera e preme su “salva”\\
+    & 5.3) l’utente preme su “elimina”\\
+    & 6.1) il sistema salva i nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.2) il sistema salva i nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.3) il sistema elimina i dati relativi al prodotto dal database e restituisce un messaggio di conferma\\\midrule
+    ESTENSIONI
+    & 6.1.1) se il prodotto non viene salvato correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.2.1) se il prodotto non viene salvato correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.3.1) se il prodotto non viene eliminato correttamente, il sistema restituisce un messaggio di errore \\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\subsubsection{gestioneAttrezzatura}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & gestioneAttrezzatura\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI &
+    L’attore Utente vuole visualizzare la lista dell’attrezzatura, aggiungere o rimuovere attrezzatura che ha in casa \\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente riesce a visualizzare la lista dell’attrezzatura, aggiungere o rimuovere
+    attrezzatura che ha in casa\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente seleziona la voce attrezzatura\\
+    SUCCESSO & 2) il sistema restituisce la lista dell’attrezzatura\\
+    & 3.1) l’utente seleziona “aggiungi attrezzo”\\
+    & 3.2) l’utente seleziona l'attrezzo desiderato dalla lista\\
+    & 4.1) il sistema restituisce la schermata per aggiungere l'attrezzo\\
+    & 4.2) il sistema restituisce la schermata dell'attrezzo\\
+    & 5.1) l’utente inserisce i dati dell'attrezzo e salva\\
+    & 5.2) l’utente modifica i dati che desidera e preme su “salva”\\
+    & 5.3) l’utente preme su “elimina”\\
+    & 6.1) il sistema salva i nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.2) il sistema salva i nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.3) il sistema elimina i dati relativi all'attrezzo dal database e restituisce un messaggio di conferma\\\midrule
+    ESTENSIONI
+    & 6.1.1) se l'attrezzo non viene salvato correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.2.1) se l'attrezzo non viene salvato correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.3.1) se l'attrezzo non viene eliminato correttamente, il sistema restituisce un messaggio di errore \\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\subsubsection{gestioneRicette}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & gestioneRicette\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI &
+    L’attore Utente vuole visualizzare la lista delle ricette, modificare, aggiungere o rimuovere i prodotti che ha in casa \\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente riesce a visualizzare la lista delle ricette, modificare, aggiungere o rimuovere i prodotti che ha in casa \\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente seleziona la voce ricette\\
+    SUCCESSO & 2) il sistema restituisce la lista delle ricette\\
+    & 3.1) l’utente seleziona “aggiungi ricetta”\\
+    & 3.2) l’utente seleziona la ricetta desiderata dalla lista\\
+    & 4.1) il sistema restituisce la schermata per aggiungere la ricetta\\
+    & 4.2) il sistema restituisce la schermata della ricetta\\
+    & 5.1) l’utente inserisce i dati della ricetta e salva\\
+    & 5.2) l’utente modifica i dati che desidera e preme su “salva”\\
+    & 5.3) l’utente preme su “elimina ricetta”\\
+    & 5.4) l'utente seleziona la quantità da produrre e preme su "prepara birra"\\
+    & 6.2) il sistema salva i nuovi dati nel database e restituisce un messaggio di conferma\\
+    & 6.3) il sistema elimina i dati relativi alla ricetta dal database e restituisce un messaggio di conferma\\
+    & 6.4) il sistema sposta dalla lista dei prodotti alla lista della spesa la quantità di prodotti utilizzata per la preparazione della ricetta\\\midrule
+    ESTENSIONI
+    & 5.1.1) se la ricetta non viene salvata correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.2.1) se la ricetta non viene salvata correttamente, il sistema restituisce un messaggio di errore\\
+    & 6.3.1) se la ricetta non viene eliminata correttamente, il sistema restituisce un messaggio di errore \\
+    & 6.4.1) se l'utente non ha quantità sufficienti di prodotti per la preparazione, il sistema restituisce un messaggio di errore\\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\subsubsection{listaSpesa}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & listaSpesa\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI & L’attore Utente vuole visualizzare la lista dei prodotti da comprare\\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO & L’attore Utente riesce a  visualizzare la lista dei prodotti da comprare\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l'utente preme su "lista della spesa"\\
+    SUCCESSO & 2) il sistema restituisce la lista della spesa\\
+    & 3) l’utente preme su “ho fatto la spesa”\\
+    & 4) il sistema cancella la lista della spesa\\\midrule
+    ESTENSIONI & Nessuna\\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna\\\bottomrule
+\end{longtable}
+\vphantom{}
+\newpage
+\subsubsection{CheBirraFaccio}
+\begin{longtable}{p{6cm}p{7cm}}\toprule
+    NOME & CheBirraFaccio\\\midrule
+    PORTATA & Brew Day!\\\midrule
+    LIVELLO & Gestione di ricette di birra artigianali\\\midrule
+    ATTORE PRIMARIO & Utente\\\midrule
+    PARTI INTERESSATE E INTERESSI &
+    L’attore Utente vuole un consiglio sulla birra da preparare\\\midrule
+    PRE-CONDIZIONI & Login\\\midrule
+    GARANZIA DI SUCCESSO &L’attore Utente riesce ad avere la ricetta della birra da preparare che massimizza l’uso dei prodotti disponibili\\\midrule
+    SCENARIO PRINCIPALE DI
+    & 1) l’utente preme su “Che birra faccio oggi?”\\
+    SUCCESSO & 2) il sistema calcola che birra fare in base alla quantità di prodotti e alle ricette presenti nel database\\
+    & 3) il sistema restituisce un messaggio con il nome della ricetta e il numero massimo di litri che si possono produrre\\
+    ESTENSIONI
+    & 3.1) se l'utente non ha abbastanza prodotti per produrre alcuna ricetta presente nel database il sistema restituisce un messaggio di errore\\\midrule
+    REQUISITI SPECIALI & Nessuno\\\midrule
+    ELENCO VARIABILI TECNOLOGICHE & Database\\\midrule
+    FREQUENZA DI RIPETIZIONE & Più volte al giorno\\\midrule
+    VARIE & Nessuna \\\bottomrule
+\end{longtable}
+
+%%\begin{tabular}[c]{@{}l@{}} \end{tabular}\\\midrule
+\newpage
+\subsection{Diagramma delle classi a livello di Dominio}
+Con il seguente diagramma vengono rappresentate le classi implementate, inclusi gli attributi e le interazioni tra le stesse. \\\\
+\includegraphics[scale=0.50]{Immagini/Domain Model_Brew Day!_definitivo.png}
+\subsection{Diagramma delle classi a livello di Progettazione}
+Con il seguente diagramma vengono rappresentate le classi implementate, inclusi gli attributi, i metodi e le interazioni tra le stesse. \\\\
+\includegraphics[scale=0.40]{Immagini/Design Model_Brew Day!_definitivo.png}
+\subsection{Diagramma dell'architettura software}
+Con il seguente diagramma viene mostrata l'architettura dell'applicazione sviluppata.
+L'architettura richiama il modello MVC:
+\begin{itemize}
+    \item Model: comprende le classi che strutturano l'applicazione;
+    \item View: comprende tutte le classi che formano le finestre che costituiscono l'interfaccia per l'utente;
+    \item Controller: è rappresentato dalla classe mediatrice tra View e il database esterno contenente i dati.
+\end{itemize}
+\includegraphics[scale=0.70]{Immagini/Diagramma Architettura Software_Brew Day!.png}
+
+\newpage
+\subsection{Diagramma di sequenza}
+Con il seguente diagramma viene mostrato il funzionamento dell’intera applicazione. Con la fase di registrazione vengono inseriti email e password, dati che vengono poi controllati, in modo da non avere duplicati, e salvati nel database. Questo passaggio permette la creazione di un account, necessario per salvare e modificare prodotti, attrezzi e ricette dell’utente. Con la fase di login vengono richieste le credenziali definite in fase di registrazione, e solo dopo si potrà visualizzare il menu’ principale. Il menù mostra diverse funzionalità che possono essere classificate in:
+\begin{itemize}
+    \item Profilo:
+        \subitem - modificare il profilo cambiando la password;
+        \subitem - eliminare il profilo.
+    \item Prodotti:
+        \subitem - aggiungere un nuovo prodotto al database definendone nome e quantità;
+        \subitem - modificare la quantità di un prodotto esistente;
+        \subitem - eliminare un prodotto dal database.
+    \item Attrezzatura:
+        \subitem - aggiungere un nuovo attrezzo al database definendone nome e capacità;
+        \subitem - modificare la capacità di un attrezzo esistente
+        \subitem - eliminare un attrezzo dal database.\\
+        In questa applicazione l'attrezzatura è puramente a scopo illustrativo. Questa sezione tiene solamente traccia degli attrezzi che si possiedono, non viene considerata per la preparazione di una ricetta o nella funzionalità "Che Birra Faccio Oggi?".
+    \item Ricette:
+        \subitem - aggiungere una nuova ricetta al database definendone nome, elenco prodotti, elenco attrezzi, preparazione e note;
+        \subitem - modificare le note di una ricetta esistente;
+        \subitem - eliminare una ricetta dal database;
+        \subitem - preparare una ricetta inserendo la quantità. Con questa operazione la quantità dei prodotti necessaria alla preparazione della ricetta selezionata viene spostata dalla tabella 'prodotto' alla tabella 'listadellaspesa' presenti nel database.\\
+        La modifica di una ricetta riguarda solo le note, in quanto si crede che una volta inserita questa non vari nel tempo, mentre è utile poter modificare le note che riportano un'informazione personale riguardante la ricetta.
+    \item "Che Birra Faccio Oggi?":
+        \subitem è una funzionalità speciale che permette di ottenere un consiglio riguardo la ricetta da preparare. La ricetta ottenuta grazie a questa funzionalità è quella di cui si possono fare più litri con i prodotti presenti in quel momento nella propria dispensa.\\
+        Questa funzionalità restituisce semplicemente un consiglio su quale birra produrre, mostrando nome e quantità massima supportata dai prodotti presenti in dispensa, sarà poi facoltà dell’utente scegliere quale ricetta e quanta prepararne.
+    \item Lista della spesa:
+        \subitem è una funzionalità che permette di vedere quali prodotti mancano nella dispensa per poter preparare le varie ricette, una volta selezionata questa voce si visualizzerà la lista e si avrà la possibilità di cancellarla una volta comprato i prodotti.\\
+        La lista della spesa viene solo visualizzata in modo che poi sia l'utente a scegliere cosa comprare e potrà in autonomia cancellare la lista ed aggiornate i prodotti.
+\end{itemize}
+\newpage
+\includegraphics[scale=0.40]{Immagini/Sequence Diagram_Brew Day!_definitivo_1.png}
+\newpage
+\includegraphics[scale=0.40]{Immagini/Sequence Diagram_Brew Day!_definitivo_2.png}
+
+\newpage
+
+\subsection{Diagramma di sequenza di progettazione}
+Con il seguente diagramma viene mostrato in maniera dettagliata il funzionamento del caso d’uso gestioneRicette.\\\\\
+\includegraphics[scale=0.43]{Immagini/Sequence Diagram gestioneRicette.png}
+\subsection{Diagramma di stato}
+Con il seguente diagramma a stati viene mostrato il funzionamento del caso d'uso Login.\\\\
+\includegraphics[scale=0.60]{Immagini/State Machine Diagram Login_Brew Day!.png}
+\subsection{Diagramma di attività}
+Con il seguente diagramma viene mostrato il funzionamento del caso d'uso Registrazione.\\\\
+\includegraphics[scale=0.50]{Immagini/Activity Diagram Registrazione_Brew Day!.png}
+\subsection{Diagramma EER}
+Questo diagramma rappresenta la struttura del database creato come appoggio all'applicazione.\\\\
+\includegraphics[scale=0.50]{Immagini/diagrammaER.PNG}
+\\E' stato utilizzato un database esterno di supporto dell'applicazione in quanto è possibile installarla su dispositivi diversi e recuperare le proprie informazioni.
+\newpage
+
+\section{Pattern}
+\vphantom{}
+\subsection{Singleton}
+Il pattern Singleton viene utilizzato dalla classe 'GestioneDB'. Questa classe ha il compito di svolgere tutte le operazioni che si interfacciano al database di supporto. Abbiamo introdotto questo pattern al fine di evitare errori di comunicazione, infatti è presente una sola classe mediatrice tra il database e le altre classi.\\\\
+\includegraphics[scale=0.80]{Immagini/Singleton.png}
+\subsection{Data Mapper}
+Il pattern Data Mapper viene utilizzato nella creazione delle classi che rappresentano gli oggetti manipolati nel database.
+E' stato rivisitato il suo utilizzo rendendolo più semplice togliendo uno step intermedio.
+Nel nostro caso vengono creati degli oggetti di tipo prodotto, ricetta e listaSpesa in modo da non dover richiedere ogni volta l'intervento del database.\\\\
+\includegraphics[scale=0.70]{Immagini/DataMapper.PNG}
+\newpage
+\subsection{Identity Field}
+Il pattern Identity Field è presente in tutte le tabelle del database, ma viene utilizzato in modo particolare nelle funzionalità inerenti alla tabella Ricetta.
+La chiave primaria idRicetta viene utilizzata per richiamare i prodotti contenuti nella tabella 'prodricetta' per le funzionalità di preparazione di una ricetta e "Che birra faccio oggi?".\\\\
+\includegraphics[scale=0.40]{Immagini/IdentityField.jpg}
+\subsection{Association Table Mapping}
+Il pattern Asssociation Table Mapping viene utilizzato nella tabella 'prodricetta' come collegamento tra le tabelle 'ricetta' e 'prodotto'. All'interno del database non è presente come un'associazione molti-a-molti, viene però utilizzata in questo modo nell'implementazione.\\\\ 
+\includegraphics[scale=0.40]{Immagini/AssociationTableMapping_.jpg}
+\subsection{Facade}
+Il pattern Facade è presente nella gestione delle finestre, l'utente preme il bottone e il metodo che svolge questa funzionalità è semplice e nasconde la complessità dell'utilizzo dell'applicazione.
+\newpage
+
+\section{Analisi Understand}
+Tramite l'utilizzo del software Understand è stata svolta un'analisi del codice e della struttura dell'applicazione sviluppata.\\\\
+\includegraphics[scale=0.40]{Immagini/Understand_1.png}\\
+\includegraphics[scale=0.40]{Immagini/Understand_3.png}\\
+\includegraphics[scale=0.40]{Immagini/Understand_2.png}\\
+\\Sono stati individuati alcuni antipatterns.
+\subsection{God Class}
+E' stata individuata la classe 'GestioneDB' come la classe che "sa tutto". Essa infatti contiene tutte le informazioni riguardanti tutte le funzioni svolte dall'applicazione.
+\subsection{Accumulate and fire}
+All'interno del progetto vengono usate variabili globali per facilitare la comunicazione tra le classi.
+\subsection{Copy and paste programming}
+All’interno del progetto è possibile notare la presente di metodi diversi che svolgono la stessa funzione. Ciò è stato necessario perchè la comunicazione con il database richiedeva, anche per operazioni simili, query diverse per interpellare la tabella interessata.
+\subsection{Reinventing the wheet}
+E' stato usato un metodo già testato per effettuare la connessione con il database.
+
+\section{Analisi Sonarqube}
+Viene riportata la schermata di analisi del progetto software.\\\\
+\includegraphics[scale=0.60]{Immagini/form/Sonarqube.png}
+\\\\
+Sono stati individuati e corretti i principali issue presenti nel codice.
+Non è stato possibile rimuovere i code smells rimanenti in quanto sono parte integrante della struttura del codice e rimuoverli avrebbe richiesto un completo refactor del progetto.
+\end{document}
