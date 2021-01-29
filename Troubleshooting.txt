@@ -1,0 +1,1 @@
+Al primo avvio dell'applicazione all'interno dell'ambiente  Visual Studio è possibile che compaia una finestra di dialogo, è sufficiente premere su "Ok" e l'applicazione continuerà la sua esecuzione, al successivo avvio dovrebbe procedere tutto senza interruzioni.
