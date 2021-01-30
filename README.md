@@ -8,3 +8,7 @@ Per avviare l'applicazione è necessario eseguire i seguenti passi:
 3. selezionare e aprire la cartella "bin";
 4. selezionare e aprire la cartella "Release";
 5. selezionare ed eseguire il file "ProgettoBirra.exe".
+
+E' stato creato un account di prova, di seguito sono scritte le credenziali:
+Email: accountTest@gmail.com
+Password: test
